@@ -117,6 +117,10 @@ a.social_icons__discord{
     border-radius: 50%;
 }
 
+.hiddenBackground {
+    visibility: hidden;
+}
+
 /* .box_bacgrounds{
     position: absolute;
     width: 100%;
@@ -202,7 +206,7 @@ a.social_icons__discord{
     top: -19px;
 } */
 
-.box_ducks{
+/* .box_ducks{
     height: 750px;
     width: 750px;
     position: relative;
@@ -212,7 +216,7 @@ a.social_icons__discord{
 }
 .box_ducks.active{
     animation: ease playDuck 4.5s forwards;
-}
+} */
 @keyframes playDuck {
     from {
         opacity: 0;
@@ -222,10 +226,9 @@ a.social_icons__discord{
         opacity: 1;
     }
   }
-.box_title{
+/* .box_title{
     position: absolute;
     width: 100%;
-    /* border: 2px solid red; */
     margin: 0 auto;
     bottom: -50%;
     display: flex;
@@ -235,7 +238,7 @@ a.social_icons__discord{
 }
 .box_title.active{
     animation: ease titleTop 1.5s forwards;
-}
+} */
 @keyframes titleTop {
     from {
         bottom: -50%;
@@ -244,7 +247,7 @@ a.social_icons__discord{
         bottom: -2%;
     }
   }
-.big_title{
+/* .big_title{
     height: 181px;
     width: 1032px;
     font-family: 'TrovasRegular-rgGOy'; 
@@ -256,8 +259,8 @@ a.social_icons__discord{
     color: rgba(255, 255, 255, 1);
     text-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-}
-.big_btn{
+} */
+/* .big_btn{
 	font-family: 'TrovasRegular-rgGOy'; 
     font-size: 40px;
     font-weight: 400;
@@ -271,7 +274,7 @@ a.social_icons__discord{
     background: linear-gradient(270deg, #FFC48D 0%, #FFE6A5 33.59%, #ECA33E 71.39%, #FFE68D 100.78%);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 49.5px;
-}
+} */
 
 @media only screen and (max-width: 1920px) {
 
@@ -279,9 +282,9 @@ a.social_icons__discord{
     /* .box_all{
         overflow: hidden;
     } */
-    .box_ducks{
+    /* .box_ducks{
         left: calc(50% - 375px);
-    }
+    } */
     
 }
 
@@ -354,17 +357,16 @@ a.social_icons__discord{
         line-height: 34px;
 
     } */
-    .box_title{
+    /* .box_title{
         position: absolute;
         width: 100%;
-        /* border: 2px solid red; */
         margin: 0 auto;
         bottom: -50%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1133px) {
@@ -382,7 +384,7 @@ a.social_icons__discord{
         left: 15px;
         top: 85%;
     } */
-    .nav_background__left{
+    /* .nav_background__left{
         left: -8%;
         top: 80%;
         width: 533px;
@@ -406,7 +408,7 @@ a.social_icons__discord{
         left: 56.479248046875px;
         top: -551px;
         filter: blur(110px);
-    }
+    } */
     /* nav{
         max-width: 1133px;
         width: 100%; 
@@ -434,12 +436,12 @@ a.social_icons__discord{
         height: 17px;
         width: 99px;
     } */
-    .box_ducks{
+    /* .box_ducks{
         height: 633px;
         width: 633px;
         top: 81px;
-    }
-    .box_title{
+    } */
+    /* .box_title{
         position: absolute;
         width: 120%;
         margin: 0 auto;
@@ -447,7 +449,7 @@ a.social_icons__discord{
     }
     .box_title.active{
         animation: ease titleTop 1.5s forwards;
-    }
+    } */
     @keyframes titleTop {
         from {
             bottom: -50%;
@@ -456,20 +458,20 @@ a.social_icons__discord{
             bottom: -20%;
         }
       }
-    .big_title{
+    /* .big_title{
         height: 150px;
         width: 805px;
         font-size: 128px;
         font-weight: 400;
         line-height: 154px;
-    }
-    .big_btn{
+    } */
+    /* .big_btn{
         height: 82px;
         width: 260px;
         font-size: 40px;
         font-weight: 400;
         line-height: 48px;
-    }
+    } */
 
 }
 @media only screen and (max-width: 990px) {
@@ -530,24 +532,24 @@ a.social_icons__discord{
     /* nav{
         display: none;
     } */
-    .box_ducks{
+    /* .box_ducks{
         position: relative;
         left: calc(50% - 375px);
         top: 51px;
         opacity: 0;
         height: 566px;
         width: 566px;
-    }
-    .img_ducks{
+    } */
+    /* .img_ducks{
         height: 566px;
         width: 566px;
         left: 15%;
-        /* position: relative; */
+        position: relative;
         top: 131px;
-    }
-    .box_ducks.active{
+    } */
+    /* .box_ducks.active{
         animation: ease playDuck 4.5s forwards;
-    }
+    } */
     @keyframes playDuck {
         from {
             opacity: 0;
@@ -558,14 +560,14 @@ a.social_icons__discord{
         }
       }
 
-    .box_title{
+    /* .box_title{
         width: 100%;
         bottom: -50%;
         left: 15%;
     }
     .box_title.active{
         animation: ease titleTop 1.5s forwards;
-    }
+    } */
     @keyframes titleTop {
         from {
             bottom: -50%;
@@ -574,7 +576,7 @@ a.social_icons__discord{
             bottom: 60%;
         }
       }
-    .big_title{
+    /* .big_title{
         height: 58px;
         width: 363px;
         left: 14px;
@@ -583,20 +585,16 @@ a.social_icons__discord{
         font-weight: 400;
         line-height: 70px;
         text-align: center;
-    }
-    .big_btn{
-position: relative;
-top: 485px;
-
-height: 70px;
-width: 222px;
-font-size: 38px;
-font-weight: 400;
-line-height: 48px;
-
-
-
-    }
+    } */
+    /* .big_btn{
+        position: relative;
+        top: 485px;
+        height: 70px;
+        width: 222px;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 48px;
+    } */
 }
 /* белая шумь */
 .grain {
@@ -1111,9 +1109,50 @@ img.welcome_box__arrow{
 /* хром, сафари */
 .faq::-webkit-scrollbar { width: 0; }
 /* ie 10+ */
-.faq { -ms-overflow-style: none; }
+.faq { 
+    -ms-overflow-style: none;
+    /* background-image: url("../img/gallery-bg.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 80%; */
+    /* position: relative; */
+    /* background-color: black; */
+    /* z-index: 1; */
+    /* background-image: url(../img/faq-bg-deco.png); */
+    /* background-color: #000; */
+    /* display: flex; */
+ }
 /* фф (свойство больше не работает, других способов тоже нет)*/
 .faq { overflow: -moz-scrollbars-none; }
+
+ .faq-duck{
+    height: 100vh;
+    position: inherit;
+    z-index: 1;
+    color: #fff;
+    /*background-image: url("../img/faq-bg.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center bottom;*/
+    /*background-size: 50%;*/
+    background-color: initial;
+    width: 100%;
+    height: 100vh;
+    background-color: #000; 
+    background-image: url("../img/faq-bg.png");
+    background-position: relative;
+    background-position-y:bottom;
+    background-size: auto 91%;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+}
+
+.faq-dop {
+    width: 100%;
+    height: 100vh;
+}
+
+.addVisible {
+    visibility: hidden;
+}
 
 .faq .faq-block{
     display: block;
@@ -1127,7 +1166,11 @@ img.welcome_box__arrow{
     backdrop-filter: blur(40px);
     position: inherit;
     top: 50%;
+    /* visibility: hidden; */
     transform: translateY(-50%);
+}
+.faq-block{
+    /* z-index: 3; */
 }
 .faq .faq-block__title{
     font-family: 'dance_partner', sans-serif;
@@ -1180,11 +1223,6 @@ img.welcome_box__arrow{
     color: #fff;
     transform: translateY(-25%);
     font-size: 45px;
-}
-
-.faq-duck{
-    width: 100%;
-    height: 100vh;
 }
 .team{
     position: inherit;

@@ -5,7 +5,19 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #000;
+    /* background: #000; */
+
+    /* background-color: #000;
+    background-image: url("../img/faq-bg.png");
+    background-position: absolute;
+    background-position-y:bottom;
+    background-size: auto 91%;
+    background-repeat:no-repeat;
+    background-color: #000; */
+    /* z-index: 1; */
+    /* background-position: center bottom; */
+    /* transform: translateX(-50%); */
+    
 }
 body.faq-bg .faq-bg-duck{
     display: block;
@@ -20,4 +32,12 @@ body.faq-bg .faq-bg-duck{
     height: 91%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+body.second-bg .faq-bg-duck{
+    background-color: initial;
+}
+
+.faq-bg-duck{
+    background-color: #000;
 }

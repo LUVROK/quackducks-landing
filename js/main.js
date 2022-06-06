@@ -17,20 +17,51 @@ let boxTitle = document.querySelector(".box_title");
 let nav = document.querySelector("nav");
 let blackWallpaper = document.querySelector(".black_wallpaper");
 
-// window.onscroll = function () {
+
+window.onscroll = function () {
+    if (window.pageYOffset > 30) {
+        nav.style.background = "#5F5F5F";
+        blackWallpaper.style.display = "flex";
+        nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+    }
+    else {
+        nav.style.background = "none";
+        blackWallpaper.style.display = "none";
+    }
+}
+
+// function throttle(callee, timeout) {
+//     let timer = null;
+//     return function perform(...args) {
+//         if (timer) return;
+//         timer = setTimeout(() => {
+//             callee(...args);
+//             clearTimeout(timer);
+//             timer = null;
+//         }, timeout);
+//     };
+// }
+
+// function recalculateProgress() {
 //     if (window.pageYOffset > 30) {
 //         nav.style.background = "#5F5F5F";
 //         blackWallpaper.style.display = "flex";
 //         nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-
-//         // nav.style.boxShadow = '0px 0px 10px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%)';
 //         console.log(window.pageYOffset)
 //     }
 //     else {
 //         nav.style.background = "none";
 //         blackWallpaper.style.display = "none";
 //     }
+//     // window.pageXOffset >= 2718
+//     //     ? black_wallpaper.classList.add('hiddenBackground')
+//     //     : black_wallpaper.classList.remove('hiddenBackground')
 // }
+
+// const optimizedHandler = throttle(recalculateProgress, 200);
+
+// window.addEventListener("scroll", optimizedHandler);
+// window.addEventListener("resize", optimizedHandler);
 
 
 
@@ -667,6 +698,9 @@ $(".view-photo__close").on('click', function (e) {
     $(".view-photo").removeClass("show-popup");
 })
 
+const background_faq_bg_duck = document.querySelector(".faq-bg-duck");
+const duck_bg = document.querySelector(".duck-bg");
+const black_wallpaper = document.querySelector(".black_wallpaper");
 
 //Second bg body
 $(window).on('scroll', function () {
@@ -681,6 +715,7 @@ $(window).on('scroll', function () {
         }
     }
     else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
+        console.log('teamteam')
         if ($('body').hasClass('faq-bg')) {
             return
         } else {
@@ -695,17 +730,17 @@ $(window).on('scroll', function () {
 })
 
 
-/*$(window).on('scroll', function (){
-    if($(document).scrollTop()>1900 && $(document).scrollTop()<6800){
-        if($('body').hasClass('second-bg')){
+$(window).on('scroll', function () {
+    if ($(document).scrollTop() > 1900 && $(document).scrollTop() < 6800) {
+        if ($('body').hasClass('second-bg')) {
             return
         } else {
             $('body').addClass('second-bg');
             $('body').removeClass('faq-bg');
         }
     }
-    else if($(document).scrollTop()>6800){
-        if($('body').hasClass('faq-bg')){
+    else if ($(document).scrollTop() > 6800) {
+        if ($('body').hasClass('faq-bg')) {
             return
         } else {
             $('body').addClass('faq-bg');
@@ -713,13 +748,13 @@ $(window).on('scroll', function () {
         }
     }
     else {
-        if($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')){
+        if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
             $('body').removeClass('second-bg');
             $('body').removeClass('faq-bg');
         } else {
             return;
         }
     }
-})*/
+})
 
 console.log($(location).attr('hash'));

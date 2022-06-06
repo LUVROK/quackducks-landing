@@ -69,6 +69,9 @@
     .shadow-block-bacground .welcome-block .welcome-full summary{
         font-size: 20px;
     }
+    .shadow-block-bacground .welcome-block-content{
+        min-height: 1680px;
+    }
 }
 
 @media screen and (max-width: 880px) {
