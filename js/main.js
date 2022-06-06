@@ -17,16 +17,20 @@ let boxTitle = document.querySelector(".box_title");
 let nav = document.querySelector("nav");
 let blackWallpaper = document.querySelector(".black_wallpaper");
 
-window.onscroll = function () {
-    if (window.pageYOffset > 30) {
-        nav.style.background = "black";
-        blackWallpaper.style.display = "flex";
-    }
-    else {
-        nav.style.background = "none";
-        blackWallpaper.style.display = "none";
-    }
-}
+// window.onscroll = function () {
+//     if (window.pageYOffset > 30) {
+//         nav.style.background = "#5F5F5F";
+//         blackWallpaper.style.display = "flex";
+//         nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+
+//         // nav.style.boxShadow = '0px 0px 10px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%)';
+//         console.log(window.pageYOffset)
+//     }
+//     else {
+//         nav.style.background = "none";
+//         blackWallpaper.style.display = "none";
+//     }
+// }
 
 
 
@@ -510,13 +514,15 @@ elementsArray.forEach(element => {
         element.classList.add('box-active');
         // console.log(elementsArray)
         if (element.id === "box_duckOne_img_2") {
+            // console.log(element.id)
             element2.classList.add('box-active');
         }
         else {
             element2.classList.remove('box-active');
         }
         elementsArray[activeElement - 1].classList.remove('box-active')
-        console.log(elementsArray[activeElement - 1])
+        // console.log(elementsArray[activeElement - 1])
+        // console.log(element.id)
         // boxGaaler2.classList.remove('box-unactive');
         // element.style.flex = '1 1 20%';
 
@@ -573,6 +579,20 @@ swiper_right.addEventListener("click", e => {
     activeElement !== 2 ? element2.classList.remove('box-active') : null;
 });
 
+// const containerVisibility = document.querySelector(".box_all")
+// const containerControlScroll = document.querySelector(".block_factions")
+
+// console.log('Текущая прокрутка сверху: ' + window.pageYOffset);
+// alert( 'Текущая прокрутка слева: ' + window.pageXOffset );
+
+
+
+
+
+
+
+
+
 
 
 
@@ -587,7 +607,6 @@ function sliderUp() {
     console.log("yes");
     faqDusksSmallBox.classList.add("active");
 }
-
 
 
 var swiper = new Swiper(".mySwiper", {});

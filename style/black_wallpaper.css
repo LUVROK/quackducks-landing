@@ -1,0 +1,115 @@
+.black_wallpaper{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+.box_all{
+    /*max-width: 1520px;*/
+    /* border: 4px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    /* visibility: hidden; */
+}
+.container {
+    position: relative;
+    top:0%;
+    display: flex;
+    width: 100%;
+    padding: 0 0 80px 0;
+    box-sizing: border-box;
+    height: 100%;
+    /* display: none; */
+}
+.box_one .container{
+    max-width: 1520px;
+}
+.box_one{
+    height: 912px;
+    width: 100%;
+    position: relative;
+}
+body.second-bg .box_one{
+    opacity: 0;
+}
+.box_social_icons{
+    position: absolute;
+    left: 56px;
+    top: 557px;
+    width: 35px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.box_bacgrounds{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1920px) {
+    .box_all{
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 1680px) {
+    .black_wallpaper{
+        height: 71px;
+    }
+    .box_all{
+        max-width: 1680px !important;
+    }
+    .box_one{
+        height: 853px;
+        width: 100%;
+        position: relative;
+    }
+    .box_social_icons{
+        left: 56px;
+        top: 75%;
+    }
+}
+@media only screen and (max-width: 1133px) {
+    .black_wallpaper{
+        height: 51px;
+    }
+    .box_all{
+        max-width: 1133px !important;
+    }
+    .box_one{
+        height: 744px;
+    }
+    .box_social_icons{
+        left: 15px;
+        top: 85%;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .black_wallpaper{
+        display: none;
+    }
+    .box_all{
+        max-width: 390px;
+    }
+    .box_one{
+        height: 846px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 0% 0%;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+}
