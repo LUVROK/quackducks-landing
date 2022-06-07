@@ -650,7 +650,7 @@ $.scrollify({
     sectionName: "section-name",
     interstitialSection: ".block-scroll",
     easing: "easeOutExpo",
-    scrollSpeed: 700, //1100 было
+    scrollSpeed: 1800, //1100 было
     offset: 0,
     scrollbars: true,
     standardScrollElements: ".team",
@@ -658,10 +658,10 @@ $.scrollify({
     overflowScroll: true,
     updateHash: true,
     touchScroll: true,
-    // before: function () { },
-    // after: function () { },
-    // afterResize: function () { },
-    // afterRender: function () { }
+    before: function () { },
+    after: function () { },
+    afterResize: function () { },
+    afterRender: function () { }
 });
 
 
