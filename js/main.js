@@ -653,7 +653,7 @@ $.scrollify({
     scrollSpeed: 700,
     offset: 0,
     scrollbars: true,
-    standardScrollElements: ".team",
+    // standardScrollElements: ".footer",
     setHeights: true,
     overflowScroll: true,
     updateHash: true,

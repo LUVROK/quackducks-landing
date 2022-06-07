@@ -1262,6 +1262,8 @@ img.welcome_box__arrow{
     color: #fff;
     background: #000;
     position: inherit;
+    /* height: 100vh; */
+    z-index: 1;
 }
 .footer .footer-container{
     max-width: 1130px;
