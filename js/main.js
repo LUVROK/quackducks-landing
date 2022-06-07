@@ -669,7 +669,7 @@ $.scrollify({
     sectionName: "section-name",
     interstitialSection: ".block-scroll",
     // easing: "easeOutExpo",
-    scrollbars: true,
+    // scrollbars: true,
     before: function (i, panels) {
 
         var ref = panels[i].attr("data-section-name");
