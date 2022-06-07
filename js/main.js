@@ -646,14 +646,14 @@ function sliderUp() {
 
 
 $.scrollify({
-    section: ".block-scroll",
+    section: ".welcome-block",
     sectionName: "section-name",
     interstitialSection: ".block-scroll",
     easing: "easeOutExpo",
     scrollSpeed: 700,
-    // offset: 0,
+    offset: 0,
     scrollbars: true,
-    // standardScrollElements: ".footer",
+    standardScrollElements: ".footer",
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
