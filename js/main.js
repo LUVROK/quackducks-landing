@@ -657,11 +657,11 @@ $.scrollify({
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
-    // touchScroll: true,
-    before: function () { },
-    after: function () { },
-    afterResize: function () { },
-    afterRender: function () { }
+    touchScroll: true,
+    // before: function () { },
+    // after: function () { },
+    // afterResize: function () { },
+    // afterRender: function () { }
 });
 
 
