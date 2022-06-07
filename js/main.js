@@ -667,9 +667,9 @@ function sliderUp() {
 $.scrollify({
     section: ".block-scroll",
     // sectionName: "section-name",
-    interstitialSection: ".block-scroll",
-    easing: "easeOutExpo",
-    scrollbars: true,
+    // interstitialSection: ".block-scroll",
+    // easing: "easeOutExpo",
+    // scrollbars: true,
     touchScroll: true,
     // scrollSpeed: 700,
     // before: function (i, panels) {
