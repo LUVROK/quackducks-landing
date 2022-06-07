@@ -461,7 +461,7 @@ function duckAbsolute(a) {
 
     let img = ducksAllImg[a].src;
     absoluteBigImg.src = ducksAllImg[a].src;
-    console.log(ducksAllImg[a].src);
+    // console.log(ducksAllImg[a].src);
     dusksAbsolute.style.display = "flex";
 }
 function duckClose() {
@@ -653,12 +653,12 @@ $.scrollify({
     scrollSpeed: 700,
     offset: 0,
     scrollbars: true,
-    standardScrollElements: ".footer",
+    // standardScrollElements: ".footer",
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
     touchScroll: true,
-    before: function () { },
+    before: function () { console.log(1) },
     after: function () { },
     afterResize: function () { },
     afterRender: function () { }
@@ -763,7 +763,7 @@ $(window).on('scroll', function () {
         }
     }
     else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
-        console.log('teamteam')
+        // console.log('teamteam')
         if ($('body').hasClass('faq-bg')) {
             return
         } else {
@@ -779,7 +779,7 @@ $(window).on('scroll', function () {
 
 
 $(window).on('scroll', function () {
-    console.log(document.scrollTop)
+    // console.log(document.scrollTop)
     if ($(document).scrollTop() > 3000 && $(document).scrollTop() < 8000) {
         if ($('body').hasClass('second-bg')) {
             return
