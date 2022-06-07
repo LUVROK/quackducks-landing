@@ -666,12 +666,21 @@ function sliderUp() {
 
 $.scrollify({
     section: ".block-scroll",
-    // sectionName: "section-name",
-    // interstitialSection: ".block-scroll",
-    // easing: "easeOutExpo",
-    // scrollbars: true,
+    sectionName: "section-name",
+    interstitialSection: ".block-scroll",
+    easing: "easeOutExpo",
+    scrollSpeed: 1800, //1100 было
+    offset: 0,
+    scrollbars: true,
+    standardScrollElements: ".team",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
     touchScroll: true,
-    // scrollSpeed: 700,
+    before: function () { },
+    after: function () { },
+    afterResize: function () { },
+    afterRender: function () { }
     // before: function (i, panels) {
 
     //     var ref = panels[i].attr("data-section-name");
