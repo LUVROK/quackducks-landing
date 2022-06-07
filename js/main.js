@@ -658,7 +658,7 @@ $.scrollify({
     overflowScroll: true,
     updateHash: true,
     touchScroll: true,
-    before: function () { console.log(1) },
+    before: function () { },
     after: function () { },
     afterResize: function () { },
     afterRender: function () { }
@@ -780,7 +780,8 @@ $(window).on('scroll', function () {
 
 $(window).on('scroll', function () {
     // console.log(document.scrollTop)
-    if ($(document).scrollTop() > 0 && $(document).scrollTop() < 8000) {
+    if ($(document).scrollTop() > 2900 && $(document).scrollTop() < 6800) {
+        console.log($(document).scrollTop())
         if ($('body').hasClass('second-bg')) {
             return
         } else {
@@ -798,7 +799,7 @@ $(window).on('scroll', function () {
     }
     else {
         if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-            // $('body').removeClass('second-bg');
+            $('body').removeClass('second-bg');
             $('body').removeClass('faq-bg');
         } else {
             return;
