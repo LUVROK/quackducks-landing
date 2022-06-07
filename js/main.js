@@ -780,7 +780,7 @@ $(window).on('scroll', function () {
 
 $(window).on('scroll', function () {
     // console.log(document.scrollTop)
-    if ($(document).scrollTop() > 0 && $(document).scrollTop() < 8000) {
+    if ($(document).scrollTop() > 7000 && $(document).scrollTop() < 8000) {
         if ($('body').hasClass('second-bg')) {
             return
         } else {
