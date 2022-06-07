@@ -666,14 +666,14 @@ $.scrollify({
 
 
 // Просмотр фото галереии
-// let imgSrc = $(".ducks-gallery-img").on('click', function (e) { imgSrc = e.target.src; openGalery() });
-// let allImages = '';
-// let imgNumber = 0;
-// function openGalery() {
-//     $(".view-photo").addClass("show-popup");
-//     allImages = $(".ducks-gallery-img img");
-//     $(".view-photo-big img").attr("src", imgSrc);
-// }
+let imgSrc = $(".ducks-gallery-img").on('click', function (e) { imgSrc = e.target.src; openGalery() });
+let allImages = '';
+let imgNumber = 0;
+function openGalery() {
+    $(".view-photo").addClass("show-popup");
+    allImages = $(".ducks-gallery-img img");
+    $(".view-photo-big img").attr("src", imgSrc);
+}
 // $('.view-photo .view-photo-btns .view-photo-btns__prev').on('click', function () {
 //     imgNumber--;
 //     if (imgNumber < 0) {
