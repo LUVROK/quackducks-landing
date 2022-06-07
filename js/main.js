@@ -668,7 +668,7 @@ $.scrollify({
     section: ".block-scroll",
     sectionName: "section-name",
     interstitialSection: ".block-scroll",
-    easing: "easeOutExpo",
+    // easing: "easeOutExpo",
     scrollbars: true,
     before: function (i, panels) {
 
