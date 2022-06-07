@@ -640,63 +640,63 @@ function sliderUp() {
 }
 
 
-var swiper = new Swiper(".mySwiper", {});
+// var swiper = new Swiper(".mySwiper", {});
 
 
 
 
-// $.scrollify({
-//     section: ".block-scroll",
-//     sectionName: "section-name",
-//     interstitialSection: ".block-scroll",
-//     easing: "easeOutExpo",
-//     scrollSpeed: 700, //1100 было
-//     offset: 0,
-//     scrollbars: true,
-//     standardScrollElements: ".team",
-//     setHeights: true,
-//     overflowScroll: true,
-//     updateHash: true,
-//     touchScroll: true,
-//     before: function () { },
-//     after: function () { },
-//     afterResize: function () { },
-//     afterRender: function () { }
-// });
+$.scrollify({
+    section: ".block-scroll",
+    sectionName: "section-name",
+    interstitialSection: ".block-scroll",
+    easing: "easeOutExpo",
+    scrollSpeed: 700, //1100 было
+    offset: 0,
+    scrollbars: true,
+    standardScrollElements: ".team",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll: true,
+    before: function () { },
+    after: function () { },
+    afterResize: function () { },
+    afterRender: function () { }
+});
 
 
 // Просмотр фото галереии
-let imgSrc = $(".ducks-gallery-img").on('click', function (e) { imgSrc = e.target.src; openGalery() });
-let allImages = '';
-let imgNumber = 0;
-function openGalery() {
-    $(".view-photo").addClass("show-popup");
-    allImages = $(".ducks-gallery-img img");
-    $(".view-photo-big img").attr("src", imgSrc);
-}
-$('.view-photo .view-photo-btns .view-photo-btns__prev').on('click', function () {
-    imgNumber--;
-    if (imgNumber < 0) {
-        imgNumber = allImages.length - 1;
-        $('.view-photo-big img').attr('src', allImages[imgNumber].src);
-    }
-    else {
-        $('.view-photo-big img').attr("src", allImages[imgNumber].src);
-    }
-})
-$('.view-photo-btns .view-photo-btns__next').on('click', function () {
-    imgNumber++;
-    if (imgNumber >= allImages.length) {
-        imgNumber = 0;
-        $('.view-photo-big img').attr('src', allImages[imgNumber].src);
-    }
-    else {
-        $('.view-photo-big img').attr("src", allImages[imgNumber].src);
-    }
-})
-$(".view-photo__close").on('click', function (e) {
-    $(".view-photo").removeClass("show-popup");
-})
+// let imgSrc = $(".ducks-gallery-img").on('click', function (e) { imgSrc = e.target.src; openGalery() });
+// let allImages = '';
+// let imgNumber = 0;
+// function openGalery() {
+//     $(".view-photo").addClass("show-popup");
+//     allImages = $(".ducks-gallery-img img");
+//     $(".view-photo-big img").attr("src", imgSrc);
+// }
+// $('.view-photo .view-photo-btns .view-photo-btns__prev').on('click', function () {
+//     imgNumber--;
+//     if (imgNumber < 0) {
+//         imgNumber = allImages.length - 1;
+//         $('.view-photo-big img').attr('src', allImages[imgNumber].src);
+//     }
+//     else {
+//         $('.view-photo-big img').attr("src", allImages[imgNumber].src);
+//     }
+// })
+// $('.view-photo-btns .view-photo-btns__next').on('click', function () {
+//     imgNumber++;
+//     if (imgNumber >= allImages.length) {
+//         imgNumber = 0;
+//         $('.view-photo-big img').attr('src', allImages[imgNumber].src);
+//     }
+//     else {
+//         $('.view-photo-big img').attr("src", allImages[imgNumber].src);
+//     }
+// })
+// $(".view-photo__close").on('click', function (e) {
+//     $(".view-photo").removeClass("show-popup");
+// })
 
 const background_faq_bg_duck = document.querySelector(".faq-bg-duck");
 const duck_bg = document.querySelector(".duck-bg");
@@ -758,4 +758,4 @@ $(window).on('scroll', function () {
     }
 })
 
-console.log($(location).attr('hash'));
+// console.log($(location).attr('hash'));
