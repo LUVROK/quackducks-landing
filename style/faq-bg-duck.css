@@ -36,6 +36,10 @@ body.faq-bg .faq-bg-duck{
 
 body.second-bg .faq-bg-duck{
     background-color: initial;
+    /* position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); */
 }
 
 .faq-bg-duck{
