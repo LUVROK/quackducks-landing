@@ -18,17 +18,17 @@ let nav = document.querySelector("nav");
 let blackWallpaper = document.querySelector(".black_wallpaper");
 
 
-window.onscroll = function () {
-    if (window.pageYOffset > 30) {
-        nav.style.background = "#5F5F5F";
-        blackWallpaper.style.display = "flex";
-        nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-    }
-    else {
-        nav.style.background = "none";
-        blackWallpaper.style.display = "none";
-    }
-}
+// window.onscroll = function () {
+//     if (window.pageYOffset > 30) {
+//         nav.style.background = "#5F5F5F";
+//         blackWallpaper.style.display = "flex";
+//         nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+//     }
+//     else {
+//         nav.style.background = "none";
+//         blackWallpaper.style.display = "none";
+//     }
+// }
 
 // function throttle(callee, timeout) {
 //     let timer = null;
@@ -703,58 +703,59 @@ const duck_bg = document.querySelector(".duck-bg");
 const black_wallpaper = document.querySelector(".black_wallpaper");
 
 //Second bg body
-$(window).on('scroll', function () {
-    let hash = $(location).attr('hash');
+// $(window).on('scroll', function () {
+//     let hash = $(location).attr('hash');
 
-    if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-        if ($('body').hasClass('second-bg')) {
-            return
-        } else {
-            $('body').addClass('second-bg');
-            $('body').removeClass('faq-bg');
-        }
-    }
-    else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
-        console.log('teamteam')
-        if ($('body').hasClass('faq-bg')) {
-            return
-        } else {
-            $('body').addClass('faq-bg');
-            $('body').removeClass('second-bg');
-        }
-    }
-    else {
-        $('body').removeClass('faq-bg');
-        $('body').removeClass('second-bg');
-    }
-})
+//     if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
+//         if ($('body').hasClass('second-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('second-bg');
+//             $('body').removeClass('faq-bg');
+//         }
+//     }
+//     else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
+//         console.log('teamteam')
+//         if ($('body').hasClass('faq-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('faq-bg');
+//             $('body').removeClass('second-bg');
+//         }
+//     }
+//     else {
+//         $('body').removeClass('faq-bg');
+//         $('body').removeClass('second-bg');
+//     }
+// })
 
 
-$(window).on('scroll', function () {
-    if ($(document).scrollTop() > 1900 && $(document).scrollTop() < 6800) {
-        if ($('body').hasClass('second-bg')) {
-            return
-        } else {
-            $('body').addClass('second-bg');
-            $('body').removeClass('faq-bg');
-        }
-    }
-    else if ($(document).scrollTop() > 6800) {
-        if ($('body').hasClass('faq-bg')) {
-            return
-        } else {
-            $('body').addClass('faq-bg');
-            $('body').removeClass('second-bg');
-        }
-    }
-    else {
-        if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-            $('body').removeClass('second-bg');
-            $('body').removeClass('faq-bg');
-        } else {
-            return;
-        }
-    }
-})
+// $(window).on('scroll', function () {
+//     console.log(window.scrollTop)
+//     if ($(document).scrollTop() > 3000 && $(document).scrollTop() < 8000) {
+//         if ($('body').hasClass('second-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('second-bg');
+//             $('body').removeClass('faq-bg');
+//         }
+//     }
+//     else if ($(document).scrollTop() > 6800) {
+//         if ($('body').hasClass('faq-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('faq-bg');
+//             $('body').removeClass('second-bg');
+//         }
+//     }
+//     else {
+//         if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
+//             $('body').removeClass('second-bg');
+//             $('body').removeClass('faq-bg');
+//         } else {
+//             return;
+//         }
+//     }
+// })
 
 console.log($(location).attr('hash'));
