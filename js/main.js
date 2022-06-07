@@ -671,6 +671,7 @@ $.scrollify({
     easing: "easeOutExpo",
     scrollbars: true,
     touchScroll: true,
+    scrollSpeed: 700,
     // before: function (i, panels) {
 
     //     var ref = panels[i].attr("data-section-name");
