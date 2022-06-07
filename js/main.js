@@ -657,7 +657,7 @@ $.scrollify({
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
-    touchScroll: true,
+    // touchScroll: true,
     before: function () { },
     after: function () { },
     afterResize: function () { },
@@ -674,29 +674,29 @@ function openGalery() {
     allImages = $(".ducks-gallery-img img");
     $(".view-photo-big img").attr("src", imgSrc);
 }
-// $('.view-photo .view-photo-btns .view-photo-btns__prev').on('click', function () {
-//     imgNumber--;
-//     if (imgNumber < 0) {
-//         imgNumber = allImages.length - 1;
-//         $('.view-photo-big img').attr('src', allImages[imgNumber].src);
-//     }
-//     else {
-//         $('.view-photo-big img').attr("src", allImages[imgNumber].src);
-//     }
-// })
-// $('.view-photo-btns .view-photo-btns__next').on('click', function () {
-//     imgNumber++;
-//     if (imgNumber >= allImages.length) {
-//         imgNumber = 0;
-//         $('.view-photo-big img').attr('src', allImages[imgNumber].src);
-//     }
-//     else {
-//         $('.view-photo-big img').attr("src", allImages[imgNumber].src);
-//     }
-// })
-// $(".view-photo__close").on('click', function (e) {
-//     $(".view-photo").removeClass("show-popup");
-// })
+$('.view-photo .view-photo-btns .view-photo-btns__prev').on('click', function () {
+    imgNumber--;
+    if (imgNumber < 0) {
+        imgNumber = allImages.length - 1;
+        $('.view-photo-big img').attr('src', allImages[imgNumber].src);
+    }
+    else {
+        $('.view-photo-big img').attr("src", allImages[imgNumber].src);
+    }
+})
+$('.view-photo-btns .view-photo-btns__next').on('click', function () {
+    imgNumber++;
+    if (imgNumber >= allImages.length) {
+        imgNumber = 0;
+        $('.view-photo-big img').attr('src', allImages[imgNumber].src);
+    }
+    else {
+        $('.view-photo-big img').attr("src", allImages[imgNumber].src);
+    }
+})
+$(".view-photo__close").on('click', function (e) {
+    $(".view-photo").removeClass("show-popup");
+})
 
 const background_faq_bg_duck = document.querySelector(".faq-bg-duck");
 const duck_bg = document.querySelector(".duck-bg");
