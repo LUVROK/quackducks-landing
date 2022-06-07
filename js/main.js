@@ -651,7 +651,7 @@ $.scrollify({
     interstitialSection: ".block-scroll",
     easing: "easeOutExpo",
     scrollSpeed: 700,
-    offset: 0,
+    // offset: 0,
     scrollbars: true,
     // standardScrollElements: ".footer",
     setHeights: true,
