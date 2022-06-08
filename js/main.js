@@ -725,32 +725,35 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 // })
 
 
-// $(window).on('scroll', function () {
-//     if ($(document).scrollTop() > 2900 && $(document).scrollTop() < 8000) {
-//         if ($('body').hasClass('second-bg')) {
-//             return
-//         } else {
-//             $('body').addClass('second-bg');
-//             $('body').removeClass('faq-bg');
-//         }
-//     }
-//     else if ($(document).scrollTop() > 6800) {
-//         if ($('body').hasClass('faq-bg')) {
-//             return
-//         } else {
-//             $('body').addClass('faq-bg');
-//             $('body').removeClass('second-bg');
-//         }
-//     }
-//     else {
-//         if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-//             $('body').removeClass('second-bg');
-//             $('body').removeClass('faq-bg');
-//         } else {
-//             return;
-//         }
-//     }
-// })
+$(window).on('scroll', function () {
+    let hash = $(location).attr('hash');
+
+    if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
+        // console.log(1)
+        if ($('body').hasClass('second-bg')) {
+            return
+        } else {
+            $('body').addClass('second-bg');
+            $('body').removeClass('faq-bg');
+        }
+    }
+    else if ($(document).scrollTop() > 6800) {
+        if ($('body').hasClass('faq-bg')) {
+            return
+        } else {
+            $('body').addClass('faq-bg');
+            $('body').removeClass('second-bg');
+        }
+    }
+    else {
+        if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
+            $('body').removeClass('second-bg');
+            $('body').removeClass('faq-bg');
+        } else {
+            return;
+        }
+    }
+})
 
 $.scrollify({
     section: ".welcome-block",
@@ -773,26 +776,6 @@ $.scrollify({
         //     aObj = document.querySelector('.team')
         //     console.log(aObj)
         // }
-    },
-    after: function () {
-        let hash = $(location).attr('hash');
-        if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
-            nav.style.background = "none";
-            blackWallpaper.style.display = "none";
-        }
-        else {
-            nav.style.background = "#5F5F5F";
-            blackWallpaper.style.display = "flex";
-            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-        }
-        console.log(hash)
-        console.log(1)
-        if ((hash == "#team_1" || hash == "#team_2" || hash == "#team_3")) {
-            aObj = document.querySelector('.team')
-            console.log(aObj)
-        }
-
-
         if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
             if ($('body').hasClass('second-bg')) {
                 return
@@ -814,35 +797,37 @@ $.scrollify({
             $('body').removeClass('faq-bg');
             $('body').removeClass('second-bg');
         }
-
-
-
-        if ($(document).scrollTop() > 2900 && $(document).scrollTop() < 8000) {
-            if ($('body').hasClass('second-bg')) {
-                return
-            } else {
-                $('body').addClass('second-bg');
-                $('body').removeClass('faq-bg');
-            }
-        }
-        else if ($(document).scrollTop() > 6800) {
-            if ($('body').hasClass('faq-bg')) {
-                return
-            } else {
-                $('body').addClass('faq-bg');
-                $('body').removeClass('second-bg');
-            }
+    },
+    after: function () {
+        let hash = $(location).attr('hash');
+        console.log(hash)
+        if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+            nav.style.background = "none";
+            blackWallpaper.style.display = "none";
         }
         else {
-            if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-                $('body').removeClass('second-bg');
-                $('body').removeClass('faq-bg');
-            } else {
-                return;
-            }
+            nav.style.background = "#5F5F5F";
+            blackWallpaper.style.display = "flex";
+            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
         }
+        // console.log(hash)
+        // console.log(1)
+        if ((hash == "#team_1" || hash == "#team_2" || hash == "#team_3")) {
+            aObj = document.querySelector('.team')
+            // console.log(aObj)
+        }
+        // console.log($(document).scrollTop())
+        // console.log()
 
-
+        if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
+            console.log("duck_n")
+        }
+        else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team_title' || hash == "ducks-gallery" || hash == "ducks-gallery" || hash == '#team_1' || hash == '#team_2' || hash == '#team_3' || hash == '#footer') {
+            console.log("footer")
+        }
+        else {
+            console.log("header")
+        }
     },
     afterResize: function () {
 
