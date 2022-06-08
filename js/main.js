@@ -12,16 +12,20 @@ window.onload = function () {
 let boxDucks = document.querySelector(".box_ducks");
 let boxTitle = document.querySelector(".box_title");
 
+let nav = document.querySelector("nav");
+let blackWallpaper = document.querySelector(".black_wallpaper");
 
 // window.onscroll = function () {
-//     if (window.pageYOffset > 30) {
+//     let hash = $(location).attr('hash');
+
+//     if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+//         nav.style.background = "none";
+//         blackWallpaper.style.display = "none";
+//     }
+//     else {
 //         nav.style.background = "#5F5F5F";
 //         blackWallpaper.style.display = "flex";
 //         nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-//     }
-//     else {
-//         nav.style.background = "none";
-//         blackWallpaper.style.display = "none";
 //     }
 // }
 
@@ -636,10 +640,6 @@ function sliderUp() {
 // var swiper = new Swiper(".mySwiper", {});
 
 
-let nav = document.querySelector("nav");
-let blackWallpaper = document.querySelector(".black_wallpaper");
-
-
 // Просмотр фото галереии
 let imgSrc = $(".ducks-gallery-img").on('click', function (e) { imgSrc = e.target.src; openGalery() });
 let allImages = '';
@@ -677,9 +677,18 @@ const background_faq_bg_duck = document.querySelector(".faq-bg-duck");
 const duck_bg = document.querySelector(".duck-bg");
 const black_wallpaper = document.querySelector(".black_wallpaper");
 
-
-window.addEventListener('scroll', function () {
+window.onscroll = function () {
     let hash = $(location).attr('hash');
+
+    if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+        nav.style.background = "none";
+        blackWallpaper.style.display = "none";
+    }
+    else {
+        nav.style.background = "#5F5F5F";
+        blackWallpaper.style.display = "flex";
+        nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+    }
 
     if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
         if ($('body').hasClass('second-bg')) {
@@ -702,7 +711,33 @@ window.addEventListener('scroll', function () {
         $('body').removeClass('faq-bg');
         $('body').removeClass('second-bg');
     }
-});
+}
+
+// window.addEventListener('scroll', function () {
+//     let hash = $(location).attr('hash');
+
+//     if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
+//         if ($('body').hasClass('second-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('second-bg');
+//             $('body').removeClass('faq-bg');
+//         }
+//     }
+//     else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
+//         // console.log('teamteam')
+//         if ($('body').hasClass('faq-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('faq-bg');
+//             $('body').removeClass('second-bg');
+//         }
+//     }
+//     else {
+//         $('body').removeClass('faq-bg');
+//         $('body').removeClass('second-bg');
+//     }
+// });
 
 window.addEventListener('scroll', function () {
     let hash = $(location).attr('hash');
@@ -784,7 +819,7 @@ $.scrollify({
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
-    touchScroll: false,
+    touchScroll: true,
     before: function () {
         // let hash = $(location).attr('hash');
         // if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
@@ -811,17 +846,6 @@ $.scrollify({
 
     },
     after: function () {
-        let hash = $(location).attr('hash');
-
-        if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
-            nav.style.background = "none";
-            blackWallpaper.style.display = "none";
-        }
-        else {
-            nav.style.background = "#5F5F5F";
-            blackWallpaper.style.display = "flex";
-            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-        }
         // console.log(hash)
         // console.log(1)
         if ((hash == "#team_1" || hash == "#team_2" || hash == "#team_3")) {
