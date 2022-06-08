@@ -784,7 +784,7 @@ $.scrollify({
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
-    // touchScroll: true,
+    touchScroll: false,
     before: function () {
         // let hash = $(location).attr('hash');
         // if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
