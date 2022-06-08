@@ -728,7 +728,7 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 $(window).on('scroll', function () {
     let hash = $(location).attr('hash');
     if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
-        // console.log(1)
+        // console.log("scrollTop")
         if ($('body').hasClass('second-bg')) {
             return
         } else {
@@ -752,6 +752,11 @@ $(window).on('scroll', function () {
             return;
         }
     }
+    console.log("hash" + hash)
+    if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
+        console.log("hash")
+    }
+
 })
 
 $.scrollify({
@@ -768,51 +773,50 @@ $.scrollify({
     updateHash: true,
     // touchScroll: true,
     before: function () {
-        // let hash = $(location).attr('hash');
-
-        // if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-        //     if ($('body').hasClass('second-bg')) {
-        //         return
-        //     } else {
-        //         $('body').addClass('second-bg');
-        //         $('body').removeClass('faq-bg');
-        //     }
-        // }
-        // else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
-        //     // console.log('teamteam')
-        //     if ($('body').hasClass('faq-bg')) {
-        //         return
-        //     } else {
-        //         $('body').addClass('faq-bg');
-        //         $('body').removeClass('second-bg');
-        //     }
-        // }
-        // else {
-        //     $('body').removeClass('faq-bg');
-        //     $('body').removeClass('second-bg');
-        // }
+        let hash = $(location).attr('hash');
+        if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
+            if ($('body').hasClass('second-bg')) {
+                return
+            } else {
+                $('body').addClass('second-bg');
+                $('body').removeClass('faq-bg');
+            }
+        }
+        else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
+            // console.log('teamteam')
+            if ($('body').hasClass('faq-bg')) {
+                return
+            } else {
+                $('body').addClass('faq-bg');
+                $('body').removeClass('second-bg');
+            }
+        }
+        else {
+            $('body').removeClass('faq-bg');
+            $('body').removeClass('second-bg');
+        }
 
     },
     after: function () {
-        // let hash = $(location).attr('hash');
+        let hash = $(location).attr('hash');
+
+        if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+            nav.style.background = "none";
+            blackWallpaper.style.display = "none";
+        }
+        else {
+            nav.style.background = "#5F5F5F";
+            blackWallpaper.style.display = "flex";
+            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+        }
         // console.log(hash)
-        // if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
-        //     nav.style.background = "none";
-        //     blackWallpaper.style.display = "none";
-        // }
-        // else {
-        //     nav.style.background = "#5F5F5F";
-        //     blackWallpaper.style.display = "flex";
-        //     nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-        // }
-        // // console.log(hash)
-        // // console.log(1)
-        // if ((hash == "#team_1" || hash == "#team_2" || hash == "#team_3")) {
-        //     aObj = document.querySelector('.team')
-        //     // console.log(aObj)
-        // }
-        // // console.log($(document).scrollTop())
-        // // console.log()
+        // console.log(1)
+        if ((hash == "#team_1" || hash == "#team_2" || hash == "#team_3")) {
+            aObj = document.querySelector('.team')
+            // console.log(aObj)
+        }
+        // console.log($(document).scrollTop())
+        // console.log()
 
         // if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
         //     console.log("duck_n")
@@ -832,47 +836,21 @@ $.scrollify({
     }
 });
 
-// function isInViewport(el) {
-//     const rect = el.getBoundingClientRect();
-//     return (
-//         rect.top >= 0 &&
-//         rect.left >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-// }
 
-// document.addEventListener('scroll', function () {
-//     const messageText = isInViewport(box) ?
-//         'The box is visible in the viewport' :
-//         'The box is not visible in the viewport';
-
-//     message.textContent = messageText;
-
-// }, {
-//     passive: true
-// });
+// $('selector').horizon({ swipe: false });
 
 
-// $.fn.isInViewport = function () {
-//     console.log(1)
-//     var elementTop = $(this).offset().top;
-//     var elementBottom = elementTop + $(this).outerHeight();
+// var deleteLog = false;
 
-//     var viewportTop = $(window).scrollTop();
-//     var viewportBottom = viewportTop + $(window).height();
-
-//     return elementBottom > viewportTop && elementTop < viewportBottom;
-// };
-
-// $(window).on('resize scroll', function () {
-//     console.log(isInViewport())
-
-    // if ($(this).isInViewport()) {
-    //     $('#fixed-' + activeColor).addClass(activeColor + '-active');
-    // } else {
-    //     $('#fixed-' + activeColor).removeClass(activeColor + '-active');
-    // }
+// $(document).ready(function () {
+//     $('#pagepiling').pagepiling({
+//         navigation: {
+//             'textColor': '#f2f2f2',
+//             'bulletsColor': '#ccc',
+//             'position': 'right',
+//             'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+//         }
+//     });
 // });
 
 
