@@ -21,6 +21,7 @@ nav{
 }
 .nav_elements__one{
     margin-left: 10px;
+    /* scroll-behavior: smooth;  */
 }
 
 .nav_elements__one,

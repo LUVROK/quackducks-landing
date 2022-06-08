@@ -11,6 +11,9 @@ body{
     position: relative;
     /* border: 2px solid red; */
 }
+html {
+    /* scroll-behavior: smooth; */
+  }
 body.second-bg{
     background-color: #FFF3F3;
     background-image: url("../img/all-duck1.png");
