@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow:  hidden; */
+    /* overflow-x:hidden; */
 }
 body{
     width: 100%;
     min-height: 100%;
     background: rgba(3, 3, 3, 1);
     position: relative;
+    overflow-x: hidden;
     /* border: 2px solid red; */
 }
 body.second-bg{
@@ -799,7 +800,6 @@ img.welcome_box__arrow{
     justify-content: center;
     align-items: center;
     color: rgba(255, 255, 255, 1);
-
 }
 .block_factions__content{
     /* max-width: 1520px; */
