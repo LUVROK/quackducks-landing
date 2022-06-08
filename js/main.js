@@ -13,22 +13,17 @@ let boxDucks = document.querySelector(".box_ducks");
 let boxTitle = document.querySelector(".box_title");
 
 
-//   nav black background
-let nav = document.querySelector("nav");
-let blackWallpaper = document.querySelector(".black_wallpaper");
-
-
-window.onscroll = function () {
-    if (window.pageYOffset > 30) {
-        nav.style.background = "#5F5F5F";
-        blackWallpaper.style.display = "flex";
-        nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-    }
-    else {
-        nav.style.background = "none";
-        blackWallpaper.style.display = "none";
-    }
-}
+// window.onscroll = function () {
+//     if (window.pageYOffset > 30) {
+//         nav.style.background = "#5F5F5F";
+//         blackWallpaper.style.display = "flex";
+//         nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+//     }
+//     else {
+//         nav.style.background = "none";
+//         blackWallpaper.style.display = "none";
+//     }
+// }
 
 // function throttle(callee, timeout) {
 //     let timer = null;
@@ -174,7 +169,6 @@ let newNumberOne = 0;
 //поменял местами события клик ducksImgNext и ducksImgBack
 ducksImgNext.addEventListener("click", ducksImgSliderBack);
 function ducksImgSliderBack() {
-
     newNumberNull();
     ducksImgBack.style.display = "none";
     setTimeout(function () { ducksImgBack.style.display = "flex"; }, 1000);
@@ -264,7 +258,6 @@ function ducksImgSliderNext() {
     ducksImgNext.style.display = "none";
     setTimeout(function () { ducksImgNext.style.display = "flex"; }, 1000);
     if (window.outerWidth > permissionLarge && window.outerWidth < permissionBig) {
-
         numberZero = 0 + "%";
         numberOne = 37 + "%";
         numberTwo = 74 + "%";
@@ -643,7 +636,8 @@ function sliderUp() {
 // var swiper = new Swiper(".mySwiper", {});
 
 
-
+let nav = document.querySelector("nav");
+let blackWallpaper = document.querySelector(".black_wallpaper");
 
 $.scrollify({
     section: ".welcome-block",
@@ -658,59 +652,40 @@ $.scrollify({
     overflowScroll: true,
     updateHash: true,
     touchScroll: true,
-    before: function () { },
-    after: function () { },
-    afterResize: function () { },
-    afterRender: function () { }
+    before: function () {
+        let hash = $(location).attr('hash');
+        // console.log(hash)
+        // console.log(1)
+        // if ((hash == "#team_1" || hash == "#team_2" || hash == "#team_3")) {
+        //     aObj = document.querySelector('.team')
+        //     console.log(aObj)
+        // }
+    },
+    after: function () {
+        let hash = $(location).attr('hash');
+        if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+            nav.style.background = "none";
+            blackWallpaper.style.display = "none";
+        }
+        else {
+            nav.style.background = "#5F5F5F";
+            blackWallpaper.style.display = "flex";
+            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+        }
+        console.log(hash)
+        console.log(1)
+        if ((hash == "#team_1" || hash == "#team_2" || hash == "#team_3")) {
+            aObj = document.querySelector('.team')
+            console.log(aObj)
+        }
+    },
+    afterResize: function () {
+
+    },
+    afterRender: function () {
+
+    }
 });
-
-// $.scrollify({
-//     section: ".block-scroll",
-//     sectionName: "section-name",
-//     interstitialSection: ".block-scroll",
-//     easing: "easeOutExpo",
-//     scrollSpeed: 1800, //1100 было
-//     offset: 0,
-//     scrollbars: true,
-//     standardScrollElements: ".team",
-//     setHeights: true,
-//     overflowScroll: true,
-//     updateHash: true,
-//     touchScroll: true,
-//     before: function (i, panels) {
-
-//         var ref = panels[i].attr("data-section-name");
-
-//         $(".pagination .active").removeClass("active");
-
-//         $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
-//     },
-//     afterRender: function () {
-//         var pagination = "<ul class=\"pagination\">";
-//         var activeClass = "";
-//         $(".panel").each(function (i) {
-//             activeClass = "";
-//             if (i === $.scrollify.currentIndex()) {
-//                 activeClass = "active";
-//             }
-//             pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
-//         });
-
-//         pagination += "</ul>";
-
-//         $(".home").append(pagination);
-//         /*
-
-//         Tip: The two click events below are the same:
-
-//         $(".pagination a").on("click",function() {
-//           $.scrollify.move($(this).attr("href"));
-//         });
-
-//         */
-//         $(".pagination a").on("click", $.scrollify.move);
-//     }
-// });
 
 
 // Просмотр фото галереии
@@ -752,7 +727,22 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 
 //Second bg body
 $(window).on('scroll', function () {
+
     let hash = $(location).attr('hash');
+
+    // if (hash == "#team_1" || hash == "#team_2" || hash == "#team_3") {
+    // aObj = document.querySelector('.team')
+    // // console.log(aObj.classList)
+    // if ($(window).width() <= 920) {
+    //     $(".disactiveTeam").remove();
+    // <div class="team-all activeTeam"></div>
+    //     $(".activeTeam").append('<section class="block-scroll" data-section-name="team"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">ALEX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">RUZILl</div></div></section><section class="block-scroll" data-section-name="team"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team3.png" alt=""></div><div class="team-all-one__name">MARIA</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">NUREX</div></div></section><section class="block-scroll" data-section-name="team"><div class="team-all-one lastTeamBlock"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">TIM</div></div></section>');
+    // }
+    // else {
+    //     $(".activeTeam").remove();
+    //     $(".disactiveTeam").append('<div class="team-all disactiveTeam"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">ALEX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">RUZILl</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team3.png" alt=""></div><div class="team-all-one__name">MARIA</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">NUREX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">TIM</div></div></div>')
+    // }
+    // }
 
     if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
         if ($('body').hasClass('second-bg')) {
@@ -775,13 +765,12 @@ $(window).on('scroll', function () {
         $('body').removeClass('faq-bg');
         $('body').removeClass('second-bg');
     }
+
 })
 
 
 $(window).on('scroll', function () {
-    // console.log(document.scrollTop)
     if ($(document).scrollTop() > 2900 && $(document).scrollTop() < 8000) {
-        // console.log($(document).scrollTop())
         if ($('body').hasClass('second-bg')) {
             return
         } else {

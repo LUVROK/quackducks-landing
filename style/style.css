@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow:  hidden; */
 }
 body{
     width: 100%;
@@ -796,14 +797,14 @@ img.welcome_box__arrow{
     background-position: 70px -70px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     color: rgba(255, 255, 255, 1);
 
 }
 .block_factions__content{
-    max-width: 1520px;
+    /* max-width: 1520px; */
     height: 100%;
-    width: 95%;
+    width: 95%; /*95*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -811,7 +812,7 @@ img.welcome_box__arrow{
     position: relative;
 }
 .faction_content__title{
-    padding-top: 60px;
+    /* padding-top: 60px; */
     height: 76px;
     width: 439px;
     font-family: 'dance_partner';
@@ -821,11 +822,12 @@ img.welcome_box__arrow{
     letter-spacing: 0em;
     text-align: center;
     text-transform: uppercase;
+    /* background-color:blue */
 }
 .faction_content_body{
     transform: scale(0.8);
     height: 688px;
-    width: 97%;
+    width: 100%;
     position: relative;
 }
 .content_body_ducks{
@@ -834,6 +836,7 @@ img.welcome_box__arrow{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: red */
 }
 .button_left_duck{
     position: absolute;
@@ -844,6 +847,7 @@ img.welcome_box__arrow{
     top: 0px;
     cursor: pointer;
     z-index: 100;
+    transform: translate(-170px,0px)
 }
 .button_right_duck{
     position: absolute;
@@ -1219,14 +1223,14 @@ img.welcome_box__arrow{
     transform: translateY(-25%);
     font-size: 45px;
 }
-.team{
+/* .team{
     position: inherit;
     z-index: 1;
     background: #FFF5F5;
     height: 100vh;
     padding: 4% 0;
-}
-.team .team-container{
+} */
+/* .team .team-container{
     max-width: 1460px;
     margin: 0 auto;
 }
@@ -1255,7 +1259,7 @@ img.welcome_box__arrow{
     font-family: 'Pelinka-ExtraLight', sans-serif;
     text-align: center;
     font-size: 36px;
-}
+} */
 .footer{
     padding: 80px 0;
     font-family: 'Pelinka-ExtraLight', sans-serif;
@@ -2009,7 +2013,7 @@ details[open] {
         display: block;
         padding-bottom: 20px;
     } */
-    .team{
+    /* .team{
         height: auto;
     }
     .team .team-container{
@@ -2023,7 +2027,7 @@ details[open] {
     }
     .team .team-all .team-all-one:nth-of-type(odd){
         align-self: start;
-    }
+    } */
 }
 @media screen and (max-width: 880px) {
     .all-ducks .all-ducks-block:not(:last-of-type) {
@@ -2431,20 +2435,22 @@ details[open] {
         line-height: 59px;
     }
     .faction_content_body{
-        height: 469px;
+        position: relative;
+        width:100%;
+        /* height: 469px;
         width: 100%;
-        transform: scale(0.8);
+        transform: scale(0.8); */
+        /* background-color: red */
     }
     .content_body_ducks{
         position: relative;
-        top: -100px;
-        transform: translate(-170px,0px) ;
+        /* top: -100px; */
+        transform: translate(-145px,0px) ;
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
     .ducks_block_one{
         height: 469px;
@@ -2475,7 +2481,7 @@ details[open] {
     }
     .ducks_block_one.two{
         top: 20%;
-        left: 58%;
+        left: 50%;
         height: auto;
         width: 272px;
         top: 27%;
@@ -2500,6 +2506,7 @@ details[open] {
         top: 0px;
         cursor: pointer;
         z-index: 100;
+        
         /* display: none; */
     }
     .button_right_duck{
@@ -2703,9 +2710,9 @@ details[open] {
     .ducks-gallery .ducks-gallery-img{
         width: 49.5%;
     }
-    .team .team__title{
+    /* .team .team__title{
         font-size: 54px;
-    }
+    } */
     .all-ducks .all-ducks-block-text .all-ducks-block-text__title {
         font-size: 42px;
     }
