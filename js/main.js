@@ -725,35 +725,35 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 // })
 
 
-$(window).on('scroll', function () {
-    let hash = $(location).attr('hash');
+// $(window).on('scroll', function () {
+//     let hash = $(location).attr('hash');
 
-    if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
-        // console.log(1)
-        if ($('body').hasClass('second-bg')) {
-            return
-        } else {
-            $('body').addClass('second-bg');
-            $('body').removeClass('faq-bg');
-        }
-    }
-    else if ($(document).scrollTop() > 6800) {
-        if ($('body').hasClass('faq-bg')) {
-            return
-        } else {
-            $('body').addClass('faq-bg');
-            $('body').removeClass('second-bg');
-        }
-    }
-    else {
-        if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-            $('body').removeClass('second-bg');
-            $('body').removeClass('faq-bg');
-        } else {
-            return;
-        }
-    }
-})
+//     if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
+//         // console.log(1)
+//         if ($('body').hasClass('second-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('second-bg');
+//             $('body').removeClass('faq-bg');
+//         }
+//     }
+//     else if ($(document).scrollTop() > 6800) {
+//         if ($('body').hasClass('faq-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('faq-bg');
+//             $('body').removeClass('second-bg');
+//         }
+//     }
+//     else {
+//         if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
+//             $('body').removeClass('second-bg');
+//             $('body').removeClass('faq-bg');
+//         } else {
+//             return;
+//         }
+//     }
+// })
 
 $.scrollify({
     section: ".welcome-block",
@@ -776,6 +776,7 @@ $.scrollify({
         //     aObj = document.querySelector('.team')
         //     console.log(aObj)
         // }
+
         if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
             if ($('body').hasClass('second-bg')) {
                 return
@@ -797,6 +798,7 @@ $.scrollify({
             $('body').removeClass('faq-bg');
             $('body').removeClass('second-bg');
         }
+
     },
     after: function () {
         let hash = $(location).attr('hash');
