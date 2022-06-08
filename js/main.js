@@ -727,7 +727,6 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 
 $(window).on('scroll', function () {
     let hash = $(location).attr('hash');
-    console.log(isInViewport())
     if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
         // console.log(1)
         if ($('body').hasClass('second-bg')) {
@@ -767,7 +766,7 @@ $.scrollify({
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
-    touchScroll: true,
+    // touchScroll: true,
     before: function () {
         // let hash = $(location).attr('hash');
 
@@ -832,6 +831,27 @@ $.scrollify({
 
     }
 });
+
+// function isInViewport(el) {
+//     const rect = el.getBoundingClientRect();
+//     return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+// }
+
+// document.addEventListener('scroll', function () {
+//     const messageText = isInViewport(box) ?
+//         'The box is visible in the viewport' :
+//         'The box is not visible in the viewport';
+
+//     message.textContent = messageText;
+
+// }, {
+//     passive: true
+// });
 
 
 // $.fn.isInViewport = function () {

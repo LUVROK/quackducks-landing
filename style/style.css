@@ -11,11 +11,6 @@ body{
     position: relative;
     /* border: 2px solid red; */
 }
-html {
-    /* position: fixed; */
-    /* height: 100%; */
-    /* overflow: hidden; */
-}
 body.second-bg{
     background-color: #FFF3F3;
     background-image: url("../img/all-duck1.png");
@@ -1170,9 +1165,6 @@ img.welcome_box__arrow{
     top: 50%;
     /* visibility: hidden; */
     transform: translateY(-50%);
-}
-.faq-block{
-    /* z-index: 3; */
 }
 .faq .faq-block__title{
     font-family: 'dance_partner', sans-serif;
