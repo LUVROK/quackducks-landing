@@ -7,6 +7,11 @@ window.onload = function () {
         boxDucks.classList.add('active');
         boxTitle.classList.add('active');
     }, 500);
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        alert('mobile')
+    } else {
+        alert('web')
+    }
 }
 
 let boxDucks = document.querySelector(".box_ducks");
@@ -23,6 +28,9 @@ jQuery(document).ready(function () {
         return false;
     });
 });
+
+
+
 
 // $('a[href^="#"]').click(function () { // #1
 //     let anchor = $(this).attr('href');  // #2
