@@ -842,10 +842,10 @@ $.scrollify({
     easing: "easeOutExpo",
     scrollSpeed: 700,
     offset: 0,
-    scrollbars: true,
+    // scrollbars: true,
     standardScrollElements: "",
-    setHeights: true,
-    overflowScroll: true,
+    // setHeights: true,
+    // overflowScroll: true,
     updateHash: true,
     touchScroll: true,
     before: function () {
