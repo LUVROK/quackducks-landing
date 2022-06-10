@@ -837,8 +837,8 @@ window.addEventListener('scroll', function () {
 $.scrollify({
     section: ".block-scroll",
     sectionName: "section-name",
-    // interstitialSection: ".block-scroll",
-    interstitialSection: "",
+    interstitialSection: ".block-scroll",
+    // interstitialSection: "",
     easing: "easeOutCubic",
     scrollSpeed: 700,
     offset: 0,
