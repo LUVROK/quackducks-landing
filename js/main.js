@@ -7,11 +7,11 @@ window.onload = function () {
         boxDucks.classList.add('active');
         boxTitle.classList.add('active');
     }, 500);
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        alert('mobile')
-    } else {
-        alert('web')
-    }
+    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //     alert('mobile')
+    // } else {
+    //     alert('web')
+    // }
 }
 
 let boxDucks = document.querySelector(".box_ducks");
@@ -29,8 +29,9 @@ jQuery(document).ready(function () {
     });
 });
 
-
-
+// $(window).on('#Move_welcome-block', function () {
+//     $.scrollify.move("#1");
+// });
 
 // $('a[href^="#"]').click(function () { // #1
 //     let anchor = $(this).attr('href');  // #2
@@ -834,14 +835,15 @@ window.addEventListener('scroll', function () {
 // })
 
 $.scrollify({
-    section: ".welcome-block",
+    section: ".block-scroll",
     sectionName: "section-name",
-    interstitialSection: ".block-scroll",
+    // interstitialSection: ".block-scroll",
+    interstitialSection: "",
     easing: "easeOutExpo",
     scrollSpeed: 700,
     offset: 0,
-    scrollbars: true,
-    // standardScrollElements: ".footer",
+    scrollbars: false,
+    standardScrollElements: "",
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
@@ -893,11 +895,42 @@ $.scrollify({
         // }
     },
     afterResize: function () {
-
+        if ($(window).width() < 767) {
+            $.scrollify.disable()
+        } else {
+            $.scrollify.enable()
+        }
     },
     afterRender: function () {
 
     }
+});
+
+$('#Move_welcome-block').on("click", function () {
+    // $.scrollify.next();
+    // $.scrollify.move("#welcome-block");
+    $.scrollify("move", "#welcome-block");
+    console.log("Move_Section3");
+
+});
+$('.Move_Section4').on("click", function () {
+    $.scrollify.instantMove("#1");
+    console.log("#section4");
+});
+$('.Move_Black_wallpaper').on("click", function () {
+    $.scrollify.instantMove("#block_factions");
+    console.log("Move_Black_wallpaper");
+});
+$('.Move_Section10').on("click", function () {
+    $.scrollify.move("#faq");
+    console.log("Move_Section10");
+});
+$('.Move_Section12').on("click", function () {
+    // $.scrollify.move("#team_title");
+    e.preventDefault();
+    $.scrollify.move("1");
+    // $.scrollify.move("#team_title");
+    console.log("Move_Section12");
 });
 
 
