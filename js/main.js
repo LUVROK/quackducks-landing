@@ -846,7 +846,7 @@ $.scrollify({
     standardScrollElements: "",
     setHeights: true,
     overflowScroll: true,
-    updateHash: true,
+    updateHash: false,
     touchScroll: true,
     before: function () {
         // let hash = $(location).attr('hash');
@@ -907,18 +907,16 @@ $.scrollify({
 });
 
 $('#Move_welcome-block').on("click", function () {
-    // $.scrollify.next();
-    // $.scrollify.move("#welcome-block");
-    $.scrollify("move", "#welcome-block");
+    $.scrollify.move("#block_factions");
     console.log("Move_Section3");
 
 });
 $('.Move_Section4').on("click", function () {
-    $.scrollify.instantMove("#1");
+    $.scrollify.move("#duck1");
     console.log("#section4");
 });
 $('.Move_Black_wallpaper').on("click", function () {
-    $.scrollify.instantMove("#block_factions");
+    $.scrollify.move("#welcome-block");
     console.log("Move_Black_wallpaper");
 });
 $('.Move_Section10').on("click", function () {
@@ -926,10 +924,7 @@ $('.Move_Section10').on("click", function () {
     console.log("Move_Section10");
 });
 $('.Move_Section12').on("click", function () {
-    // $.scrollify.move("#team_title");
-    e.preventDefault();
-    $.scrollify.move("1");
-    // $.scrollify.move("#team_title");
+    $.scrollify.move("#team_title");
     console.log("Move_Section12");
 });
 
