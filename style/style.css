@@ -18,7 +18,7 @@ body {
             height: 100%;
             margin: 0;
             overflow: hidden; */
-            overflow-x: hidden;
+            /* overflow-x: hidden; */
 }
 body.second-bg{
     background-color: #FFF3F3;
