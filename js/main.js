@@ -842,11 +842,11 @@ $.scrollify({
     easing: "easeOutExpo",
     scrollSpeed: 700,
     offset: 0,
-    scrollbars: false,
+    scrollbars: true,
     standardScrollElements: "",
     setHeights: true,
     overflowScroll: true,
-    updateHash: false,
+    updateHash: true,
     touchScroll: true,
     before: function () {
         // let hash = $(location).attr('hash');
