@@ -20,14 +20,14 @@ let boxTitle = document.querySelector(".box_title");
 let nav = document.querySelector("nav");
 let blackWallpaper = document.querySelector(".black_wallpaper");
 
-jQuery(document).ready(function () {
-    jQuery("a.scrollto").click(function () {
-        elementClick = jQuery(this).attr("href")
-        destination = jQuery(elementClick).offset().top;
-        jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1100);
-        return false;
-    });
-});
+// jQuery(document).ready(function () {
+//     jQuery("a.scrollto").click(function () {
+//         elementClick = jQuery(this).attr("href")
+//         destination = jQuery(elementClick).offset().top;
+//         jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1100);
+//         return false;
+//     });
+// });
 
 // $(window).on('#Move_welcome-block', function () {
 //     $.scrollify.move("#1");
@@ -758,16 +758,6 @@ window.onscroll = function () {
 window.addEventListener('scroll', function () {
     let hash = $(location).attr('hash');
 
-    if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
-        nav.style.background = "none";
-        blackWallpaper.style.display = "none";
-    }
-    else {
-        nav.style.background = "#5F5F5F";
-        blackWallpaper.style.display = "flex";
-        nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-    }
-
     if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
         // console.log("scrollTop")
         if ($('body').hasClass('second-bg')) {
@@ -881,6 +871,15 @@ $.scrollify({
             aObj = document.querySelector('.team')
             // console.log(aObj)
         }
+        if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+            nav.style.background = "none";
+            blackWallpaper.style.display = "none";
+        }
+        else {
+            nav.style.background = "#5F5F5F";
+            blackWallpaper.style.display = "flex";
+            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+        }
         // console.log($(document).scrollTop())
         // console.log()
 
@@ -895,11 +894,12 @@ $.scrollify({
         // }
     },
     afterResize: function () {
-        if ($(window).width() < 767) {
-            $.scrollify.disable()
-        } else {
-            $.scrollify.enable()
-        }
+        // if ($(window).width() < 767) {
+        //     $.scrollify.disable()
+        // } else {
+        //     $.scrollify.enable()
+        // }
+
     },
     afterRender: function () {
 

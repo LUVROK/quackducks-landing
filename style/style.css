@@ -10,6 +10,7 @@ body{
     background: rgba(3, 3, 3, 1);
     position: relative;
     /* border: 2px solid red; */
+    /* overflow-x:hidden; */
 }
 html, body { overflow-x:hidden; }
 body.second-bg{
