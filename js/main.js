@@ -838,7 +838,7 @@ $.scrollify({
     section: ".block-scroll",
     sectionName: "section-name",
     // interstitialSection: ".block-scroll",
-    interstitialSection: ".block-scroll",
+    interstitialSection: "",
     easing: "easeOutExpo",
     scrollSpeed: 700,
     offset: 0,
