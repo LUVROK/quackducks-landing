@@ -846,7 +846,7 @@ $.scrollify({
     standardScrollElements: "",
     setHeights: true,
     overflowScroll: true,
-    updateHash: false,
+    updateHash: true,
     touchScroll: true,
     before: function () {
         // let hash = $(location).attr('hash');
