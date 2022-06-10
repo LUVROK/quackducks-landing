@@ -111,6 +111,7 @@ body.second-bg .box_one{
     background: linear-gradient(270deg, #FFC48D 0%, #FFE6A5 33.59%, #ECA33E 71.39%, #FFE68D 100.78%);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 49.5px;
+    border-width: 0;
 }
 
 
