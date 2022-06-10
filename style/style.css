@@ -135,8 +135,7 @@ a.social_icons__discord{
     left: -20%;
     top: 10%;
     width: 1271px;
-    filter: blur(110px);
-
+    /* filter: blur(110px); */
 }
 .nav_background__center{
     position: relative;
