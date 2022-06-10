@@ -838,7 +838,7 @@ $.scrollify({
     section: ".block-scroll",
     sectionName: "section-name",
     // interstitialSection: ".block-scroll",
-    interstitialSection: "",
+    interstitialSection: ".block-scroll",
     easing: "easeOutExpo",
     scrollSpeed: 700,
     offset: 0,
@@ -846,7 +846,7 @@ $.scrollify({
     standardScrollElements: "",
     setHeights: true,
     overflowScroll: true,
-    updateHash: true,
+    updateHash: false,
     touchScroll: true,
     before: function () {
         // let hash = $(location).attr('hash');
