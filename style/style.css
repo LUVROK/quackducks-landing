@@ -12,7 +12,10 @@ body{
     /* border: 2px solid red; */
     /* overflow-x:hidden; */
 }
-html, body { overflow-x:hidden; }
+html, body { 
+    max-width: 100%;
+    overflow-x:hidden; 
+}
 body.second-bg{
     background-color: #FFF3F3;
     background-image: url("../img/all-duck1.png");
