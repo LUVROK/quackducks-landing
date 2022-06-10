@@ -835,7 +835,7 @@ $.scrollify({
     // scrollbars: true,
     standardScrollElements: "",
     // setHeights: true,
-    // overflowScroll: true,
+    overflowScroll: true,
     updateHash: true,
     touchScroll: true,
     before: function () {
