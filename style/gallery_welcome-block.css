@@ -80,13 +80,17 @@
 }
 
 @media screen and (max-width: 900px){
-    .gaalery,
+    /* .gaalery,
     .gallery .gallery-arrows{
+        display: none;
+    } */
+    .galer_desc_cont, .gallery .gallery-arrows {
         display: none;
     }
     .gallery-mobile{
         display: block;
         padding-bottom: 20px;
+        top: -100px;
     }
 }
 

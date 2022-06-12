@@ -723,7 +723,7 @@ function sliderUp() {
 }
 
 
-// var swiper = new Swiper(".mySwiper", {});
+var swiper = new Swiper(".mySwiper", {});
 
 
 // Просмотр фото галереии
@@ -815,41 +815,6 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 //     }
 // });
 
-
-// $(window).on('scroll', function () {
-//     let hash = $(location).attr('hash');
-//     if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
-//         // console.log("scrollTop")
-//         if ($('body').hasClass('second-bg')) {
-//             return
-//         } else {
-//             $('body').addClass('second-bg');
-//             $('body').removeClass('faq-bg');
-//         }
-//     }
-//     else if ($(document).scrollTop() > 6800) {
-//         if ($('body').hasClass('faq-bg')) {
-//             return
-//         } else {
-//             $('body').addClass('faq-bg');
-//             $('body').removeClass('second-bg');
-//         }
-//     }
-//     else {
-//         if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-//             $('body').removeClass('second-bg');
-//             $('body').removeClass('faq-bg');
-//         } else {
-//             return;
-//         }
-//     }
-//     console.log("hash" + hash)
-//     if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-//         console.log("hash")
-//     }
-
-// })
-
 $.scrollify({
     section: ".block-scroll",
     sectionName: "section-name",
@@ -864,39 +829,9 @@ $.scrollify({
     overflowScroll: true,
     updateHash: true,
     touchScroll: true,
-    before: function () {
-        // let hash = $(location).attr('hash');
-        // if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-        //     if ($('body').hasClass('second-bg')) {
-        //         return
-        //     } else {
-        //         $('body').addClass('second-bg');
-        //         $('body').removeClass('faq-bg');
-        //     }
-        // }
-        // else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
-        //     // console.log('teamteam')
-        //     if ($('body').hasClass('faq-bg')) {
-        //         return
-        //     } else {
-        //         $('body').addClass('faq-bg');
-        //         $('body').removeClass('second-bg');
-        //     }
-        // }
-        // else {
-        //     $('body').removeClass('faq-bg');
-        //     $('body').removeClass('second-bg');
-        // }
-
-    },
+    before: function () { },
     after: function () {
-        // console.log(hash)
-        // console.log(1)
         let hash = $(location).attr('hash');
-        if ((hash == "#team_1" || hash == "#team_2" || hash == "#team_3")) {
-            aObj = document.querySelector('.team')
-            // console.log(aObj)
-        }
         if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
             nav.style.background = "none";
             blackWallpaper.style.display = "none";
@@ -907,30 +842,9 @@ $.scrollify({
             nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
         }
         console.log($(document).scrollTop())
-        // console.log($(document).scrollTop())
-        // console.log()
-
-        // if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-        //     console.log("duck_n")
-        // }
-        // else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team_title' || hash == "ducks-gallery" || hash == "ducks-gallery" || hash == '#team_1' || hash == '#team_2' || hash == '#team_3' || hash == '#footer') {
-        //     console.log("footer")
-        // }
-        // else {
-        //     console.log("header")
-        // }
     },
-    afterResize: function () {
-        // if ($(window).width() < 767) {
-        //     $.scrollify.disable()
-        // } else {
-        //     $.scrollify.enable()
-        // }
-
-    },
-    afterRender: function () {
-
-    }
+    afterResize: function () { },
+    afterRender: function () { }
 });
 
 $('#Move_welcome-block').on("click", function () {
@@ -957,20 +871,6 @@ $('.Move_Section12').on("click", function () {
 
 
 // $('selector').horizon({ swipe: false });
-
-
-// var deleteLog = false;
-
-// $(document).ready(function () {
-//     $('#pagepiling').pagepiling({
-//         navigation: {
-//             'textColor': '#f2f2f2',
-//             'bulletsColor': '#ccc',
-//             'position': 'right',
-//             'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
-//         }
-//     });
-// });
 
 
 // console.log($(location).attr('hash'));
