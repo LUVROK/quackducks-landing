@@ -822,7 +822,7 @@ $.scrollify({
     // interstitialSection: "",
     easing: "easeOutExpo",
     // easing: "easeOutCubic",
-    scrollSpeed: 700,
+    scrollSpeed: 2000,
     offset: 0,
     // scrollbars: true,
     standardScrollElements: "",

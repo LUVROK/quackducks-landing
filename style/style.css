@@ -880,7 +880,7 @@ img.welcome_box__arrow{
 }
 .ducks_block_one.two{
     position: absolute;
-    left: 40%;
+    /* left: 40%; */
     top: 15%;
 }
 .ducks_block_one.three{
@@ -895,8 +895,6 @@ img.welcome_box__arrow{
     top: 11%;
     border: 1px solid rgba(142, 14, 14, 1);
     transform:scale(1.2);
-
-
 }
 
 .ducks_block_one_img{
@@ -2424,7 +2422,7 @@ details[open] {
     .block_factions__content{
         width: 100%;
         height: 828px;
-        top: 80px;
+        top: 100px;
         justify-content: start;
     }
     .faction_content__title{
@@ -2445,7 +2443,7 @@ details[open] {
     .content_body_ducks{
         position: relative;
         /* top: -100px; */
-        transform: translate(-145px,0px) ;
+        transform: translate(-145px,0px);
         width: 100%;
         height: 100%;
         display: flex;
@@ -2481,10 +2479,13 @@ details[open] {
     }
     .ducks_block_one.two{
         top: 20%;
-        left: 50%;
+        /* left: 50%; */
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
         height: auto;
         width: 272px;
-        top: 27%;
+        /* top: 27%; */
     }
 
 
@@ -2524,7 +2525,7 @@ details[open] {
 
 
     .ducks_block_one_img{
-
+        transition: 2s;
         margin: 5px;
     }
     .ducks_block_one_img.active{

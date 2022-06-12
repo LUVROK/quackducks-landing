@@ -60,6 +60,7 @@
 
 @media screen and (max-width: 900px){
     .shadow-block-bacground .welcome-block .welcome-block-content{
+        /* background-color: rgba(255, 255, 255, 0.4);  */
     }
     .shadow-block-bacground .welcome-block .welcome-block-title__title{
         font-size: 64px;
