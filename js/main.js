@@ -7,11 +7,71 @@ window.onload = function () {
         boxDucks.classList.add('active');
         boxTitle.classList.add('active');
     }, 500);
-    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    //     alert('mobile')
-    // } else {
-    //     alert('web')
-    // }
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.addEventListener('scroll', function () {
+            let hash = $(location).attr('hash');
+
+            if ($(document).scrollTop() > 2700 && $(document).scrollTop() < 7400) {
+                // console.log("scrollTop")
+                if ($('body').hasClass('second-bg')) {
+                    return
+                } else {
+                    $('body').addClass('second-bg');
+                    $('body').removeClass('faq-bg');
+                }
+            }
+            else if ($(document).scrollTop() > 6500) {
+                if ($('body').hasClass('faq-bg')) {
+                    return
+                } else {
+                    $('body').addClass('faq-bg');
+                    $('body').removeClass('second-bg');
+                }
+            }
+            else {
+                if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
+                    $('body').removeClass('second-bg');
+                    $('body').removeClass('faq-bg');
+                } else {
+                    return;
+                }
+            }
+        });
+    } else {
+        window.addEventListener('scroll', function () {
+            let hash = $(location).attr('hash');
+
+            if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
+                // console.log("scrollTop")
+                if ($('body').hasClass('second-bg')) {
+                    return
+                } else {
+                    $('body').addClass('second-bg');
+                    $('body').removeClass('faq-bg');
+                }
+            }
+            else if ($(document).scrollTop() > 6800) {
+                if ($('body').hasClass('faq-bg')) {
+                    return
+                } else {
+                    $('body').addClass('faq-bg');
+                    $('body').removeClass('second-bg');
+                }
+            }
+            else {
+                if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
+                    $('body').removeClass('second-bg');
+                    $('body').removeClass('faq-bg');
+                } else {
+                    return;
+                }
+            }
+            console.log("hash" + hash)
+            if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
+                console.log("hash")
+            }
+        });
+    }
 }
 
 let boxDucks = document.querySelector(".box_ducks");
@@ -703,31 +763,31 @@ const background_faq_bg_duck = document.querySelector(".faq-bg-duck");
 const duck_bg = document.querySelector(".duck-bg");
 const black_wallpaper = document.querySelector(".black_wallpaper");
 
-window.onscroll = function () {
-    let hash = $(location).attr('hash');
+// window.onscroll = function () {
+//     let hash = $(location).attr('hash');
 
-    if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-        if ($('body').hasClass('second-bg')) {
-            return
-        } else {
-            $('body').addClass('second-bg');
-            $('body').removeClass('faq-bg');
-        }
-    }
-    else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
-        // console.log('teamteam')
-        if ($('body').hasClass('faq-bg')) {
-            return
-        } else {
-            $('body').addClass('faq-bg');
-            $('body').removeClass('second-bg');
-        }
-    }
-    else {
-        $('body').removeClass('faq-bg');
-        $('body').removeClass('second-bg');
-    }
-}
+//     if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
+//         if ($('body').hasClass('second-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('second-bg');
+//             $('body').removeClass('faq-bg');
+//         }
+//     }
+//     else if (hash == '#faq-duck' || hash == '#faq' || hash == '#team') {
+//         // console.log('teamteam')
+//         if ($('body').hasClass('faq-bg')) {
+//             return
+//         } else {
+//             $('body').addClass('faq-bg');
+//             $('body').removeClass('second-bg');
+//         }
+//     }
+//     else {
+//         $('body').removeClass('faq-bg');
+//         $('body').removeClass('second-bg');
+//     }
+// }
 
 window.onscroll = function () {
     window.scrollTo(0, window.scrollY);
@@ -758,40 +818,6 @@ window.onscroll = function () {
 //         $('body').removeClass('second-bg');
 //     }
 // });
-
-window.addEventListener('scroll', function () {
-    let hash = $(location).attr('hash');
-
-    if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
-        // console.log("scrollTop")
-        if ($('body').hasClass('second-bg')) {
-            return
-        } else {
-            $('body').addClass('second-bg');
-            $('body').removeClass('faq-bg');
-        }
-    }
-    else if ($(document).scrollTop() > 6800) {
-        if ($('body').hasClass('faq-bg')) {
-            return
-        } else {
-            $('body').addClass('faq-bg');
-            $('body').removeClass('second-bg');
-        }
-    }
-    else {
-        if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-            $('body').removeClass('second-bg');
-            $('body').removeClass('faq-bg');
-        } else {
-            return;
-        }
-    }
-    console.log("hash" + hash)
-    if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-        console.log("hash")
-    }
-});
 
 
 // $(window).on('scroll', function () {
