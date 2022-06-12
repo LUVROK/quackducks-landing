@@ -759,14 +759,9 @@ window.onscroll = function () {
 //     }
 // });
 
-// let htmlstyles = document.querySelector("body");
-
 window.addEventListener('scroll', function () {
     let hash = $(location).attr('hash');
-    // console.log("hash" + hash)
-    if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-        console.log("hash2")
-    }
+
     if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
         // console.log("scrollTop")
         if ($('body').hasClass('second-bg')) {
@@ -785,14 +780,16 @@ window.addEventListener('scroll', function () {
         }
     }
     else {
-        console.log("hash")
-        // htmlstyles.style.overflow = "hidden"
         if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
             $('body').removeClass('second-bg');
             $('body').removeClass('faq-bg');
         } else {
             return;
         }
+    }
+    console.log("hash" + hash)
+    if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
+        console.log("hash")
     }
 });
 
