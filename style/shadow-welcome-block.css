@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 900px){
     .shadow-block-bacground .welcome-block .welcome-block-content{
-        background-image: none; 
+        backdrop-filter: blur(150px);
     }
     .shadow-block-bacground .welcome-block .welcome-block-title__title{
         font-size: 64px;
