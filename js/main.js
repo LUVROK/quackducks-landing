@@ -7,72 +7,72 @@ window.onload = function () {
         boxDucks.classList.add('active');
         boxTitle.classList.add('active');
     }, 500);
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        window.addEventListener('scroll', function () {
-            let hash = $(location).attr('hash');
 
-            if ($(document).scrollTop() > 2700 && $(document).scrollTop() < 7400) {
-                // console.log("scrollTop")
-                if ($('body').hasClass('second-bg')) {
-                    return
-                } else {
-                    $('body').addClass('second-bg');
-                    $('body').removeClass('faq-bg');
-                }
-            }
-            else if ($(document).scrollTop() > 6500) {
-                if ($('body').hasClass('faq-bg')) {
-                    return
-                } else {
-                    $('body').addClass('faq-bg');
-                    $('body').removeClass('second-bg');
-                }
-            }
-            else {
-                if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-                    $('body').removeClass('second-bg');
-                    $('body').removeClass('faq-bg');
-                } else {
-                    return;
-                }
-            }
-        });
-    } else {
-        window.addEventListener('scroll', function () {
-            let hash = $(location).attr('hash');
+    window.scrollTo(0, 0);
 
-            if ($(document).scrollTop() > 3300 && $(document).scrollTop() < 8500) {
-                // console.log("scrollTop")
-                if ($('body').hasClass('second-bg')) {
-                    return
-                } else {
-                    $('body').addClass('second-bg');
-                    $('body').removeClass('faq-bg');
-                }
+    let min_second_bg = 3300;
+    let max_second_bg = 8500;
+
+    let block_factions = document.getElementById('section3');
+    let ducks_gallery = document.getElementById("section8");
+
+
+    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { 
+    //     // мобильные уст
+    //     ducks_gallery = document.getElementById("section8");
+    // } else {
+    //     ducks_gallery = document.getElementById("section9");
+    // }
+
+    let position1 = block_factions.getBoundingClientRect();
+    let bottom1 = position1.bottom;
+    let top1 = position1.top;
+    let center1 = ((bottom1 - top1) / 2) + top1;
+    let position2 = ducks_gallery.getBoundingClientRect();
+    let bottom2 = position2.bottom;
+    let top2 = position2.top;
+    let center2 = ((bottom2 - top2) / 2) + top2;
+
+    console.log("block_factions top1 - " + top1)
+    console.log("block_factions bottom1 - " + bottom1)
+    console.log("block_factions center1 - " + center1)
+    console.log("ducks_gallery top2 - " + top2)
+    console.log("ducks_gallery bottom2 - " + bottom2)
+    console.log("ducks_gallery center2 - " + center2)
+
+    window.addEventListener('scroll', function () {
+        if ($(document).scrollTop() >= center1 && $(document).scrollTop() <= center2) {
+            // console.log("scrollTop")
+            if ($('body').hasClass('second-bg')) {
+                return
+            } else {
+                $('body').addClass('second-bg');
+                $('body').removeClass('faq-bg');
             }
-            else if ($(document).scrollTop() > 6800) {
-                if ($('body').hasClass('faq-bg')) {
-                    return
-                } else {
-                    $('body').addClass('faq-bg');
-                    $('body').removeClass('second-bg');
-                }
+        }
+        else if ($(document).scrollTop() > center2) {
+            if ($('body').hasClass('faq-bg')) {
+                return
+            } else {
+                $('body').addClass('faq-bg');
+                $('body').removeClass('second-bg');
             }
-            else {
-                if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
-                    $('body').removeClass('second-bg');
-                    $('body').removeClass('faq-bg');
-                } else {
-                    return;
-                }
-            }
-            console.log("hash" + hash)
-            if (hash == '#duck1' || hash == '#duck2' || hash == '#duck3' || hash == '#duck4' || hash == '#duck5') {
-                console.log("hash")
-            }
-        });
-    }
+        }
+        else {
+            // if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
+            $('body').removeClass('second-bg');
+            $('body').removeClass('faq-bg');
+            // } else {
+            //     return;
+            // }
+        }
+    })
 }
+
+// window.onscroll = function () {
+//     window.scrollTo(0, window.scrollY);
+//     console.log($(document).scrollTop())
+// }
 
 let boxDucks = document.querySelector(".box_ducks");
 let boxTitle = document.querySelector(".box_title");
@@ -789,10 +789,6 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 //     }
 // }
 
-window.onscroll = function () {
-    window.scrollTo(0, window.scrollY);
-}
-
 // window.addEventListener('scroll', function () {
 //     let hash = $(location).attr('hash');
 
@@ -907,9 +903,10 @@ $.scrollify({
         }
         else {
             nav.style.background = "#5F5F5F";
-            blackWallpaper.style.display = "flex";
+            // blackWallpaper.style.display = "flex";
             nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
         }
+        console.log($(document).scrollTop())
         // console.log($(document).scrollTop())
         // console.log()
 
