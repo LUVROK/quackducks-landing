@@ -17,7 +17,9 @@ nav{
 .nav_elements_right{
     height: 0px;
     width: 591.1px;
-    border: 1px solid rgba(174, 94, 76, 1)    
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(255, 255, 255, 0.25);
 }
 .nav_elements__one{
     margin-left: 10px;
