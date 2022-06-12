@@ -1,4 +1,5 @@
 // прелоадер
+let numberZero, numberOne, numberTwo;
 window.onload = function () {
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
@@ -17,12 +18,15 @@ window.onload = function () {
     let ducks_gallery = document.getElementById("section8");
 
 
-    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { 
-    //     // мобильные уст
-    //     ducks_gallery = document.getElementById("section8");
-    // } else {
-    //     ducks_gallery = document.getElementById("section9");
-    // }
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        numberZero = 0 + "%";
+        numberOne = 30 + "%";
+        numberTwo = 77 + "%";
+    } else {
+        numberZero = 0 + "%";
+        numberOne = 40 + "%";
+        numberTwo = 80 + "%";
+    }
 
     let position1 = block_factions.getBoundingClientRect();
     let bottom1 = position1.bottom;
@@ -246,9 +250,6 @@ function caruselBackNull() {
 };
 let carusel = 0;
 let caruselBack = 0;
-let numberZero = 0 + "%";
-let numberOne = 40 + "%";
-let numberTwo = 80 + "%";
 let permissionBig = 1880;
 let permissionLarge = 1400;
 let permissionMedium = 1000;
@@ -261,9 +262,12 @@ ducksImgNext.addEventListener("click", ducksImgSliderBack);
 function ducksImgSliderBack() {
     newNumberNull();
     ducksImgBack.style.display = "none";
-    setTimeout(function () { ducksImgBack.style.display = "flex"; }, 1000);
+    ducksImgNext.style.display = "none";
+    setTimeout(function () {
+        ducksImgBack.style.display = "flex";
+        ducksImgNext.style.display = "flex";
+    }, 1000);
     if (window.outerWidth > permissionLarge && window.outerWidth < permissionBig) {
-
         numberZero = 0 + "%";
         numberOne = 37 + "%";
         numberTwo = 74 + "%";
@@ -822,7 +826,7 @@ $.scrollify({
     // interstitialSection: "",
     easing: "easeOutExpo",
     // easing: "easeOutCubic",
-    scrollSpeed: 2000,
+    scrollSpeed: 1000,
     offset: 0,
     // scrollbars: true,
     standardScrollElements: "",

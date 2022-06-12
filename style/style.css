@@ -790,68 +790,6 @@ img.welcome_box__arrow{
 
 
 /* section_two_factions */
-.block_factions{
-    z-index: 10;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    border-radius: 0px;
-    background: rgb(168,6,6);
-    background: radial-gradient(circle, rgba(168,6,6,1) 1%, rgba(0,0,0,1) 37%);
-    background-position: 70px -70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 1);
-}
-.block_factions__content{
-    /* max-width: 1520px; */
-    height: 100%;
-    width: 95%; /*95*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-.faction_content__title{
-    /* padding-top: 60px; */
-    height: 76px;
-    width: 439px;
-    font-family: 'dance_partner';
-    font-size: 96px;
-    font-weight: 400;
-    line-height: 106px;
-    letter-spacing: 0em;
-    text-align: center;
-    text-transform: uppercase;
-    /* background-color:blue */
-}
-.faction_content_body{
-    transform: scale(0.8);
-    height: 688px;
-    width: 100%;
-    position: relative;
-}
-.content_body_ducks{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: red */
-}
-.button_left_duck{
-    position: absolute;
-    /* border: 2px solid red; */
-    width: 25%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    cursor: pointer;
-    z-index: 100;
-    transform: translate(-170px,0px)
-}
 .button_right_duck{
     position: absolute;
     width: 25%;
@@ -861,51 +799,6 @@ img.welcome_box__arrow{
     /* border: 2px solid gold; */
     cursor: pointer;
     z-index: 100;
-}
-.ducks_block_one{
-    position: relative;
-    height: 469px;
-    width: 330px;
-    border-radius: 231px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: width 1.3s, height 1.3s, background-color 1.3s, transform 1.3s, left 1.3s;
-}
-/* slider animation one */
-.ducks_block_one.one{
-    position: absolute;
-    left: 0%;
-    top: 15%;
-}
-.ducks_block_one.two{
-    position: absolute;
-    /* left: 40%; */
-    top: 15%;
-}
-.ducks_block_one.three{
-    position: absolute;
-    left: 80%;
-    top: 15%;
-}
-.ducks_block_one.active{
-    border-radius: 260px;
-    height: 510px;
-    width: 370px;
-    top: 11%;
-    border: 1px solid rgba(142, 14, 14, 1);
-    transform:scale(1.2);
-}
-
-.ducks_block_one_img{
-    height: 469px;
-    width: 330px;
-    border-radius: 231px;
-    cursor: pointer;
-    object-fit: cover;
-}
-.ducks_block_one_img.active{
-    border-radius: 231px;
 }
 .content_body_textBox{
     width: 676px;
@@ -927,12 +820,12 @@ img.welcome_box__arrow{
     justify-content: space-between;
     width: 100%;
     height: 100%;
+
 }
 .textBox_name::after{
     content: "";
     position: absolute;
     right: 150px;
-    width: 131px;
     bottom: 220px;
     width: 100px;
     height: 2px;
@@ -1570,12 +1463,6 @@ details[open] {
         animation: ducks__right_center 4s;
         animation-fill-mode:both;
     }
-    .ducks_block_one.two{
-        left: 33%;
-    }
-    .ducks_block_one.three{
-        left: 77%;
-    }
     @keyframes ducks__left_center  {
         0% {
             left: -300px;
@@ -1701,34 +1588,6 @@ details[open] {
 
 
     /* section_two_factions */
-    .faction_content__title{
-        height: 76px;
-        width: 295px;
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 70px;
-    }
-    .faction_content_body{
-        height: 469px;
-    }
-    .ducks_block_one{
-        height: 276px;
-        width: 194px;
-    }
-    .ducks_block_one.active{
-        height: 469px;
-        width: 338px;
-        top: -4%;
-
-    }
-    .ducks_block_one_img{
-        height: 276px;
-        width: 194px;
-    }
-    .ducks_block_one_img.active{
-        height: 425px;
-        width: 300px;
-    }
     .content_body_textBox{
         width: 456px;
         height: 290px;
@@ -1888,12 +1747,6 @@ details[open] {
         font-size: 110px;
         line-height: 115px;
         position: absolute;
-    }
-    .ducks_block_one.two{
-        left: 30%;
-    }
-    .ducks_block_one.three{
-        left: 77%;
     }
 
 
@@ -2415,101 +2268,6 @@ details[open] {
 
     /* section_two_factions */
 
-    .block_factions {
-        width: 100%;
-        overflow: hidden;
-    }
-    .block_factions__content{
-        width: 100%;
-        height: 828px;
-        top: 100px;
-        justify-content: start;
-    }
-    .faction_content__title{
-        padding-top: 0;
-        height: 63px;
-        width: 274px;
-        font-size: 54px;
-        line-height: 59px;
-    }
-    .faction_content_body{
-        position: relative;
-        width:100%;
-        /* height: 469px;
-        width: 100%;
-        transform: scale(0.8); */
-        /* background-color: red */
-    }
-    .content_body_ducks{
-        position: relative;
-        /* top: -100px; */
-        transform: translate(-145px,0px);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .ducks_block_one{
-        height: 469px;
-        width: 300px;
-        border-radius: 231px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-
-    }
-    .ducks_block_one.active{
-
-        height: 510px;
-        width: 370px;
-        padding: 2px;
-        top: 21%;
-        z-index: 10;
-
-    }
-    .ducks_block_one.one{
-        left: 0%;
-        height: auto;
-        width: 272px;
-        top: 27%;
-
-    }
-    .ducks_block_one.two{
-        top: 20%;
-        /* left: 50%; */
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        width: 272px;
-        /* top: 27%; */
-    }
-
-
-    .ducks_block_one.three{
-        left: 100%;
-        height: auto;
-        width: 268px;
-        top: 27%;
-
-    }
-
-
-    .button_left_duck{
-        position: absolute;
-        /* border: 2px solid red; */
-        width: 25%;
-        height: 100%;
-        left: 170px;
-        top: 0px;
-        cursor: pointer;
-        z-index: 100;
-        
-        /* display: none; */
-    }
     .button_right_duck{
         position: absolute;
         width: 25%;
@@ -2520,18 +2278,6 @@ details[open] {
         cursor: pointer;
         z-index: 100;
         /* display: none; */
-    }
-
-
-
-    .ducks_block_one_img{
-        transition: 2s;
-        margin: 5px;
-    }
-    .ducks_block_one_img.active{
-        height: 393px;
-        width: 258px;
-
     }
     .content_body_textBox{
         width: 300px;
