@@ -9,11 +9,13 @@ body{
     min-height: 100%;
     background: rgba(3, 3, 3, 1);
     position: relative;
+    margin:0 auto;
     /* border: 2px solid red; */
     /* overflow-x:hidden; */
 }
 html {
-    overflow-x: hidden;
+    overflow-x:hidden;
+    /* overflow-y: hidden; */
 }
 body.second-bg{
     background-color: #FFF3F3;
@@ -1077,7 +1079,7 @@ img.welcome_box__arrow{
     font-size: 20px;
 }
 
-/* .faq details summary{
+.faq details summary{
     display: block;
     position: relative;
     margin-bottom: 30px;
@@ -1093,9 +1095,9 @@ img.welcome_box__arrow{
     top: 0;
     right: 0;
     color: #fff;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     font-size: 45px;
-} */
+}
 
 .faq-details-bottom{
     padding-bottom: 20px
@@ -1204,7 +1206,7 @@ img.welcome_box__arrow{
 }
 .footer .footer-right-socials{
     margin-top: 20px;
-    margin-right: -10px;
+    /* margin-right: -10px; */
     text-align: right;
 }
 .footer .footer-right-socials li{

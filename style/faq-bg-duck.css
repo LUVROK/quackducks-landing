@@ -5,6 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    background: #000;
     /* background: #000; */
 
     /* background-color: #000;
@@ -40,14 +41,19 @@ body.faq-bg .faq-bg-duck{
     transform: translateX(-50%);
 }
 
-body.second-bg .faq-bg-duck{
-    background-color: initial;
+/* body.second-bg .faq-bg-duck{ */
+    /* background-color: initial; */
     /* position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%); */
-}
+/* } */
 
-.faq-bg-duck{
-    background-color: #000;
-}
+/* .faq-bg-duck{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+} */
