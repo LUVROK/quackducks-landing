@@ -143,7 +143,7 @@ a.social_icons__discord{
     right: -25%;
     top: -270%;
     width: 1799.5px;
-    filter: blur(70px);
+    /* filter: blur(70px); */
 }
 .nav_background__top{
     height: 1225px;
@@ -504,14 +504,13 @@ a.social_icons__discord{
         top: 20%;
         width: 533px;
         /* filter: blur(60px); */
-    
     }
     .nav_background__center{
         position: relative;
         left: -3%;
         top: -37%;
         width:390.4px;
-        filter: blur(0px);
+        /* filter: blur(0px); */
         /* border: 2px solid rgb(72, 255, 0); */
         height: 706px;
     }
@@ -520,9 +519,9 @@ a.social_icons__discord{
         left: 19%;
         top: -150%;
         width: 494px;
-        filter: blur(70px);
+        /* filter: blur(70px); */
         border: 2px solid rgb(55, 0, 255);
-        filter: blur(20px);
+        /* filter: blur(20px); */
     }
     .nav_background__top{
         display: none;
