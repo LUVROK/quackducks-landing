@@ -153,14 +153,18 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .ducks_block_one.one{
+        left: 0%;
+    }
     .ducks_block_one.two{
         left: 30%;
     }
     .ducks_block_one.three{
         left: 77%;
     }
-    .ducks_block_one.one {
-        left: 0%;
+    .ducks_block_one.active{
+        height: 393px;
+        width: 277px;
     }
 }
 
