@@ -818,13 +818,12 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 //         $('body').removeClass('second-bg');
 //     }
 // });
-
 $.scrollify({
     section: ".block-scroll",
     sectionName: "section-name",
     interstitialSection: ".block-scroll",
     // interstitialSection: "",
-    easing: "easeOutExpo",
+    // easing: "easeOutExpo",
     // easing: "easeOutCubic",
     scrollSpeed: 1000,
     offset: 0,
