@@ -520,7 +520,9 @@ a.social_icons__discord{
         top: -150%;
         width: 494px;
         /* filter: blur(70px); */
-        border: 2px solid rgb(55, 0, 255);
+        /* border: 2px solid rgb(55, 0, 255); */
+        /* backdrop-filter: blur(20px); */
+        /* -webkit-backdrop-filter: blur(20px); */
         /* filter: blur(20px); */
     }
     .nav_background__top{
