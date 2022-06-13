@@ -205,22 +205,22 @@ body.second-bg .box_one{
         left: -5%;
         top: -10%;
         width: 1319.4px;
-    }
+    } */
     .nav_background__right{
         position: relative;
         right: -10%;
         top: -190%;
         width: 1502px;
     }
-    .nav_background__top{
+    /* .nav_background__top{
         height: 1225px;
         width: 1507px;
         position: absolute;
         left: 56.479248046875px;
         top: -551px;
         filter: blur(110px);
-    } */
-    /*сверху бесполезный стиль */
+    }
+    сверху бесполезный стиль */
 
 }
 @media only screen and (max-width: 990px) {
