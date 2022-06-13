@@ -12,10 +12,8 @@ body{
     /* border: 2px solid red; */
     /* overflow-x:hidden; */
 }
-html, body {
-    /* width: 100vw; */
-    /* height: 100vh; */
-    /* overflow: hidden; */
+html {
+    overflow-x: hidden;
 }
 body.second-bg{
     background-color: #FFF3F3;
@@ -1057,6 +1055,7 @@ img.welcome_box__arrow{
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     position: inherit;
     top: 50%;
     /* visibility: hidden; */
@@ -1236,6 +1235,7 @@ img.welcome_box__arrow{
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
 }
 .view-photo .view-photo-big img{
     width: 100%;
