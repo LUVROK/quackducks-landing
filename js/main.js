@@ -39,7 +39,7 @@ window.onload = function () {
             // easing: "easeOutCubic",
             scrollSpeed: 1000,
             offset: 0,
-            // scrollbars: true,
+            scrollbars: false,
             standardScrollElements: "",
             // setHeights: true,
             overflowScroll: true,
@@ -66,6 +66,15 @@ window.onload = function () {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
+
+        let elem = document.querySelector("#mobileTeam");
+        console.log(elem);
+        elem.remove();
+        document.querySelector('#section12').innerHTML = '<div class="team-container block-scroll" data-section-name="TheTeam" id="WebTeam"><div class="team__title">THE TEAM</div><div class="team-all disactiveTeam"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">ALEX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">RUZILl</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team3.png" alt=""></div><div class="team-all-one__name">MARIA</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">NUREX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">TIM</div></div> </div></div></div>';
+        // document.querySelector("#section13").classList.add('activeTeam');
+        // document.querySelector("#section14").classList.add('activeTeam');
+        // document.querySelector("#section15").classList.add('activeTeam');
+
         $.scrollify({
             section: ".block-scroll",
             sectionName: "section-name",
@@ -76,7 +85,7 @@ window.onload = function () {
             // easing: "easeOutCubic",
             scrollSpeed: 1000,
             offset: 0,
-            // scrollbars: true,
+            scrollbars: false,
             standardScrollElements: "",
             // setHeights: true,
             overflowScroll: true,
@@ -144,6 +153,15 @@ window.onload = function () {
             // }
         }
     })
+}
+
+window.addEventListener('resize', start);
+
+function start() {
+    //   document.getElementById('SpanID2').innerText = document.documentElement.clientHeight;
+    if (document.documentElement.clientWidth <= 920) {
+        console.log(true)
+    }
 }
 
 // window.onscroll = function () {
