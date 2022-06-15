@@ -35,7 +35,7 @@ window.onload = function () {
             interstitialSection: ".block-scroll-mobile",
             // standardScrollElements: 'TheTeam',
             // interstitialSection: "",
-            easing: "easeOutExpo",
+            // easing: "easeOutExpo",
             // easing: "easeOutCubic",
             scrollSpeed: 1000,
             offset: 0,
