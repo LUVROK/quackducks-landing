@@ -22,47 +22,83 @@ window.onload = function () {
         numberZero = 0 + "%";
         numberOne = 30 + "%";
         numberTwo = 77 + "%";
-        // $("#mobileTeam").removeAttr("display");
-        // var WebTeam = document.querySelector("#mobileTeam");
-        // console.log(WebTeam)
-        // mobileTeam.classList.add('displayDelete');
-        document.querySelector('#section13').classList.add('block-scroll')
-        document.querySelector('#section14').classList.add('block-scroll')
-        document.querySelector('#section15').classList.add('block-scroll')
-        const mobileTeam = document.querySelector('#mobileTeam');
-        console.log(mobileTeam)
-        // var WebTeam = document.querySelector("#mobileTeam");
-        // console.log(WebTeam)
-        // var WebTeam = document.querySelector("#mobileTeam");
-        // WebTeam.removeAttribute('display');
-        // console.log(WebTeam)
-        // document.querySelector("#section12").insertAdjacentHTML("afterend",
-        //     '<div class="team-container" id="addCont"><div class="team-all activeTeam"><div class="team_1 block-scroll" data-section-name="team_1" id="section13"><div class="team__title">THE TEAM</div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">ALEX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">RUZILl</div></div></div><div class="block-scroll" data-section-name="team_2" id="section14"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team3.png" alt=""></div><div class="team-all-one__name">MARIA</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">NUREX</div></div></div><div class="block-scroll" data-section-name="team_3" id="section15"><div class="team-all-one lastTeamBlock"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">TIM</div></div></div></div></div>');
-        // $("#section12").append('<div class="team-container" id="addCont"><div class="team-all activeTeam"><div class="team_1 block-scroll" data-section-name="team_1" id="section13"><div class="team__title">THE TEAM</div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">ALEX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">RUZILl</div></div></div><div class="block-scroll" data-section-name="team_2" id="section14"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team3.png" alt=""></div><div class="team-all-one__name">MARIA</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">NUREX</div></div></div><div class="block-scroll" data-section-name="team_3" id="section15"><div class="team-all-one lastTeamBlock"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">TIM</div></div></div></div></div>');
 
+        document.querySelector("#team_img_1").classList.add('team_png_1');
+        document.querySelector("#team_img_2").classList.add('team_png_2');
+        document.querySelector("#team_img_3").classList.add('team_png_3');
+        document.querySelector("#team_img_4").classList.add('team_png_4');
+        document.querySelector("#team_img_5").classList.add('team_png_5');
+
+        $.scrollify({
+            section: ".block-scroll-mobile",
+            sectionName: "section-name",
+            interstitialSection: ".block-scroll-mobile",
+            // standardScrollElements: 'TheTeam',
+            // interstitialSection: "",
+            easing: "easeOutExpo",
+            // easing: "easeOutCubic",
+            scrollSpeed: 1000,
+            offset: 0,
+            // scrollbars: true,
+            standardScrollElements: "",
+            // setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll: true,
+            before: function () { },
+            after: function () {
+                let hash = $(location).attr('hash');
+                if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+                    nav.style.background = "none";
+                    blackWallpaper.style.display = "none";
+                }
+                else {
+                    nav.style.background = "#5F5F5F";
+                    // blackWallpaper.style.display = "flex";
+                    nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+                }
+                console.log($(document).scrollTop())
+            },
+            afterResize: function () { },
+            afterRender: function () { }
+        });
     } else {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        // const WebTeam = document.querySelector('#WebTeam');
-        // WebTeam.classList.remove('displayDelete');
-
-        const WebTeam = document.querySelector('#mobileTeam');
-        // WebTeam.classList.add('displayDelete');
-
-        // document.querySelector('#section13').classList.remove('block-scroll')
-        // document.querySelector('#section14').classList.remove('block-scroll')
-        // document.querySelector('#section15').classList.remove('block-scroll')
-        // var WebTeam = document.querySelector("#mobileTeam");
-        // console.log(WebTeam)
-        // if (bodyStyle.removeAttribute)
-        //     bodyStyle.removeAttribute('background-color');
-        // else
-        //     bodyStyle.removeProperty('background-color');
-        // document.querySelector("#WebTeam").removeAttr("display");
-        // document.querySelector("#section12").insertAdjacentHTML("afterend",
-        //     '<div class="team-container block-scroll" id="addCont" data-section-name="team_title"><div class="team__title">THE TEAM</div><div class="team-all disactiveTeam"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">ALEX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">RUZILl</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team3.png" alt=""></div><div class="team-all-one__name">MARIA</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">NUREX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">TIM</div></div></div>');
-        // $("#section12").append('<div class="team-container block-scroll" id="addCont" data-section-name="team_title"><div class="team__title">THE TEAM</div><div class="team-all disactiveTeam"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">ALEX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">RUZILl</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team3.png" alt=""></div><div class="team-all-one__name">MARIA</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">NUREX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">TIM</div></div></div>');
+        $.scrollify({
+            section: ".block-scroll",
+            sectionName: "section-name",
+            interstitialSection: ".block-scroll",
+            // standardScrollElements: 'TheTeam',
+            // interstitialSection: "",
+            easing: "easeOutExpo",
+            // easing: "easeOutCubic",
+            scrollSpeed: 1000,
+            offset: 0,
+            // scrollbars: true,
+            standardScrollElements: "",
+            // setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll: true,
+            before: function () { },
+            after: function () {
+                let hash = $(location).attr('hash');
+                if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+                    nav.style.background = "none";
+                    blackWallpaper.style.display = "none";
+                }
+                else {
+                    nav.style.background = "#5F5F5F";
+                    // blackWallpaper.style.display = "flex";
+                    nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+                }
+                console.log($(document).scrollTop())
+            },
+            afterResize: function () { },
+            afterRender: function () { }
+        });
     }
 
     let position1 = block_factions.getBoundingClientRect();
@@ -855,38 +891,6 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 //         $('body').removeClass('second-bg');
 //     }
 // });
-$.scrollify({
-    section: ".block-scroll",
-    sectionName: "section-name",
-    interstitialSection: ".block-scroll",
-    // interstitialSection: "",
-    // easing: "easeOutExpo",
-    // easing: "easeOutCubic",
-    scrollSpeed: 1000,
-    offset: 0,
-    // scrollbars: true,
-    standardScrollElements: "",
-    // setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll: true,
-    before: function () { },
-    after: function () {
-        let hash = $(location).attr('hash');
-        if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
-            nav.style.background = "none";
-            blackWallpaper.style.display = "none";
-        }
-        else {
-            nav.style.background = "#5F5F5F";
-            // blackWallpaper.style.display = "flex";
-            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-        }
-        console.log($(document).scrollTop())
-    },
-    afterResize: function () { },
-    afterRender: function () { }
-});
 
 $('#Move_welcome-block').on("click", function () {
     $.scrollify.move("#block_factions");

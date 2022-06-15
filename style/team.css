@@ -8,8 +8,21 @@
     height: 100vh;
 }
 .team_1 {
-    padding: 4% 0;
-
+    /* padding: 4% 0; */
+    height: 100vh;
+    position: relative;
+}
+.team_2 {
+    /* padding: 4% 0; */
+    height: 100vh;
+    position: relative;
+}
+.team_3 {
+    /* padding: 4% 0; */
+    height: 100vh;
+    position: relative;
+    /* margin-left: 0;
+    margin-right: auto; */
 }
 .team .team-container{
     max-width: 1460px;
@@ -18,9 +31,9 @@
 .team .team__title{
     font-family: 'dance_partner', sans-serif;
     font-size: 128px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 .team .team-all{
     display: flex;
@@ -28,9 +41,46 @@
     flex-wrap: wrap;
 }
 .team .team-all .team-all-one .team-all-one__img{
-    margin-bottom: 40px;
+    /* position: absolute; */
+    /* bottom: 20px; */
+    margin-bottom: 10px;
     height: 320px;
     width: 160px;
+}
+.team_png_1 {
+    /* background-color: burlywood; */
+    /* float: left; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.team_png_2 {
+    /* background-color: burlywood; */
+    /* float: right; */
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+}
+.team_png_3 {
+    /* background-color: burlywood;  */
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    /* float: left; */
+}
+.team_png_4 {
+    /* background-color: burlywood; */
+    /* float: right; */
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
+.team_png_5 {
+    /* background-color: burlywood; */
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    /* float: left; */
 }
 .team .team-all .team-all-one .team-all-one__img img{
     height: 100%;
@@ -45,11 +95,20 @@
 .disactiveTeam {
     /* visibility: hidden; */
 }
-.lastTeamBlock {
+/* .lastTeamBlock {
     height: 100vh;
-}
+} */
 
 @media screen and (max-width: 920px){
+    .team_1 {
+        width: 100%;
+    }
+    .team_2 {
+        width: 100%;
+    }
+    .team_3 {
+        width: 100%;
+    }
     .team{
         height: auto;
     }
@@ -57,16 +116,20 @@
         padding: 0 50px;
     }
     .team .team__title{
+        padding-top: 20px;
         padding-bottom: 10px;
     }
     .team .team-all {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
     }
     .team .team-all .team-all-one:nth-of-type(odd){
         align-self: start;
+    }
+    .team .team-all .team-all-one .team2_png {
+        
     }
 }
 
@@ -74,4 +137,8 @@
     .team .team__title{
         font-size: 54px;
     }
+}
+
+@media screen and (max-height: 400px){
+
 }
