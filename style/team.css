@@ -121,8 +121,9 @@
     .team .team-all {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+        height: 100vh;
+        /* flex-direction: column; */
+        /* align-items: center; */
     }
     .team .team-all .team-all-one:nth-of-type(odd){
         align-self: start;

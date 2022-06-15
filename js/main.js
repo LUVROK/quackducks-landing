@@ -39,7 +39,7 @@ window.onload = function () {
             // easing: "easeOutCubic",
             scrollSpeed: 1000,
             offset: 0,
-            scrollbars: false,
+            scrollbars: true,
             standardScrollElements: "",
             // setHeights: true,
             overflowScroll: true,
@@ -85,7 +85,7 @@ window.onload = function () {
             // easing: "easeOutCubic",
             scrollSpeed: 1000,
             offset: 0,
-            scrollbars: false,
+            scrollbars: true,
             standardScrollElements: "",
             // setHeights: true,
             overflowScroll: true,
@@ -155,14 +155,14 @@ window.onload = function () {
     })
 }
 
-window.addEventListener('resize', start);
 
-function start() {
-    //   document.getElementById('SpanID2').innerText = document.documentElement.clientHeight;
-    if (document.documentElement.clientWidth <= 920) {
-        console.log(true)
-    }
-}
+//Можно использовать это событие при уменьшении размера экрана, если он как мобильный, то изменить блок the team, но у меня по каким то причинам не удается изменить поведения скролифая которое уже задано в начале
+// window.addEventListener('resize', start);
+// function start() {
+//     if (document.documentElement.clientWidth <= 920) {
+
+//     }
+// }
 
 // window.onscroll = function () {
 //     window.scrollTo(0, window.scrollY);
@@ -931,6 +931,10 @@ $('.Move_Section12').on("click", function () {
     $.scrollify.move("#team_title");
     console.log("Move_Section12");
 });
+
+// $('li').click(function() {
+//     $.scrollify.move('#' + $(this).attr('id'))
+// })
 
 
 // $('selector').horizon({ swipe: false });
