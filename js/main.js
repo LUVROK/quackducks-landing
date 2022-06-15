@@ -25,11 +25,12 @@ window.onload = function () {
         // $("#mobileTeam").removeAttr("display");
         // var WebTeam = document.querySelector("#mobileTeam");
         // console.log(WebTeam)
-        const mobileTeam = document.querySelector('#WebTeam');
-        mobileTeam.classList.add('displayDelete');
-        // document.querySelector('#section13').classList.add('block-scroll')
-        // document.querySelector('#section14').classList.add('block-scroll')
-        // document.querySelector('#section15').classList.add('block-scroll')
+        // mobileTeam.classList.add('displayDelete');
+        document.querySelector('#section13').classList.add('block-scroll')
+        document.querySelector('#section14').classList.add('block-scroll')
+        document.querySelector('#section15').classList.add('block-scroll')
+        const mobileTeam = document.querySelector('#mobileTeam');
+        console.log(mobileTeam)
         // var WebTeam = document.querySelector("#mobileTeam");
         // console.log(WebTeam)
         // var WebTeam = document.querySelector("#mobileTeam");
@@ -47,12 +48,8 @@ window.onload = function () {
         // WebTeam.classList.remove('displayDelete');
 
         const WebTeam = document.querySelector('#mobileTeam');
-        WebTeam.classList.add('displayDelete');
+        // WebTeam.classList.add('displayDelete');
 
-        const WebTeamsection = document.querySelector('#WebTeam');
-        WebTeamsection.classList.add('block-scroll')
-
-        console.log(WebTeamsection)
         // document.querySelector('#section13').classList.remove('block-scroll')
         // document.querySelector('#section14').classList.remove('block-scroll')
         // document.querySelector('#section15').classList.remove('block-scroll')
