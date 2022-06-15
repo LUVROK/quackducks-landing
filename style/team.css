@@ -1,3 +1,6 @@
+.displayDelete {
+    display: none;
+}
 .team{
     position: inherit;
     z-index: 1;
@@ -17,6 +20,7 @@
     font-size: 128px;
     padding-bottom: 100px;
     text-align: center;
+    padding-top: 40px;
 }
 .team .team-all{
     display: flex;
@@ -26,7 +30,7 @@
 .team .team-all .team-all-one .team-all-one__img{
     margin-bottom: 40px;
     height: 320px;
-    width: 180px;
+    width: 160px;
 }
 .team .team-all .team-all-one .team-all-one__img img{
     height: 100%;
