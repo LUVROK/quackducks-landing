@@ -121,7 +121,7 @@
     .team .team-all {
         display: flex;
         flex-wrap: wrap;
-        height: 100vh;
+        /* height: 100vh; */
         /* flex-direction: column; */
         /* align-items: center; */
     }
