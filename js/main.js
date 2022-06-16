@@ -17,6 +17,18 @@ window.onload = function () {
     let block_factions = document.getElementById('section3');
     let ducks_gallery = document.getElementById("section8");
 
+    let pagepiling = document.getElementById('welcome-block-content-id');
+    let position1 = block_factions.getBoundingClientRect();
+    let bottom1 = position1.bottom;
+    let top1 = position1.top;
+    let center1 = ((bottom1 - top1) / 2) + top1;
+    console.log(top1)
+    pagepiling.style.minHeight = `${top1}px`;
+    let position2 = ducks_gallery.getBoundingClientRect();
+    let bottom2 = position2.bottom;
+    let top2 = position2.top;
+    let center2 = ((bottom2 - top2) / 2) + top2;
+
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         numberZero = 0 + "%";
@@ -110,21 +122,12 @@ window.onload = function () {
         });
     }
 
-    let position1 = block_factions.getBoundingClientRect();
-    let bottom1 = position1.bottom;
-    let top1 = position1.top;
-    let center1 = ((bottom1 - top1) / 2) + top1;
-    let position2 = ducks_gallery.getBoundingClientRect();
-    let bottom2 = position2.bottom;
-    let top2 = position2.top;
-    let center2 = ((bottom2 - top2) / 2) + top2;
-
-    console.log("block_factions top1 - " + top1)
-    console.log("block_factions bottom1 - " + bottom1)
-    console.log("block_factions center1 - " + center1)
-    console.log("ducks_gallery top2 - " + top2)
-    console.log("ducks_gallery bottom2 - " + bottom2)
-    console.log("ducks_gallery center2 - " + center2)
+    // console.log("block_factions top1 - " + top1)
+    // console.log("block_factions bottom1 - " + bottom1)
+    // console.log("block_factions center1 - " + center1)
+    // console.log("ducks_gallery top2 - " + top2)
+    // console.log("ducks_gallery bottom2 - " + bottom2)
+    // console.log("ducks_gallery center2 - " + center2)
 
     window.addEventListener('scroll', function () {
         if ($(document).scrollTop() >= center1 && $(document).scrollTop() <= center2) {
