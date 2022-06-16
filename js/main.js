@@ -740,7 +740,7 @@ elementsArray.forEach(element => {
         // boxGaaler2.classList.add('box-unactive');
         element.classList.remove('box-active');
         if (element.id === "box_duckOne_img_2") {
-            element2.classList.add('box-active');
+            // element2.classList.add('box-active');
         }
         else {
             element2.classList.add('box-active');
