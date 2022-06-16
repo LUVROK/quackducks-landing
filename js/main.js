@@ -721,15 +721,14 @@ let activeElement_last = activeElement - 1;
 elementsArray.forEach(element => {
     element.addEventListener('mouseenter', e => {
         element.classList.add('box-active');
-        // console.log(elementsArray)
         if (element.id === "box_duckOne_img_2") {
             // console.log(element.id)
-            element2.classList.add('box-active');
+            // element2.classList.add('box-active');
         }
         else {
             element2.classList.remove('box-active');
         }
-        elementsArray[activeElement - 1].classList.remove('box-active')
+        // elementsArray[activeElement - 1].classList.remove('box-active')
         // console.log(elementsArray[activeElement - 1])
         // console.log(element.id)
         // boxGaaler2.classList.remove('box-unactive');
@@ -743,7 +742,7 @@ elementsArray.forEach(element => {
             // element2.classList.add('box-active');
         }
         else {
-            element2.classList.add('box-active');
+            // element2.classList.add('box-active');
         }
         // elementsArray[activeElement - 1].classList.remove('box-active')
         // console.log(elementsArray[activeElement - 1])
