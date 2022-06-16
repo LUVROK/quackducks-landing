@@ -235,8 +235,8 @@ body.second-bg .box_one{
     }
     .box_social_icons{
         position: absolute;
-        left: 60%;
-        top: 55px;
+        left: 68%;
+        top: 21px;
         width: 98px;
         height: 40px;
         cursor: pointer;
@@ -265,17 +265,17 @@ body.second-bg .box_one{
     .box_title{
         width: 100%;
         bottom: -50%;
-        left: 15%;
+        left: 17%;
     }
     .box_title.active{
         animation: ease titleTop 1.5s forwards;
     }
     .big_title{
         height: 58px;
-        width: 363px;
-        left: 14px;
+        /* width: 363px; */
+        /* left: 14px; */
         top: 109px;
-        font-size: 40px;
+        font-size: 58px;
         font-weight: 400;
         line-height: 70px;
         text-align: center;
@@ -298,5 +298,54 @@ body.second-bg .box_one{
         padding: 0% 0%;
         box-sizing: border-box;
         height: 100vh;
+    }
+}
+
+@media screen and (min-height: 290px) and (max-width: 400px) {
+    .img_ducks{
+        height: 100%;
+        padding: 75px;
+        width: auto;
+        left: 17%;
+        position: relative;
+        top: 91px;
+    }
+    .big_title{
+        font-size: 38px;
+    }
+    .box_ducks{
+        top: 0px;
+    }
+    .big_btn{
+        top: 385px;
+        height: 70px;
+        width: 222px;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 48px;
+    }
+}
+
+@media screen and (min-height: 690px) and (max-width: 440px) {
+    .img_ducks{
+        height: 566px;
+        width: 566px;
+        left: 15%;
+        position: relative;
+        top: 131px;
+    }
+    .big_title{
+        font-size: 58px;
+    }
+    .box_ducks{
+        top: 51px;
+    }
+    .big_btn{
+        top: 515px;
+        height: 70px;
+        width: 222px;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 48px;
     }
 }
