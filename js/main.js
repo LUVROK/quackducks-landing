@@ -41,6 +41,8 @@ window.onload = function () {
         document.querySelector("#team_img_4").classList.add('team_png_4');
         document.querySelector("#team_img_5").classList.add('team_png_5');
 
+        
+
         $.scrollify({
             section: ".block-scroll-mobile",
             sectionName: "section-name",
