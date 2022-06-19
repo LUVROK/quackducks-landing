@@ -67,6 +67,7 @@ body.second-bg .box_one{
     left: calc(50% - 375px);
     top: 101px;
     opacity: 0;
+    z-index: 101;
 }
 .box_ducks.active{
     animation: ease playDuck 4.5s forwards;
