@@ -12,7 +12,7 @@
     color: #ffffff;
     border-top-left-radius: 50em;
     border-top-right-radius: 50em;
-    background-image: url(../img/welcome-bg.png); 
+    /* background-image: url(../img/welcome-bg.png);  */ /*РАЗБЛОК*/ 
     background-repeat: repeat;
     background-color: rgba(255, 255, 255, 0.2); 
     box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);

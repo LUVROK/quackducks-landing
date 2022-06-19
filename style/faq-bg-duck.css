@@ -32,7 +32,7 @@ body.faq-bg .faq-bg-duck{
 .faq-bg-duck .faq-bg-duck-container{
     position: relative;
     height: 100%;
-    /* background: url(../img/welcome-bg.png) no-repeat, url(../img/gallery-bg.png) no-repeat; */
+    /* background: url(../img/welcome-bg.png) no-repeat, url(../img/gallery-bg.png) no-repeat; */ /*РАЗБЛОК*/ 
 
 }
 .faq-bg-duck .faq-bg-duck-container img{
