@@ -982,14 +982,15 @@ img.welcome_box__arrow{
 }
 .ducks-gallery{
     height: 100vh;
-    background-image: url("../img/gallery-bg.png");
-    background-repeat: no-repeat;
+    /* background-image: url("../img/gallery-bg.png"); */
+    background: url(../img/welcome-bg.png) no-repeat, url(../img/gallery-bg.png) no-repeat;
     background-size: 80%;
+    background-position-x: 35%;
     position: inherit;
     z-index: 1;
     background-color: #000;
     display: flex;
-}
+} 
 .ducks-gallery .ducks-gallery-container{
     max-width: 1365px;
     margin: 0 auto;
