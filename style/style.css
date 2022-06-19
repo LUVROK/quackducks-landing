@@ -122,11 +122,11 @@ a.social_icons__discord{
     border: 1.5px solid white;
     border-radius: 50%;
 }
-/* .box_bacgrounds{
+.box_bacgrounds{
     position: absolute;
     width: 100%;
     height: 100%;
-} */
+}
 .nav_background__PESOK {
     position: absolute;
     top: 0;
@@ -385,21 +385,7 @@ a.social_icons__discord{
 }
 
 @media only screen and (max-width: 1133px) {
-
-    /* .black_wallpaper{
-        height: 51px;
-    } */
-    /* .box_all{
-        max-width: 1133px !important;
-    } */
-    /* .box_one{
-        height: 744px;
-    } */
-    /* .box_social_icons{
-        left: 15px;
-        top: 85%;
-    } */
-    /* .nav_background__left{
+    .nav_background__left{
         left: -8%;
         top: 80%;
         width: 533px;
@@ -422,7 +408,20 @@ a.social_icons__discord{
         position: absolute;
         left: 56.479248046875px;
         top: -551px;
-        filter: blur(110px);
+        /* filter: blur(110px); */
+    }
+    /* .black_wallpaper{
+        height: 51px;
+    } */
+    /* .box_all{
+        max-width: 1133px !important;
+    } */
+    /* .box_one{
+        height: 744px;
+    } */
+    /* .box_social_icons{
+        left: 15px;
+        top: 85%;
     } */
     /* nav{
         max-width: 1133px;
