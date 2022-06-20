@@ -199,7 +199,7 @@ a.social_icons__discord{
         left: -3%;
         top: -37%;
         width:390.4px;
-        /* display: none; */
+        display: none;
         /* filter: blur(0px); */
         /* border: 2px solid rgb(72, 255, 0); */
         height: 706px;
