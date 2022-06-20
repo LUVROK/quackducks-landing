@@ -141,8 +141,15 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
     transition: 2s;
 }
 .ducks_block_one_img.active{
-    transition: 2s;
+    /* transition: 2s; */
     border-radius: 231px;
+}
+.textBox_story {
+    /* font-family: 'Pelinka-ExtraLight', sans-serif;
+    font-size: 14px; */
+    /* font-weight: 200;
+    line-height: 18px; */
+    /* letter-spacing: 0em; */
 }
 
 @media screen and (max-width: 1400px) {
@@ -157,10 +164,10 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
         height: 469px;
     }
     .ducks_block_one.two{
-        left: 40%;
+        left: 33%;
     }
     .ducks_block_one.three{
-        left: 80%;
+        left: 77%;
     }
     .ducks_block_one{
         height: 276px;
@@ -169,11 +176,9 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
     .ducks_block_one.active{
         height: 469px;
         width: 338px;
-        transition: 2s;
-        /* top: -4%; */
-        border-radius: 231px;
         /* transition: 2s; */
-
+        top: -4%;
+        /* border-radius: 231px; */
     }
     .ducks_block_one_img{
         height: 276px;
@@ -280,7 +285,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
     }
     .ducks_block_one.two{
         top: 20%;
-        left: 50%;
+        left: 58%;
         height: auto;
         width: 272px;
         top: 27%;
