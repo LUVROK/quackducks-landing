@@ -177,6 +177,8 @@ window.onload = function () {
         {
             nav.style.background = "#5F5F5F";
             nav.style.transition = '.2s';
+            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+
         }
         else {
             nav.style.background = "none";

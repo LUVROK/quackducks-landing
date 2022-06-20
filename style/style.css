@@ -499,10 +499,10 @@ img.welcome_box__arrow{
     z-index: 100;
 }
 .content_body_textBox{
-    width: 676px;
+    width: 876px;
     height: 430px;
     position: absolute;
-    left: 12%;
+    left: 2%;
     bottom: -100px;
     display: flex;
     flex-direction: column;
@@ -522,7 +522,7 @@ img.welcome_box__arrow{
 .textBox_name::after{
     content: "";
     position: absolute;
-    right: 150px;
+    right: 250px;
     bottom: 220px;
     width: 100px;
     height: 2px;
@@ -543,18 +543,16 @@ img.welcome_box__arrow{
 
 .textBox_story{
     height: 134px;
-    width: 676px;
+    /* width: 676px; */
+    width: 100%;
     left: 310px;
     top: 1042px;
     /* font-family: 'Pelinka-CondensedExtraLight'; */
     font-family: 'Pelinka-ExtraLight', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     /* font-weight: 200; */
     /* line-height: 28px; */
     /* letter-spacing: .1rem; */
-    text-align: left;
-    overflow: hidden;
-
 }
 .content_block__socIcons{
     position: absolute;
@@ -586,7 +584,7 @@ img.welcome_box__arrow{
 .content_block__socIcons div a{
     height: 35px;
     width: 35px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    /* border: 1px solid rgba(255, 255, 255, 0.7); */
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -643,7 +641,8 @@ img.welcome_box__arrow{
 }
 .all-ducks .all-ducks-block-text .all-ducks-block-text__text{
     font-family: 'Pelinka-ExtraLight', sans-serif;
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: 24px;
 }
 .all-ducks .all-ducks-block-text__img{
     display: block;
@@ -997,7 +996,8 @@ text-transform: uppercase;
 }
 .all-ducks-new .all-ducks-block-text .all-ducks-block-text__text{
 font-family: 'Pelinka-ExtraLight', sans-serif;
-font-size: 28px;
+/* font-size: 28px; */
+font-size: 24px;
 }
 .all-ducks-new .all-ducks-block-text__img{
     display: block;
@@ -1051,7 +1051,7 @@ details[open] {
     .textBox_story{
         height: 124px;
         width: 422px;
-        font-size: 22px;
+        font-size: 28px;
         /* line-height: 23px; */
     }
 
@@ -1294,7 +1294,7 @@ details[open] {
     /* section_two_factions */
     .content_body_textBox{
         width: 456px;
-        height: 290px;
+        /* height: 290px; */
         left: 1%;
         bottom: 0;
     }
@@ -1308,11 +1308,12 @@ details[open] {
         width: 275px;
         font-size: 84px;
         line-height: 92px;
+        left: 310px;
     }
     .textBox_story{
-        height: auto;
+        height:124px;
         width: 422px;
-        font-size: 20px;
+        font-size: 28px;
         /* line-height: 23px; */
     }
     .content_block__socIcons{
