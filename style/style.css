@@ -209,7 +209,7 @@ a.social_icons__discord{
         left: 19%;
         top: -150%;
         width: 494px;
-        /* display: none; */
+        display: none;
         /* filter: blur(20px);         */
         /* border: 2px solid rgb(55, 0, 255); */
 
