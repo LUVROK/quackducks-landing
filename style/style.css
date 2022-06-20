@@ -203,6 +203,7 @@ a.social_icons__discord{
         /* filter: blur(0px); */
         /* border: 2px solid rgb(72, 255, 0); */
         height: 706px;
+        display: none;
     }
     .nav_background__right{
         position: relative;
@@ -223,7 +224,7 @@ a.social_icons__discord{
         transform: translateZ(0); */
     }
     .nav_background__top{
-        /* display: none; */
+        display: none;
     }
     /* nav{
         display: none;
