@@ -34,7 +34,7 @@ a.social_icons__discord{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid white;
+    /* border: 1.5px solid white; */
     border-radius: 50%;
 }
 .box_bacgrounds{
@@ -680,6 +680,7 @@ img.welcome_box__arrow{
     width: 25%;
     padding: 10px;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .ducks-gallery .ducks-gallery-img img{
     object-fit: contain;
@@ -804,6 +805,7 @@ img.welcome_box__arrow{
     padding-bottom: 15px;
     border-bottom: 1px solid #fff;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .faq-full summary:before{
     content: '+';
@@ -960,6 +962,7 @@ img.welcome_box__arrow{
 .view-photo .view-photo-btns .view-photo-btns__prev,
 .view-photo .view-photo-btns .view-photo-btns__next{
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .all-ducks-new{
     background-color: #FFF3F3;

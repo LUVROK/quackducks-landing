@@ -16,6 +16,7 @@ window.onload = function () {
 
     let block_factions = document.getElementById('section3');
     let ducks_gallery = document.getElementById("section8");
+    let team = document.getElementById("section12");
 
     let pagepiling = document.getElementById('welcome-block-content-id');
     let position1 = block_factions.getBoundingClientRect();
@@ -29,6 +30,11 @@ window.onload = function () {
     let top2 = position2.top;
     let center2 = ((bottom2 - top2) / 2) + top2;
 
+    let position3 = team.getBoundingClientRect();
+    let top3 = position3.top;
+    console.log('top3 - ', position3.top);
+
+
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         numberZero = 0 + "%";
@@ -40,6 +46,8 @@ window.onload = function () {
         document.querySelector("#team_img_3").classList.add('team_png_3');
         document.querySelector("#team_img_4").classList.add('team_png_4');
         document.querySelector("#team_img_5").classList.add('team_png_5');
+
+        //    transition: 2s;
 
         // document.querySelector(".nav_background__left").classList.add('team_png_4');
         // document.querySelector(".nav_background__center").classList.add('team_png_4');
@@ -69,17 +77,18 @@ window.onload = function () {
             touchScroll: true,
             before: function () { },
             after: function () {
-                let hash = $(location).attr('hash');
-                if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
-                    nav.style.background = "none";
-                    blackWallpaper.style.display = "none";
-                }
-                else {
-                    nav.style.background = "#5F5F5F";
-                    // blackWallpaper.style.display = "flex";
-                    nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
-                }
-                console.log($(document).scrollTop())
+                // let hash = $(location).attr('hash');
+                // if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
+                //     nav.style.background = "none";
+                //     blackWallpaper.style.display = "none";
+                // }
+                // else {
+                //     nav.style.background = "#5F5F5F";
+                //     nav.style.transition = '.2s';
+                //     // blackWallpaper.style.display = "flex";
+                //     nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+                // }
+                // console.log($(document).scrollTop())
             },
             afterResize: function () { },
             afterRender: function () { }
@@ -117,13 +126,13 @@ window.onload = function () {
             after: function () {
                 let hash = $(location).attr('hash');
                 if (hash == "#black_wallpaper" || hash == "#welcome-block" || hash == "#gallery" || hash == "#block_factions" || hash == "#ducks-gallery" || hash == "#faq" || hash == "#faq-duck") {
-                    nav.style.background = "none";
+                    // nav.style.background = "none";
                     blackWallpaper.style.display = "none";
                 }
                 else {
-                    nav.style.background = "#5F5F5F";
+                    // nav.style.background = "#5F5F5F";
                     // blackWallpaper.style.display = "flex";
-                    nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
+                    // nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
                 }
                 console.log($(document).scrollTop())
             },
@@ -140,7 +149,12 @@ window.onload = function () {
     // console.log("ducks_gallery center2 - " + center2)
 
     window.addEventListener('scroll', function () {
-        if ($(document).scrollTop() >= center1 && $(document).scrollTop() <= center2) {
+        let hash = $(location).attr('hash');
+
+        if ($(document).scrollTop() >= center1 && $(document).scrollTop() < center2) {
+            nav.style.background = "#5F5F5F";
+            nav.style.transition = '.2s';
+            nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
             // console.log("scrollTop")
             if ($('body').hasClass('second-bg')) {
                 return
@@ -149,7 +163,9 @@ window.onload = function () {
                 $('body').removeClass('faq-bg');
             }
         }
-        else if ($(document).scrollTop() > center2) {
+        else if ($(document).scrollTop() > center2 && $(document).scrollTop() <= (top3-110)) {
+            nav.style.background = "none";
+            // blackWallpaper.style.display = "none";
             if ($('body').hasClass('faq-bg')) {
                 return
             } else {
@@ -157,7 +173,14 @@ window.onload = function () {
                 $('body').removeClass('second-bg');
             }
         }
+        else if ($(document).scrollTop() >= (top3-100))
+        {
+            nav.style.background = "#5F5F5F";
+            nav.style.transition = '.2s';
+        }
         else {
+            nav.style.background = "none";
+            // blackWallpaper.style.display = "none";
             // if ($('body').hasClass('second-bg') || $('body').hasClass('faq-bg')) {
             $('body').removeClass('second-bg');
             $('body').removeClass('faq-bg');
