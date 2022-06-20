@@ -1981,10 +1981,12 @@ details[open] {
         /* display: none; */
     }
     .content_body_textBox{
-        width: 300px;
+        width: 100%;
         height: 250px;
-        left: 15%;
-        bottom: 10px;
+        /* left: 15%;
+        bottom: 10px; */
+        left: 0%;
+        bottom: -130px;
         /* display: none; РАЗБЛОК */
     }
     .content_body_textBox_one{
@@ -2012,8 +2014,11 @@ details[open] {
 
     .textBox_story{
         height: 126px;
-        width: 280px;
+        width: 80%;
+        /* width: 100%; */
+        font-weight: 200;
         font-size: 16px;
+        line-height: 18px;
         /* line-height: 18px; */
     }
     .content_block__socIcons{
@@ -2172,7 +2177,10 @@ details[open] {
         font-size: 54px;
     }
     .textBox_name::after {
-        display: none;
+        right: 70px;
+        bottom: 150px;
+        width: 63px;
+        /* display: none; */
     }
 }
 @media screen and (max-width: 420px){
