@@ -519,6 +519,7 @@ a.social_icons__discord{
         left: 0%;
         top: 20%;
         width: 533px;
+        display: none;
         /* filter: blur(60px); */
     }
     .nav_background__center{
@@ -526,6 +527,7 @@ a.social_icons__discord{
         left: -3%;
         top: -37%;
         width:390.4px;
+        display: none;
         /* filter: blur(0px); */
         /* border: 2px solid rgb(72, 255, 0); */
         height: 706px;
@@ -535,6 +537,7 @@ a.social_icons__discord{
         left: 19%;
         top: -150%;
         width: 494px;
+        display: none;
         /* filter: blur(20px);         */
         /* border: 2px solid rgb(55, 0, 255); */
 

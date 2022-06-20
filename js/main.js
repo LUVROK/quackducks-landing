@@ -41,6 +41,11 @@ window.onload = function () {
         document.querySelector("#team_img_4").classList.add('team_png_4');
         document.querySelector("#team_img_5").classList.add('team_png_5');
 
+        document.querySelector(".nav_background__left").classList.add('team_png_4');
+        document.querySelector(".nav_background__center").classList.add('team_png_4');
+        document.querySelector(".nav_background__right").classList.add('team_png_4');
+        document.querySelector(".nav_background__top").classList.add('team_png_4');
+
 
         //ОТКЛЮЧИТЬ ЭТО ЧТОБЫ НА ТЕЛЕФОНЕ НЕ ОТКЛЮЧАЛСЯ СТИЛЬ С ЗЕРНИСТОСТЬЮ (тут пока ничего нет, но при желании и лишних 30 минут можно сделать)
 
