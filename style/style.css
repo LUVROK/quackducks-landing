@@ -584,7 +584,7 @@ img.welcome_box__arrow{
 .content_block__socIcons div a{
     height: 35px;
     width: 35px;
-    /* border: 1px solid rgba(255, 255, 255, 0.7); */
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 50px;
     display: flex;
     align-items: center;
