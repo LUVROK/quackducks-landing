@@ -141,7 +141,7 @@ a.social_icons__discord{
         left: -8%;
         top: 80%;
         width: 533px;
-        filter: blur(70px);
+        /* filter: blur(70px); */
     }
     .nav_background__center{
         left: -5%;
@@ -199,18 +199,17 @@ a.social_icons__discord{
         left: -3%;
         top: -37%;
         width:390.4px;
-        display: none;
+        /* display: none; */
         /* filter: blur(0px); */
         /* border: 2px solid rgb(72, 255, 0); */
         height: 706px;
-        display: none;
     }
     .nav_background__right{
         position: relative;
         left: 19%;
         top: -150%;
         width: 494px;
-        display: none;
+        /* display: none; */
         /* filter: blur(20px);         */
         /* border: 2px solid rgb(55, 0, 255); */
 
