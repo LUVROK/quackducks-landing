@@ -151,7 +151,7 @@ window.onload = function () {
     window.addEventListener('scroll', function () {
         let hash = $(location).attr('hash');
 
-        if ($(document).scrollTop() >= center1 && $(document).scrollTop() < center2) {
+        if ($(document).scrollTop() >= center1 && $(document).scrollTop() < top2 + 100) { //center2
             nav.style.background = "#5F5F5F";
             nav.style.transition = '.2s';
             nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
@@ -163,8 +163,17 @@ window.onload = function () {
                 $('body').removeClass('faq-bg');
             }
         }
-        else if ($(document).scrollTop() > center2 && $(document).scrollTop() <= (top3-110)) {
-            nav.style.background = "none";
+        else if ($(document).scrollTop() > top2 && $(document).scrollTop() <= (top3)) {
+
+            if ($(document).scrollTop() > bottom2 - 100) {
+                nav.style.background = "none";
+            }
+            else {
+                nav.style.background = "#5F5F5F";
+                nav.style.transition = '.2s';
+                nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';            
+            }
+
             // blackWallpaper.style.display = "none";
             if ($('body').hasClass('faq-bg')) {
                 return
@@ -173,8 +182,7 @@ window.onload = function () {
                 $('body').removeClass('second-bg');
             }
         }
-        else if ($(document).scrollTop() >= (top3-100))
-        {
+        else if ($(document).scrollTop() >= (top3)) {
             nav.style.background = "#5F5F5F";
             nav.style.transition = '.2s';
             nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';

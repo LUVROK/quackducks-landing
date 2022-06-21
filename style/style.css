@@ -662,7 +662,7 @@ img.welcome_box__arrow{
     background-position-x: 35%;
     position: inherit;
     z-index: 1;
-    background-color: #000;
+    /* background-color: #000; */
     display: flex;
 } 
 .ducks-gallery .ducks-gallery-container{
