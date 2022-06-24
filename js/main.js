@@ -375,6 +375,15 @@ function caruselBackNull() {
     else if (carusel == 2) {
         caruselBack = 2;
     }
+    else if (carusel == 3) {
+        caruselBack = 3;
+    }
+    else if (carusel == 4) {
+        caruselBack = 4;
+    }
+    else if (carusel == 5) {
+        caruselBack = 5;
+    }
 };
 let carusel = 0;
 let caruselBack = 0;
