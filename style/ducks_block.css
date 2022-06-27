@@ -9,7 +9,7 @@
     /* background-image: url(../img/welcome-bg.png);  */
     background: url(../img/welcome-bg.png) no-repeat, radial-gradient(circle, #A80606 0,7%, #000000 22%); /*РАЗБЛОК*/ 
     /* background: radial-gradient(circle, rgba(168,6,6,1) 1%, rgba(0,0,0,1) 27%); */
-
+    overflow-x: hidden;
     background-position: 70px -70px;
     display: flex;
     justify-content: center;
@@ -123,6 +123,31 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
     left: 80%;
     top: 15%;
 }
+.ducks_block_one.four{
+    position: absolute;
+    left: 110%;
+    top: 15%;
+    /* display: none; */
+}
+.ducks_block_one_img_four{
+    position: absolute;
+}
+.ducks_block_one.five{
+    position: absolute;
+    left: -30%;
+    top: 15%;
+    /* display: none; */
+}
+.ducks_block_one.six{
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    z-index: -1;
+    /* display: none; */
+}
+.ducks_block_one_display_none {
+
+}
 .ducks_block_one.active{
     border-radius: 260px;
     height: 510px;
@@ -164,10 +189,10 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
         height: 469px;
     }
     .ducks_block_one.two{
-        left: 33%;
+        left: 40%;
     }
     .ducks_block_one.three{
-        left: 77%;
+        left: 80%;
     }
     .ducks_block_one{
         height: 276px;
@@ -209,6 +234,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
 @media screen and (max-width: 880px) {
     .block_factions {
         width: 100%;
+        max-width: 100%;
         overflow: hidden;
         background: url(../img/welcome-bg.png) no-repeat, radial-gradient(circle, #A80606 1%, #000000 27%); /*РАЗБЛОК*/ 
     }
@@ -271,8 +297,8 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
     }
     .ducks_block_one.active{
 
-        height: 510px;
-        width: 370px;
+        height: 469px;
+        width: 300px;
         padding: 2px;
         top: 21%;
         z-index: 10;
