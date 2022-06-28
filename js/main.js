@@ -7,7 +7,7 @@ window.onload = function () {
         document.body.classList.remove('loaded_hiding');
         boxDucks.classList.add('active');
         boxTitle.classList.add('active');
-    }, 11500);
+    }, 500);
 
     window.scrollTo(0, 0);
 
