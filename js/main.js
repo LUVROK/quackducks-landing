@@ -434,17 +434,17 @@ function ducksImgSliderBack() {
     //5 4 !0-3 1 2
 
     if (caruselBack == 0) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[2].classList.add('active');
         contentTextBox[2].classList.add('active');
         ducksBlock[2].classList.add('active');
 
-        ducksBlock[4].style.display = "none";
-        ducksBlock[5].style.display = "flex";
+        ducksBlock[4].style.transition = "none";
 
         ducksBlock[0].style.left = numberFour;
         ducksBlock[1].style.left = numberZero;
@@ -455,17 +455,17 @@ function ducksImgSliderBack() {
         caruselBack++;
     }
     else if (caruselBack == 1) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[3].classList.add('active');
         contentTextBox[3].classList.add('active');
         ducksBlock[3].classList.add('active');
 
-        ducksBlock[4].style.display = "flex";
-        ducksBlock[0].style.display = "none";
+        ducksBlock[0].style.transition = "none";
 
         ducksBlock[0].style.left = numberFive;
         ducksBlock[1].style.left = numberFour;
@@ -476,17 +476,17 @@ function ducksImgSliderBack() {
         caruselBack++;
     }
     else if (caruselBack == 2) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[5].classList.add('active');
         contentTextBox[5].classList.add('active');
         ducksBlock[5].classList.add('active');
 
-        ducksBlock[0].style.display = "flex";
-        ducksBlock[1].style.display = "none";
+        ducksBlock[1].style.transition = "none";
 
         ducksBlock[0].style.left = numberThree;
         ducksBlock[1].style.left = numberFive;
@@ -498,10 +498,11 @@ function ducksImgSliderBack() {
         caruselBack++;
     }
     else if (caruselBack == 3) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[5].classList.remove('active');
         contentTextBox[5].classList.remove('active');
@@ -510,8 +511,7 @@ function ducksImgSliderBack() {
         contentTextBox[4].classList.add('active');
         ducksBlock[4].classList.add('active');
 
-        ducksBlock[1].style.display = "flex";
-        ducksBlock[2].style.display = "none";
+        ducksBlock[2].style.transition = "none";
 
         ducksBlock[0].style.left = numberTwo;
         ducksBlock[1].style.left = numberThree;
@@ -523,17 +523,17 @@ function ducksImgSliderBack() {
         caruselBack++;
     }
     else if (caruselBack == 4) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[0].classList.add('active');
         contentTextBox[0].classList.add('active');
         ducksBlock[0].classList.add('active');
 
-        ducksBlock[2].style.display = "flex";
-        ducksBlock[3].style.display = "none";
+        ducksBlock[3].style.transition = "none";
 
         ducksBlock[0].style.left = numberOne;
         ducksBlock[1].style.left = numberTwo;
@@ -545,17 +545,17 @@ function ducksImgSliderBack() {
         caruselBack++;
     }
     else if (caruselBack == 5) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[1].classList.add('active');
         contentTextBox[1].classList.add('active');
         ducksBlock[1].classList.add('active');
 
-        ducksBlock[3].style.display = "flex";
-        ducksBlock[5].style.display = "none";
+        ducksBlock[5].style.transition = "none";
 
         ducksBlock[0].style.left = numberZero;
         ducksBlock[1].style.left = numberOne;
@@ -620,25 +620,32 @@ function ducksImgSliderNext() {
     //2 3 !5 4 0 1
     //3 5 !4 0 1 2
     //5 4 !0 1 2 3
+    // ducksBlock[0].style.display = "flex";
+    // ducksBlock[1].style.display = "flex";
+    // ducksBlock[2].style.display = "flex";
+    // ducksBlock[3].style.display = "flex";
+    // ducksBlock[4].style.display = "flex";
+    // ducksBlock[5].style.display = "flex";
 
     if (carusel == 0) {
         for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[0].classList.add('active');
         contentTextBox[0].classList.add('active');
         ducksBlock[0].classList.add('active');
-        // ducksBlock[5].style.display = "flex";
-        // ducksBlock[5].style.display = "none";
-
+        ducksBlock[5].style.transition = "none";
+        
         ducksBlock[0].style.left = numberOne;
         ducksBlock[1].style.left = numberTwo;
         ducksBlock[2].style.left = numberThree;
         ducksBlock[3].style.left = numberFive;
         ducksBlock[4].style.left = numberZero;
         ducksBlock[5].style.left = numberFour;
+
         carusel++;
     }
     //4 0 !1 2 3 5 -- места изначальные
@@ -652,11 +659,12 @@ function ducksImgSliderNext() {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[4].classList.add('active');
         contentTextBox[4].classList.add('active');
         ducksBlock[4].classList.add('active');
-        // ducksBlock[5].style.display = "flex";
+        ducksBlock[3].style.transition = "none";
 
         ducksBlock[0].style.left = numberTwo;
         ducksBlock[1].style.left = numberThree;
@@ -672,10 +680,12 @@ function ducksImgSliderNext() {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[5].classList.add('active');
         contentTextBox[5].classList.add('active');
         ducksBlock[5].classList.add('active');
+        ducksBlock[2].style.transition = "none";
 
         ducksBlock[0].style.left = numberThree;
         ducksBlock[1].style.left = numberFive;
@@ -690,11 +700,12 @@ function ducksImgSliderNext() {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[3].classList.add('active');
         contentTextBox[3].classList.add('active');
         ducksBlock[3].classList.add('active');
-
+        ducksBlock[1].style.transition = "none";
 
         ducksBlock[0].style.left = numberFive;
         ducksBlock[1].style.left = numberFour;
@@ -709,11 +720,12 @@ function ducksImgSliderNext() {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[2].classList.add('active');
         contentTextBox[2].classList.add('active');
         ducksBlock[2].classList.add('active');
-
+        ducksBlock[0].style.transition = "none";
 
         ducksBlock[0].style.left = numberFour;
         ducksBlock[1].style.left = numberZero;
@@ -735,11 +747,12 @@ function ducksImgSliderNext() {
             ducksImg[i].classList.remove('active');
             contentTextBox[i].classList.remove('active');
             ducksBlock[i].classList.remove('active');
+            ducksBlock[i].style.transition = "1.3s";
         }
         ducksImg[1].classList.add('active');
         contentTextBox[1].classList.add('active');
         ducksBlock[1].classList.add('active');
-
+        ducksBlock[4].style.transition = "none";
 
         ducksBlock[0].style.left = numberZero;
         ducksBlock[1].style.left = numberOne;
@@ -804,19 +817,19 @@ function caruselBackNull() {
         caruselBack = 0;
     }
     else if (carusel == 1) {
-        caruselBack = 2;
+        caruselBack = 5;
     }
     else if (carusel == 2) {
-        caruselBack = 2;
+        caruselBack = 5;
     }
     else if (carusel == 3) {
-        caruselBack = 2;
+        caruselBack = 5;
     }
     else if (carusel == 4) {
-        caruselBack = 2;
+        caruselBack = 5;
     }
     else if (carusel == 5) {
-        caruselBack = 2;
+        caruselBack = 5;
     }
 };
 
