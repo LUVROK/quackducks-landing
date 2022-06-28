@@ -143,6 +143,15 @@ window.onload = function () {
         });
     }
 
+    var back_link = document.getElementById('back-link');
+
+    back_link.setAttribute('href', document.referrer);
+
+    back_link.onclick = function () {
+        history.back();
+        return false;
+    }
+
     // console.log("block_factions top1 - " + top1)
     // console.log("block_factions bottom1 - " + bottom1)
     // console.log("block_factions center1 - " + center1)
@@ -638,7 +647,7 @@ function ducksImgSliderNext() {
         contentTextBox[0].classList.add('active');
         ducksBlock[0].classList.add('active');
         ducksBlock[5].style.transition = "none";
-        
+
         ducksBlock[0].style.left = numberOne;
         ducksBlock[1].style.left = numberTwo;
         ducksBlock[2].style.left = numberThree;
