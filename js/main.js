@@ -23,7 +23,7 @@ window.onload = function () {
     let bottom1 = position1.bottom;
     let top1 = position1.top;
     let center1 = ((bottom1 - top1) / 2) + top1;
-    console.log(top1)
+    // console.log(top1)
     pagepiling.style.minHeight = `${top1}px`;
     let position2 = ducks_gallery.getBoundingClientRect();
     let bottom2 = position2.bottom;
@@ -32,7 +32,7 @@ window.onload = function () {
 
     let position3 = team.getBoundingClientRect();
     let top3 = position3.top;
-    console.log('top3 - ', position3.top);
+    // console.log('top3 - ', position3.top);
 
 
 
@@ -101,7 +101,7 @@ window.onload = function () {
         numberFive = 160 + "%";
 
         let elem = document.querySelector("#mobileTeam");
-        console.log(elem);
+        // console.log(elem);
         elem.remove();
         document.querySelector('#section12').innerHTML = '<div class="team-container block-scroll" data-section-name="TheTeam" id="WebTeam"><div class="team__title">THE TEAM</div><div class="team-all disactiveTeam"><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">ALEX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">RUZILl</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team3.png" alt=""></div><div class="team-all-one__name">MARIA</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team1.png" alt=""></div><div class="team-all-one__name">NUREX</div></div><div class="team-all-one"><div class="team-all-one__img"><img src="img/team2.png" alt=""></div><div class="team-all-one__name">TIM</div></div> </div></div></div>';
         // document.querySelector("#section13").classList.add('activeTeam');
@@ -136,21 +136,21 @@ window.onload = function () {
                     // blackWallpaper.style.display = "flex";
                     // nav.style.backgroundColor = 'rgba(55, 55, 55, 0.63)';
                 }
-                console.log($(document).scrollTop())
+                // console.log($(document).scrollTop())
             },
             afterResize: function () { },
             afterRender: function () { }
         });
     }
 
-    var back_link = document.getElementById('back-link');
+    // var back_link = document.getElementById('back-link');
 
-    back_link.setAttribute('href', document.referrer);
+    // back_link.setAttribute('href', document.referrer);
 
-    back_link.onclick = function () {
-        history.back();
-        return false;
-    }
+    // back_link.onclick = function () {
+    //     history.back();
+    //     return false;
+    // }
 
     // console.log("block_factions top1 - " + top1)
     // console.log("block_factions bottom1 - " + bottom1)
@@ -386,6 +386,7 @@ let permissionSmall = 880;
 let newNumber = 0;
 let newNumberOne = 0;
 // ducksImgBack.onclick = ducksImgSliderBack ();
+//СПРАВА
 ducksImgNext.addEventListener("click", ducksImgSliderBack);
 function ducksImgSliderBack() {
     newNumberNull();
@@ -576,10 +577,11 @@ function ducksImgSliderBack() {
         caruselBack = 0;
     }
     caruselkNull();
-
+    console.log("carusel1 - " + carusel)
+    console.log("caruselBack1 - " + caruselBack)
 }
 
-
+//СЛЕВА
 ducksImgBack.addEventListener("click", ducksImgSliderNext);
 // ducksImgNext.onclick = ducksImgSliderNext ();
 function ducksImgSliderNext() {
@@ -775,49 +777,50 @@ function ducksImgSliderNext() {
     // numberOne = 40 +"%";
     // numberTwo = 80 +"%";
     caruselBackNull();
-
+    console.log("carusel2 - " + carusel)
+    console.log("caruselBack2 - " + caruselBack)
 }
 
 
 function newNumberNull() {
     if (newNumber == 0) {
-        newNumberOne = 5;
-    }
-    else if (newNumber == 1) {
-        newNumberOne = 4;
-    }
-    else if (newNumber == 2) {
-        newNumberOne = 3;
-    }
-    else if (newNumber == 3) {
-        newNumberOne = 2;
-    }
-    else if (newNumber == 4) {
         newNumberOne = 1;
     }
+    else if (newNumber == 1) {
+        newNumberOne = 5;
+    }
+    else if (newNumber == 2) {
+        newNumberOne = 4;
+    }
+    else if (newNumber == 3) {
+        newNumberOne = 3;
+    }
+    else if (newNumber == 4) {
+        newNumberOne = 2;
+    }
     else if (newNumber == 5) {
-        newNumberOne = 0;
+        newNumberOne = 1;
     }
 };
 
 function newNumberOneNull() {
     if (newNumberOne == 0) {
-        newNumber = 5;
+        newNumber = 0;
     }
     else if (newNumberOne == 1) {
-        newNumber = 4;
+        newNumber = 5;
     }
     else if (newNumberOne == 2) {
-        newNumber = 3;
+        newNumber = 4;
     }
     else if (newNumberOne == 3) {
-        newNumber = 2;
+        newNumber = 3;
     }
     else if (newNumberOne == 4) {
-        newNumber = 1;
+        newNumber = 2;
     }
     else if (newNumberOne == 5) {
-        newNumber = 0;
+        newNumber = 1;
     }
 };
 
@@ -829,34 +832,34 @@ function caruselBackNull() {
         caruselBack = 5;
     }
     else if (carusel == 2) {
-        caruselBack = 5;
+        caruselBack = 4;
     }
     else if (carusel == 3) {
-        caruselBack = 5;
+        caruselBack = 3;
     }
     else if (carusel == 4) {
-        caruselBack = 5;
+        caruselBack = 2;
     }
     else if (carusel == 5) {
-        caruselBack = 5;
+        caruselBack = 1;
     }
 };
 
 function caruselkNull() {
     if (caruselBack == 0) {
-        carusel = 1;
+        carusel = 0;
     }
     else if (caruselBack == 1) {
-        carusel = 2;
+        carusel = 5;
     }
     else if (caruselBack == 2) {
-        carusel = 3;
-    }
-    else if (caruselBack == 3) {
         carusel = 4;
     }
+    else if (caruselBack == 3) {
+        carusel = 3;
+    }
     else if (caruselBack == 4) {
-        carusel = 5;
+        carusel = 2;
     }
     else if (caruselBack == 5) {
         carusel = 1;
@@ -1094,7 +1097,7 @@ swiper_right.addEventListener("click", e => {
 function sliderUp() {
     faqDusksSection.classList.add("active");
     smallBoxImg.style.zIndex = "1";
-    console.log("yes");
+    // console.log("yes");
     faqDusksSmallBox.classList.add("active");
 }
 
@@ -1205,24 +1208,24 @@ const black_wallpaper = document.querySelector(".black_wallpaper");
 
 $('#Move_welcome-block').on("click", function () {
     $.scrollify.move("#block_factions");
-    console.log("Move_Section3");
+    // console.log("Move_Section3");
 
 });
 $('.Move_Section4').on("click", function () {
     $.scrollify.move("#duck1");
-    console.log("#section4");
+    // console.log("#section4");
 });
 $('.Move_Black_wallpaper').on("click", function () {
     $.scrollify.move("#welcome-block");
-    console.log("Move_Black_wallpaper");
+    // console.log("Move_Black_wallpaper");
 });
 $('.Move_Section10').on("click", function () {
     $.scrollify.move("#faq");
-    console.log("Move_Section10");
+    // console.log("Move_Section10");
 });
 $('.Move_Section12').on("click", function () {
     $.scrollify.move("#team_title");
-    console.log("Move_Section12");
+    // console.log("Move_Section12");
 });
 
 // $('li').click(function() {
