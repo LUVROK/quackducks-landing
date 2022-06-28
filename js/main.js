@@ -40,9 +40,9 @@ window.onload = function () {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberThree = 120 + "%";
+        numberFour = -40 + "%";
+        numberFive = 160 + "%";
 
         document.querySelector("#team_img_1").classList.add('team_png_1');
         document.querySelector("#team_img_2").classList.add('team_png_2');
@@ -96,9 +96,9 @@ window.onload = function () {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberThree = 120 + "%";
+        numberFour = -40 + "%";
+        numberFive = 160 + "%";
 
         let elem = document.querySelector("#mobileTeam");
         console.log(elem);
@@ -390,33 +390,33 @@ function ducksImgSliderBack() {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberThree = 120 + "%";
+        numberFour = -40 + "%";
+        numberFive = 160 + "%";
     }
     else if (window.outerWidth <= permissionLarge && window.outerWidth >= permissionMedium) {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberThree = 120 + "%";
+        numberFour = -40 + "%";
+        numberFive = 160 + "%";
     }
     else if (window.outerWidth < permissionMedium && window.outerWidth > permissionSmall) {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberThree = 120 + "%";
+        numberFour = -40 + "%";
+        numberFive = 160 + "%";
     }
     else if (window.outerWidth <= permissionSmall) {
-        numberZero = -12 + "%";
-        numberOne = 58 + "%";
-        numberTwo = 128 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberZero = -30 + "%";
+        numberOne = 50 + "%";
+        numberTwo = 130 + "%";
+        numberThree = 200 + "%";
+        numberFour = -120 + "%";
+        numberFive = 280 + "%";
     }
     newNumber++;
     //5 1 !2-6 3 4
@@ -432,6 +432,7 @@ function ducksImgSliderBack() {
     //2 3 !5-1 4 0
     //3 5 !4-2 0 1
     //5 4 !0-3 1 2
+
     if (caruselBack == 0) {
         for (let i = 0; i < 5; i++) {
             ducksImg[i].classList.remove('active');
@@ -441,10 +442,9 @@ function ducksImgSliderBack() {
         ducksImg[2].classList.add('active');
         contentTextBox[2].classList.add('active');
         ducksBlock[2].classList.add('active');
-        ducksBlock[0].style.zIndex = "-1";
-        ducksBlock[2].style.zIndex = "1";
-        ducksBlock[4].style.zIndex = "-2";
-        ducksBlock[5].style.zIndex = "-1";
+
+        ducksBlock[4].style.display = "none";
+        ducksBlock[5].style.display = "flex";
 
         ducksBlock[0].style.left = numberFour;
         ducksBlock[1].style.left = numberZero;
@@ -463,8 +463,9 @@ function ducksImgSliderBack() {
         ducksImg[3].classList.add('active');
         contentTextBox[3].classList.add('active');
         ducksBlock[3].classList.add('active');
-        ducksBlock[1].style.zIndex = "-1";
-        ducksBlock[0].style.zIndex = "-1";
+
+        ducksBlock[4].style.display = "flex";
+        ducksBlock[0].style.display = "none";
 
         ducksBlock[0].style.left = numberFive;
         ducksBlock[1].style.left = numberFour;
@@ -483,8 +484,9 @@ function ducksImgSliderBack() {
         ducksImg[5].classList.add('active');
         contentTextBox[5].classList.add('active');
         ducksBlock[5].classList.add('active');
-        ducksBlock[4].style.zIndex = "1";
-        ducksBlock[2].style.zIndex = "-1";
+
+        ducksBlock[0].style.display = "flex";
+        ducksBlock[1].style.display = "none";
 
         ducksBlock[0].style.left = numberThree;
         ducksBlock[1].style.left = numberFive;
@@ -507,8 +509,9 @@ function ducksImgSliderBack() {
         ducksImg[4].classList.add('active');
         contentTextBox[4].classList.add('active');
         ducksBlock[4].classList.add('active');
-        ducksBlock[2].style.zIndex = "-1";
-        ducksBlock[0].style.zIndex = "1";
+
+        ducksBlock[1].style.display = "flex";
+        ducksBlock[2].style.display = "none";
 
         ducksBlock[0].style.left = numberTwo;
         ducksBlock[1].style.left = numberThree;
@@ -528,9 +531,9 @@ function ducksImgSliderBack() {
         ducksImg[0].classList.add('active');
         contentTextBox[0].classList.add('active');
         ducksBlock[0].classList.add('active');
-        ducksBlock[2].style.zIndex = "-1";
-        ducksBlock[1].style.zIndex = "1";
-        ducksBlock[5].style.zIndex = "1";
+
+        ducksBlock[2].style.display = "flex";
+        ducksBlock[3].style.display = "none";
 
         ducksBlock[0].style.left = numberOne;
         ducksBlock[1].style.left = numberTwo;
@@ -538,12 +541,6 @@ function ducksImgSliderBack() {
         ducksBlock[3].style.left = numberFive;
         ducksBlock[4].style.left = numberZero;
         ducksBlock[5].style.left = numberFour;
-        //4 0 !1-5 2 3 -- места изначальные
-        //0 1 !2-4 3 5
-        //1 2 !3-0 5 4 
-        //2 3 !5-1 4 0 
-        //3 5 !4-2 0 1 
-        //5 4 !0-3 1 2 !
 
         caruselBack++;
     }
@@ -556,9 +553,9 @@ function ducksImgSliderBack() {
         ducksImg[1].classList.add('active');
         contentTextBox[1].classList.add('active');
         ducksBlock[1].classList.add('active');
-        ducksBlock[2].style.zIndex = "1";
-        ducksBlock[1].style.zIndex = "1";
-        ducksBlock[5].style.zIndex = "-2";
+
+        ducksBlock[3].style.display = "flex";
+        ducksBlock[5].style.display = "none";
 
         ducksBlock[0].style.left = numberZero;
         ducksBlock[1].style.left = numberOne;
@@ -567,17 +564,8 @@ function ducksImgSliderBack() {
         ducksBlock[4].style.left = numberFour;
         ducksBlock[5].style.left = numberFive;
 
-        //4 0 !1-5 2 3 -- места изначальные
-        //0 1 !2-4 3 5
-        //1 2 !3-0 5 4 
-        //2 3 !5-1 4 0 
-        //3 5 !4-2 0 1 
-        //5 4 !0-3 1 2 !
         caruselBack = 0;
     }
-    // numberZero = 0 +"%";
-    // numberOne = 40 +"%";
-    // numberTwo = 80 +"%";
     caruselkNull();
 
 }
@@ -587,47 +575,51 @@ ducksImgBack.addEventListener("click", ducksImgSliderNext);
 // ducksImgNext.onclick = ducksImgSliderNext ();
 function ducksImgSliderNext() {
     newNumberOneNull();
+    ducksImgBack.style.display = "none";
     ducksImgNext.style.display = "none";
-    setTimeout(function () { ducksImgNext.style.display = "flex"; }, 1000);
+    setTimeout(function () {
+        ducksImgBack.style.display = "flex";
+        ducksImgNext.style.display = "flex";
+    }, 1000);
     if (window.outerWidth > permissionLarge && window.outerWidth < permissionBig) {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberThree = 120 + "%";
+        numberFour = -40 + "%";
+        numberFive = 160 + "%";
     }
     else if (window.outerWidth <= permissionLarge && window.outerWidth >= permissionMedium) {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberThree = 120 + "%";
+        numberFour = -40 + "%";
+        numberFive = 160 + "%";
     }
     else if (window.outerWidth < permissionMedium && window.outerWidth > permissionSmall) {
         numberZero = 0 + "%";
         numberOne = 40 + "%";
         numberTwo = 80 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberThree = 120 + "%";
+        numberFour = -40 + "%";
+        numberFive = 160 + "%";
     }
     else if (window.outerWidth <= permissionSmall) {
-        numberZero = -12 + "%";
-        numberOne = 58 + "%";
-        numberTwo = 128 + "%";
-        numberThree = 110 + "%";
-        numberFour = -30 + "%";
-        numberFive = 40 + "%";
+        numberZero = -30 + "%";
+        numberOne = 50 + "%";
+        numberTwo = 130 + "%";
+        numberThree = 200 + "%";
+        numberFour = -120 + "%";
+        numberFive = 280 + "%";
     }
     newNumber++;
-    //5 1 !2-6 3 4
-    //1 2 !3-5 4 6
-    //2 3 !4-1 6 1
-    //5 1 !2-6 3 4
-    //5 1 !2-6 3 4
-    //5 1 !2-6 3 4
+    //4 0 !1 2 3 5 -- места изначальные
+    //5 4 !0 1 2 3
+    //1 2 !3 5 4 0
+    //2 3 !5 4 0 1
+    //3 5 !4 0 1 2
+    //5 4 !0 1 2 3
 
     if (carusel == 0) {
         for (let i = 0; i < 6; i++) {
@@ -638,11 +630,8 @@ function ducksImgSliderNext() {
         ducksImg[0].classList.add('active');
         contentTextBox[0].classList.add('active');
         ducksBlock[0].classList.add('active');
-        // ducksBlock[2].style.zIndex = "-1";
-        // ducksBlock[0].style.zIndex = "1";
-        // ducksBlock[3].style.zIndex = "-2";
-        ducksBlock[4].style.zIndex = "-1";
-        ducksBlock[5].style.zIndex = "-1";
+        // ducksBlock[5].style.display = "flex";
+        // ducksBlock[5].style.display = "none";
 
         ducksBlock[0].style.left = numberOne;
         ducksBlock[1].style.left = numberTwo;
@@ -652,6 +641,12 @@ function ducksImgSliderNext() {
         ducksBlock[5].style.left = numberFour;
         carusel++;
     }
+    //4 0 !1 2 3 5 -- места изначальные
+    //5 4 !0 1 2 3
+    //3 5 !4 0 1 2
+    //2 3 !5 4 0 1
+    //1 2 !3 5 4 0
+    //0 1 !2 3 5 4
     else if (carusel == 1) {
         for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
@@ -661,9 +656,7 @@ function ducksImgSliderNext() {
         ducksImg[4].classList.add('active');
         contentTextBox[4].classList.add('active');
         ducksBlock[4].classList.add('active');
-        // ducksBlock[1].style.zIndex = "1";
-        // ducksBlock[2].style.zIndex = "1";
-        // ducksBlock[2].style.zIndex = "-1";
+        // ducksBlock[5].style.display = "flex";
 
         ducksBlock[0].style.left = numberTwo;
         ducksBlock[1].style.left = numberThree;
@@ -671,6 +664,7 @@ function ducksImgSliderNext() {
         ducksBlock[3].style.left = numberFour;
         ducksBlock[4].style.left = numberOne;
         ducksBlock[5].style.left = numberZero;
+
         carusel++;
     }
     else if (carusel == 2) {
@@ -682,9 +676,6 @@ function ducksImgSliderNext() {
         ducksImg[5].classList.add('active');
         contentTextBox[5].classList.add('active');
         ducksBlock[5].classList.add('active');
-        ducksBlock[0].style.zIndex = "1";
-        ducksBlock[1].style.zIndex = "-1";
-        ducksBlock[3].style.zIndex = "1";
 
         ducksBlock[0].style.left = numberThree;
         ducksBlock[1].style.left = numberFive;
@@ -703,9 +694,7 @@ function ducksImgSliderNext() {
         ducksImg[3].classList.add('active');
         contentTextBox[3].classList.add('active');
         ducksBlock[3].classList.add('active');
-        ducksBlock[0].style.zIndex = "-1";
-        ducksBlock[1].style.zIndex = "1";
-        ducksBlock[3].style.zIndex = "1";
+
 
         ducksBlock[0].style.left = numberFive;
         ducksBlock[1].style.left = numberFour;
@@ -724,10 +713,7 @@ function ducksImgSliderNext() {
         ducksImg[2].classList.add('active');
         contentTextBox[2].classList.add('active');
         ducksBlock[2].classList.add('active');
-        ducksBlock[0].style.zIndex = "-1";
-        ducksBlock[1].style.zIndex = "1";
-        ducksBlock[2].style.zIndex = "1";
-        ducksBlock[4].style.zIndex = "-1";
+
 
         ducksBlock[0].style.left = numberFour;
         ducksBlock[1].style.left = numberZero;
@@ -753,8 +739,7 @@ function ducksImgSliderNext() {
         ducksImg[1].classList.add('active');
         contentTextBox[1].classList.add('active');
         ducksBlock[1].classList.add('active');
-        ducksBlock[0].style.zIndex = "-1";
-        ducksBlock[1].style.zIndex = "1";
+
 
         ducksBlock[0].style.left = numberZero;
         ducksBlock[1].style.left = numberOne;
