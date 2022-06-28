@@ -271,8 +271,8 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
         /* border: 2px solid red; */
         width: 25%;
         height: 100%;
-        left: 170px;
-        top: 0px;
+        left: 270px;
+        top: 20px;
         cursor: pointer;
         z-index: 100;
         
