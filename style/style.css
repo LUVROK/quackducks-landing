@@ -560,7 +560,7 @@ img.welcome_box__arrow{
     height: 430px;
     position: absolute;
     left: 2%;
-    bottom: -30%;
+    bottom: -35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
