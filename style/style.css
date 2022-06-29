@@ -738,11 +738,6 @@ img.welcome_box__arrow{
 .ducks-gallery .ducks-gallery-all{
     display: flex;
     flex-wrap: wrap;
-    -webkit-filter: blur(100px);
-    -moz-filter: blur(100px);
-    -o-filter: blur(100px);
-    -ms-filter: blur(100px);
-    filter: blur(40px);
 }
 .ducks-gallery .ducks-gallery-img{
     height: auto;
