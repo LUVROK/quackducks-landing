@@ -9,7 +9,7 @@
     /* background-image: url(../img/welcome-bg.png);  */
     background: url(../img/welcome-bg.png) no-repeat, radial-gradient(circle, #A80606 0,7%, #000000 22%);
     /* background: radial-gradient(circle, rgba(168,6,6,1) 1%, rgba(0,0,0,1) 27%); */
-    overflow-x: hidden;
+    overflow: hidden;
     background-position: 70px -70px;
     display: flex;
     justify-content: center;
