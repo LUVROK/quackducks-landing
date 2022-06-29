@@ -745,9 +745,10 @@ img.welcome_box__arrow{
     margin: 0;
     padding: 0;
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);    
+    background-color: rgba(255, 255, 255, 0.09); 
     color: white;
-    font-size: 64px;
+    font-size: 92px;
     font-family: 'TrovasRegular-rgGOy';  
 
 }
