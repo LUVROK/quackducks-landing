@@ -190,8 +190,6 @@ body.second-bg .box_one{
         font-weight: 400;
         line-height: 48px;
     }
-    /* сверху бесполезный стиль */
-
 }
 @media only screen and (max-width: 990px) {
     .black_wallpaper{

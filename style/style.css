@@ -348,7 +348,6 @@ a.social_icons__discord{
         left: -200%;
     }
 }
-/* белая шумь */
 .grain {
     width: 100%;
     height: 110%;
@@ -665,13 +664,11 @@ img.welcome_box__arrow{
     /*background-position-y: 200px;*/
     /*background-size: 480px;*/
 }
-/* хром, сафари */
 .all-ducks::-webkit-scrollbar { width: 0; }
 
 /* ie 10+ */
 .all-ducks { -ms-overflow-style: none; }
 
-/* фф (свойство больше не работает, других способов тоже нет)*/
 .all-ducks { overflow: -moz-scrollbars-none; }
 
 .all-ducks .all-ducks-block{
@@ -715,7 +712,7 @@ img.welcome_box__arrow{
 .ducks-gallery{
     height: 100vh;
     /* background-image: url("../img/gallery-bg.png"); */
-    background: url(../img/welcome-bg.png) no-repeat, url(../img/gallery-bg.png) no-repeat; /*РАЗБЛОК*/ 
+    background: url(../img/welcome-bg.png) no-repeat, url(../img/gallery-bg.png) no-repeat;
     background-size: 80%;
     background-position-x: 35%;
     position: inherit;
@@ -756,7 +753,6 @@ img.welcome_box__arrow{
     background-color: initial;
 }
 
-/* хром, сафари */
 .faq::-webkit-scrollbar { width: 0; }
 /* ie 10+ */
 .faq { 
@@ -771,7 +767,6 @@ img.welcome_box__arrow{
     /* background-color: #000; */
     /* display: flex; */
  }
-/* фф (свойство больше не работает, других способов тоже нет)*/
 .faq { overflow: -moz-scrollbars-none; }
 
  .faq-duck{
@@ -2049,7 +2044,6 @@ details[open] {
         bottom: 10px; */
         left: 0%;
         bottom: -130px;
-        /* display: none; РАЗБЛОК */
     }
     .content_body_textBox_one{
         display: none;

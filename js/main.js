@@ -1,4 +1,3 @@
-// прелоадер
 let numberZero, numberOne, numberTwo, numberThree, numberFour, numberFive;
 window.onload = function () {
     document.body.classList.add('loaded_hiding');
@@ -204,7 +203,6 @@ window.onload = function () {
 }
 
 
-//Можно использовать это событие при уменьшении размера экрана, если он как мобильный, то изменить блок the team, но у меня по каким то причинам не удается изменить поведения скролифая которое уже задано в начале
 // window.addEventListener('resize', start);
 // function start() {
 //     if (document.documentElement.clientWidth <= 920) {
@@ -293,7 +291,7 @@ let blackWallpaper = document.querySelector(".black_wallpaper");
 
 
 
-/*//настройки шума, тут покрутишь найдешь нужное.
+/*
 class Grain {
     constructor (el) {
       this.patternSize = 150;
@@ -386,7 +384,6 @@ let permissionSmall = 880;
 let newNumber = 0;
 let newNumberOne = 0;
 // ducksImgBack.onclick = ducksImgSliderBack ();
-//СПРАВА
 ducksImgNext.addEventListener("click", ducksImgSliderBack);
 function ducksImgSliderBack() {
     newNumberNull();
@@ -436,7 +433,7 @@ function ducksImgSliderBack() {
     //5 1 !2-6 3 4
     //5 1 !2-6 3 4
 
-    //4 0 !1-5 2 3 -- места изначальные
+    //4 0 !1-5 2 3 
     //0 1 !2-4 3 5
     //1 2 !3-0 5 4
     //2 3 !5-1 4 0
@@ -461,7 +458,7 @@ function ducksImgSliderBack() {
         ducksBlock[2].style.left = numberOne;
         ducksBlock[3].style.left = numberTwo;
         ducksBlock[4].style.left = numberFive;
-        ducksBlock[5].style.left = numberThree; //пятый на место 3
+        ducksBlock[5].style.left = numberThree;
         caruselBack++;
     }
     else if (caruselBack == 1) {
@@ -581,7 +578,6 @@ function ducksImgSliderBack() {
     console.log("caruselBack1 - " + caruselBack)
 }
 
-//СЛЕВА
 ducksImgBack.addEventListener("click", ducksImgSliderNext);
 // ducksImgNext.onclick = ducksImgSliderNext ();
 function ducksImgSliderNext() {
@@ -625,7 +621,7 @@ function ducksImgSliderNext() {
         numberFive = 280 + "%";
     }
     newNumber++;
-    //4 0 !1 2 3 5 -- места изначальные
+    //4 0 !1 2 3 5
     //5 4 !0 1 2 3
     //1 2 !3 5 4 0
     //2 3 !5 4 0 1
@@ -659,7 +655,7 @@ function ducksImgSliderNext() {
 
         carusel++;
     }
-    //4 0 !1 2 3 5 -- места изначальные
+    //4 0 !1 2 3 5 
     //5 4 !0 1 2 3
     //3 5 !4 0 1 2
     //2 3 !5 4 0 1
@@ -746,13 +742,13 @@ function ducksImgSliderNext() {
         ducksBlock[5].style.left = numberThree;
         carusel++;
     }
-    //4 0 !1-5 2 3 -- места изначальные
+    //4 0 !1-5 2 3
     //5 4 !0-3 1 2
     //3 5 !4-2 0 1 
     //2 3 !5-1 4 0 
     //1 2 !3-0 5 4 
     //0 1 !2-4 3 5 !
-    //пятый на место 3
+    //
     else if (carusel == 5) {
         for (let i = 0; i < 6; i++) {
             ducksImg[i].classList.remove('active');
@@ -868,10 +864,8 @@ function caruselkNull() {
 
 
 
-// Вешаем на прикосновение функцию handleTouchStart
 const tuchScreen = document.querySelector(".faction_content_body");
 tuchScreen.addEventListener('touchstart', handleTouchStart, false);
-// А на движение пальцем по экрану - handleTouchMove
 tuchScreen.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;
@@ -892,7 +886,6 @@ function handleTouchMove(evt) {
 
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
-    // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
     if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
         if (xDiff > 0) {
             /* left swipe */
@@ -1075,8 +1068,6 @@ swiper_right.addEventListener("click", e => {
 // const containerVisibility = document.querySelector(".box_all")
 // const containerControlScroll = document.querySelector(".block_factions")
 
-// console.log('Текущая прокрутка сверху: ' + window.pageYOffset);
-// alert( 'Текущая прокрутка слева: ' + window.pageXOffset );
 
 
 
@@ -1117,7 +1108,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// Просмотр фото галереии
 let imgSrc = $(".ducks-gallery-img").on('click', function (e) { imgSrc = e.target.src; openGalery() });
 let allImages = '';
 let imgNumber = 0;
