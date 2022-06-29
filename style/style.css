@@ -553,6 +553,8 @@ img.welcome_box__arrow{
     /* border: 2px solid gold; */
     cursor: pointer;
     z-index: 100;
+    outline: none;
+
 }
 .content_body_textBox{
     width: 876px;

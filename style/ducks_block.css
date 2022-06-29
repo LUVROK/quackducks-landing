@@ -15,6 +15,11 @@
     justify-content: center;
     align-items: center;
     color: rgba(255, 255, 255, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 /* body::before{
 content:"";
@@ -93,7 +98,8 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
     top: 0px;
     cursor: pointer;
     z-index: 100;
-    transform: translate(-170px,0px)
+    transform: translate(-170px,0px);
+    outline: none;
 }
 
 
@@ -107,6 +113,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYA
     justify-content: center;
     align-items: center;
     transition: width 1.3s, height 1.3s, background-color 1.3s, transform 1.3s, left 1.3s;
+    outline: none;
 }
 .ducks_block_one.one{
     position: absolute;
