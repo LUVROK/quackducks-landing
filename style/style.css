@@ -713,21 +713,36 @@ img.welcome_box__arrow{
     height: 100vh;
     /* background-image: url("../img/gallery-bg.png"); */
     background: url(../img/welcome-bg.png) no-repeat, url(../img/gallery-bg.png) no-repeat;
-    background-size: 80%;
+    background-size: 90%;
     background-position-x: 35%;
     position: inherit;
     z-index: 1;
     background-color: #000;
     display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 .ducks-gallery .ducks-gallery-container{
-    max-width: 1365px;
-    margin: 0 auto;
+    max-width: 1520px;
+    margin: 0 20px;
+    padding:50px;
     align-self: center;
+    /* background-image: url(../img/welcome-bg.png);  */
+    box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);
+    background-color: rgba(255, 255, 255, 0.2); 
+    background-image: url(../img/welcome-bg.png); 
+    background-repeat: repeat;
+    border-radius: 130px;
+    /* background-color: blue */
 }
 .ducks-gallery .ducks-gallery-all{
     display: flex;
     flex-wrap: wrap;
+    -webkit-filter: blur(100px);
+    -moz-filter: blur(100px);
+    -o-filter: blur(100px);
+    -ms-filter: blur(100px);
+    filter: blur(40px);
 }
 .ducks-gallery .ducks-gallery-img{
     height: auto;
@@ -740,6 +755,7 @@ img.welcome_box__arrow{
     object-fit: contain;
     width: 100%;
     height: 100%;
+    /* z-index: -1001; */
 }
 .faq{
     height: 100vh;
