@@ -576,7 +576,7 @@ img.welcome_box__arrow{
     width: 100%;
     height: 100%;
 }
-.textBox_name::after{
+/* .textBox_name::after{
     content: "";
     position: absolute;
     right: 250px;
@@ -584,7 +584,7 @@ img.welcome_box__arrow{
     width: 100px;
     height: 2px;
     background-color: white;
-}
+} */
 .textBox_name{
     height: 192px;
     width: 424px;
@@ -1123,9 +1123,9 @@ details[open] {
         left: 10%;
         bottom: -40px;
     }
-    .textBox_name::after{
+    /* .textBox_name::after{
         right: 50px;
-    }
+    } */
     .textBox_name{
         left: 310px;
         top: 746px;
@@ -1385,11 +1385,11 @@ details[open] {
         left: 1%;
         bottom: 0;
     }
-    .textBox_name::after{
+    /* .textBox_name::after{
         right: 100px;
         bottom: 220px;
         width: 82px;
-    }
+    } */
     .textBox_name{
         height: 120px;
         width: 275px;
@@ -1930,11 +1930,11 @@ details[open] {
         top: 8px;
         width: 51px;
     }
-    .welcome_text__button::after{
+    /* .welcome_text__button::after{
         right: 35px;
         top: -1px;
         height: 20px;
-    }
+    } */
     .welcome_text__box{
         height: 356px;
         max-width: 337px;
@@ -2092,11 +2092,11 @@ details[open] {
         width: 100%;
         height: 100%;
     }
-    .textBox_name::after{
+    /* .textBox_name::after{
         right: 0px;
         bottom: 150px;
         width: 63px;
-    }
+    } */
     .textBox_name{
         height: 166px;
         width: 215px;
@@ -2269,12 +2269,12 @@ details[open] {
     .textBox_name{
         font-size: 54px;
     }
-    .textBox_name::after {
-        right: 70px;
+    /* .textBox_name::after { */
+        /* right: 70px;
         bottom: 150px;
-        width: 63px;
+        width: 63px; */
         /* display: none; */
-    }
+    /* } */
 }
 @media screen and (max-width: 420px){
     .view-photo .view-photo-big {
