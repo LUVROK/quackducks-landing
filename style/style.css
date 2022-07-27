@@ -888,6 +888,7 @@ details > summary {
     font-family: 'Pelinka-ExtraLight', sans-serif;
     font-size: 20px;
     transition: height 1s ease;
+
 }
 
 details:not([open])
@@ -935,14 +936,12 @@ details[open] summary ~ * {
     color: #fff;
     /* transform: translateY(-50%); */
     font-size: 45px;
-}
-.faq details summary:focus{
-    border: 0;
-    list-style: none;
+    border-color: transparent transparent transparent #fff;
+
 }
 details summary::-webkit-details-marker {
     display:none;
-  }
+}
 
 .faq-details-bottom{
     padding-bottom: 20px
