@@ -927,8 +927,8 @@ details[open] summary ~ * {
     border-bottom: 1px solid #fff;
     text-transform: uppercase;
     transition: 2s;
-    list-style: none;
-    outline: 0;
+    /* list-style: none;
+    outline: 0; */
 
 }
 .faq details summary:before{
