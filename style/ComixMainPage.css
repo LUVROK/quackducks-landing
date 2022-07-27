@@ -1,0 +1,36 @@
+.white_background {
+    background: white;
+    /* height: 100vh; */
+    min-width: 100%;
+    min-height: 100%;
+    padding-top: 80px;
+}
+.white_background img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.nav_background_black {
+    background-color: rgba(55, 55, 55, 0.63);
+}
+
+@media only screen and (max-width: 990px) {
+    nav{
+        display: flex;
+    }
+    .white_background img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    nav{
+        display: flex;
+    }
+}
+
+body, html { 
+    width: 100%;
+    height: 100%;
+}

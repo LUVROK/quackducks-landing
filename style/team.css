@@ -1,0 +1,168 @@
+.displayDelete {
+    display: none;
+}
+.team{
+    position: inherit;
+    z-index: 1;
+    background: #FFF5F5;
+    height: 100vh;
+}
+.team_1 {
+    /* padding: 4% 0; */
+    height: 100vh;
+    position: relative;
+}
+.team_2 {
+    /* padding: 4% 0; */
+    height: 100vh;
+    position: relative;
+}
+.team_3 {
+    /* padding: 4% 0; */
+    height: 100vh;
+    position: relative;
+    /* margin-left: 0;
+    margin-right: auto; */
+}
+.team .team-container{
+    max-width: 1460px;
+    margin: 0 auto;
+}
+.team .team__title{
+    font-family: 'dance_partner', sans-serif;
+    font-size: 128px;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-top: 80px;
+}
+.team .team-all{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.team .team-all .team-all-one {
+    max-width: 191px;
+}
+.team .team-all .team-all-one .team-all-one__img{
+    /* position: absolute; */
+    /* bottom: 20px; */
+    margin-bottom: 10px;
+    height: 320px;
+    width: 100%;
+}
+.team_png_1 {
+    /* background-color: burlywood; */
+    /* float: left; */
+    position: absolute;
+    top: 0px;
+    left: -10px;
+}
+.team_png_2 {
+    /* background-color: burlywood; */
+    /* float: right; */
+    position: absolute;
+    bottom: 100px;
+    right: -20px;
+}
+.team_png_3 {
+    /* background-color: burlywood;  */
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    /* float: left; */
+}
+.team_png_4 {
+    /* background-color: burlywood; */
+    /* float: right; */
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+}
+.team_png_5 {
+    /* background-color: burlywood; */
+    /* position: absolute; */
+    top: 30px;
+    left: -10px;
+    /* float: left; */
+}
+.team_png_6 {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+}
+.team .team-all .team-all-one .team-all-one__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.team .team-all .team-all-one__name{
+    font-family: 'Pelinka-ExtraLight', sans-serif;
+    text-align: center;
+    font-size: 36px;
+}
+.activeTeam {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.circleicon {
+    border-radius: 50%;
+    padding: 5px;
+    border: 0.5px solid rgba(255, 255, 255, 0.7);
+    position: relative;
+    text-align: center;
+}
+.circleicon a {
+ width: 100%;
+ height: 100%;
+}
+
+.team-all-one__name_text {
+    font-family: 'Pelinka-ExtraLight', sans-serif;
+}
+
+
+@media screen and (max-width: 920px){
+    .team_1 {
+        width: 100%;
+    }
+    .team_2 {
+        width: 100%;
+    }
+    .team_3 {
+        width: 100%;
+    }
+    .team{
+        height: auto;
+    }
+    .team .team-container{
+        padding: 0 20px;
+    }
+    .team .team__title{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .team .team-all {
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 100vh; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+    }
+    .team .team-all .team-all-one:nth-of-type(odd){
+        align-self: start;
+    }
+    .team .team-all .team-all-one .team2_png {
+        
+    }
+}
+
+@media screen and (max-width: 550px){
+    .team .team__title{
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-height: 400px){
+
+}

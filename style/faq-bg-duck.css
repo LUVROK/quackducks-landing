@@ -1,0 +1,62 @@
+.faq-bg-duck{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    /* background: #000; */
+
+    /* background-color: #000;
+    background-image: url("../img/faq-bg.png");
+    background-position: absolute;
+    background-position-y:bottom;
+    background-size: auto 91%;
+    background-repeat:no-repeat;
+    background-color: #000; */
+    /* z-index: 1; */
+    /* background-position: center bottom; */
+    /* transform: translateX(-50%); */
+    
+}
+
+body.faq-bg .faq-bg-duck{
+    display: block;
+    /* background-color: initial;
+    background-color: #FFF3F3;
+    background-image: url(../img/all-duck1.png);
+    background-position: 100% 100%;
+    background-size: 480px;
+    background-repeat: no-repeat; */
+}
+.faq-bg-duck .faq-bg-duck-container{
+    position: relative;
+    height: 100%;
+    background: url(../img/welcome-bg.png) no-repeat, url(../img/gallery-bg.png) no-repeat;
+
+}
+.faq-bg-duck .faq-bg-duck-container img{
+    position: absolute;
+    bottom: 0;
+    height: 91%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* body.second-bg .faq-bg-duck{ */
+    /* background-color: initial; */
+    /* position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); */
+/* } */
+
+/* .faq-bg-duck{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+} */

@@ -1,0 +1,34 @@
+/* import fonts */
+@font-face {
+	font-family: 'dance_partner'; 
+	src: url(../fonts/dance_partner.ttf)  format('truetype'); 
+}
+@font-face {
+	font-family: 'Pelinka-Bold'; 
+	src: url(../fonts/Pelinka-Bold.otf)  format('truetype'); 
+}
+@font-face {
+	font-family: 'Pelinka-CondensedBold'; 
+	src: url(../fonts/Pelinka-CondensedBold.otf)  format('truetype'); 
+}
+@font-face {
+	font-family: 'Pelinka-CondensedExtraLight'; 
+	src: url(../fonts/Pelinka-CondensedExtraLight.otf)  format('truetype'); 
+}
+@font-face {
+	font-family: 'Pelinka-ExpandedBold'; 
+	src: url(../fonts/Pelinka-ExpandedBold.otf)  format('truetype'); 
+}
+@font-face {
+	font-family: 'Pelinka-ExpandedExtraLight'; 
+	src: url(../fonts/Pelinka-ExpandedExtraLight.otf)  format('truetype'); 
+}
+@font-face {
+	font-family: 'Pelinka-ExtraLight'; 
+	src: url(../fonts/Pelinka-ExtraLight.otf)  format('truetype'); 
+}
+
+@font-face {
+	font-family: 'TrovasRegular-rgGOy'; 
+	src: url(../fonts/TrovasRegular-rgGOy.otf)  format('truetype'); 
+}

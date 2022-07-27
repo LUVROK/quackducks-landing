@@ -1,0 +1,164 @@
+Uri: https://site2.assetov.kz/
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\index.htm
+Content Type: text/html
+
+Uri: https://site2.assetov.kz/fonts/dance_partner.ttf
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\fonts\dance_partner.ttf
+Content Type: application/font-sfnt
+
+Uri: https://site2.assetov.kz/fonts/Pelinka-Bold.otf
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\fonts\Pelinka-Bold.otf
+Content Type: application/vnd.oasis.opendocument.formula-template
+
+Uri: https://site2.assetov.kz/fonts/Pelinka-CondensedBold.otf
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\fonts\Pelinka-CondensedBold.otf
+Content Type: application/vnd.oasis.opendocument.formula-template
+
+Uri: https://site2.assetov.kz/fonts/Pelinka-CondensedExtraLight.otf
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\fonts\Pelinka-CondensedExtraLight.otf
+Content Type: application/vnd.oasis.opendocument.formula-template
+
+Uri: https://site2.assetov.kz/fonts/Pelinka-ExpandedBold.otf
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\fonts\Pelinka-ExpandedBold.otf
+Content Type: application/vnd.oasis.opendocument.formula-template
+
+Uri: https://site2.assetov.kz/fonts/Pelinka-ExpandedExtraLight.otf
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\fonts\Pelinka-ExpandedExtraLight.otf
+Content Type: application/vnd.oasis.opendocument.formula-template
+
+Uri: https://site2.assetov.kz/fonts/Pelinka-ExtraLight.otf
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\fonts\Pelinka-ExtraLight.otf
+Content Type: application/vnd.oasis.opendocument.formula-template
+
+Uri: https://site2.assetov.kz/fonts/TrovasRegular-rgGOy.otf
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\fonts\TrovasRegular-rgGOy.otf
+Content Type: application/vnd.oasis.opendocument.formula-template
+
+Uri: https://site2.assetov.kz/img/all-duck1.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\all-duck1.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/all-duck2.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\all-duck2.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/all-duck3.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\all-duck3.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/all-duck4.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\all-duck4.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/arrow-l-mob.svg
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\arrow-l-mob.svg
+Content Type: image/svg+xml
+
+Uri: https://site2.assetov.kz/img/arrow-l.svg
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\arrow-l.svg
+Content Type: image/svg+xml
+
+Uri: https://site2.assetov.kz/img/arrow-r-mob.svg
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\arrow-r-mob.svg
+Content Type: image/svg+xml
+
+Uri: https://site2.assetov.kz/img/arrow-r.svg
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\arrow-r.svg
+Content Type: image/svg+xml
+
+Uri: https://site2.assetov.kz/img/circle-gallery.svg
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\circle-gallery.svg
+Content Type: image/svg+xml
+
+Uri: https://site2.assetov.kz/img/discrod.svg
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\discrod.svg
+Content Type: image/svg+xml
+
+Uri: https://site2.assetov.kz/img/duck.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\duck.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/faq-bg-deco.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\faq-bg-deco.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/faq-bg.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\faq-bg.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/gallery-bg.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\gallery-bg.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/oneBlox/background_centr.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\oneBlox\background_centr.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/oneBlox/background_left.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\oneBlox\background_left.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/oneBlox/background_right.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\oneBlox\background_right.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/oneBlox/big_duck.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\oneBlox\big_duck.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/oneBlox/Ellipse.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\oneBlox\Ellipse.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/plus.svg
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\plus.svg
+Content Type: image/svg+xml
+
+Uri: https://site2.assetov.kz/img/team1.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\team1.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/team2.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\team2.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/team3.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\team3.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/img/twiter.svg
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\twiter.svg
+Content Type: image/svg+xml
+
+Uri: https://site2.assetov.kz/img/welcome-bg.png
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\img\welcome-bg.png
+Content Type: image/png
+
+Uri: https://site2.assetov.kz/js/jquery.min.js
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\js\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://site2.assetov.kz/js/jquery.scrollify.js
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\js\jquery.scrollify.js
+Content Type: application/javascript
+
+Uri: https://site2.assetov.kz/js/main.js
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\js\main.js
+Content Type: application/javascript
+
+Uri: https://site2.assetov.kz/style/preloader.css
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\style\preloader.css
+Content Type: text/css
+
+Uri: https://site2.assetov.kz/style/style.css
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\style\style.css
+Content Type: text/css
+
+Uri: https://unpkg.com/swiper@8.2.2/swiper-bundle.min.css
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\swiper@8.2.2\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://unpkg.com/swiper@8.2.2/swiper-bundle.min.js
+File Name: C:\Downloaded Web Sites\site2.assetov.kz\swiper@8.2.2\swiper-bundle.min.js
+Content Type: application/javascript
+

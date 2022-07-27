@@ -1,0 +1,42 @@
+.duck-bg{
+    display: none;
+    max-width: 1520px;
+}
+body.second-bg .duck-bg{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 45%;
+    transform: translateX(-50%);
+}
+body.second-bg .duck-bg img{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1230px) {
+    body.second-bg .duck-bg img {
+        top: 50%;
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1540px){
+    body.second-bg .duck-bg img {
+        right: 30px;
+    }
+}
+@media screen and (max-width: 950px){
+    body.second-bg .duck-bg img {
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 600px){
+    body.second-bg .duck-bg img {
+        margin-top: 170px;
+    }
+}
