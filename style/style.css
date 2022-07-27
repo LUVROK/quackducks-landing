@@ -940,6 +940,9 @@ details[open] summary ~ * {
     border: 0;
     list-style: none;
 }
+details summary::-webkit-details-marker {
+    display:none;
+  }
 
 .faq-details-bottom{
     padding-bottom: 20px
