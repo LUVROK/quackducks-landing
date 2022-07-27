@@ -926,7 +926,6 @@ details[open] summary ~ * {
     border-bottom: 1px solid #fff;
     text-transform: uppercase;
     transition: 2s;
-    list-style: none;
 }
 .faq details summary:before{
     content: '+';
@@ -936,6 +935,10 @@ details[open] summary ~ * {
     color: #fff;
     /* transform: translateY(-50%); */
     font-size: 45px;
+}
+.faq details summary:focus{
+    border: 0;
+    list-style: none;
 }
 
 .faq-details-bottom{
