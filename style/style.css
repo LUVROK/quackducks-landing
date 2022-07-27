@@ -808,10 +808,10 @@ img.welcome_box__arrow{
 
 details > summary {
     list-style: none;
-    }
-    details > summary::-webkit-details-marker {
+}
+details > summary::-webkit-details-marker {
     display: none;
-    }
+}
 
 .faq::-webkit-scrollbar { width: 0; }
 
@@ -927,6 +927,9 @@ details[open] summary ~ * {
     border-bottom: 1px solid #fff;
     text-transform: uppercase;
     transition: 2s;
+    list-style: none;
+    outline: 0;
+
 }
 .faq details summary:before{
     content: '+';
@@ -936,7 +939,6 @@ details[open] summary ~ * {
     color: #fff;
     /* transform: translateY(-50%); */
     font-size: 45px;
-    border-color: transparent transparent transparent #fff;
 
 }
 details summary::-webkit-details-marker {
