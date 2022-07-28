@@ -26,9 +26,10 @@ window.onload = function () {
 let playBool = false;
 window.addEventListener('scroll', function () {
     if ($(document).scrollTop() >= 1980) {
-        $(document).ready(function () {
-            $("#audioplayer").get(0).play();
-        });
+        // $(document).ready(function () {
+        //     $("#audioplayer").get(0).play();
+        // });
+        document.querySelector('.btnPlay').click()
     }
     else {
         $(document).ready(function () {
@@ -36,3 +37,9 @@ window.addEventListener('scroll', function () {
         });
     }
 })
+
+function play () {
+    $(document).ready(function () {
+        $("#audioplayer").get(0).play();
+    });
+}
