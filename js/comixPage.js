@@ -30,9 +30,11 @@ window.addEventListener('scroll', function () {
         //     $("#audioplayer").get(0).play();
         // });
         document.querySelector('.btnPlay').click()
-        $('#btnPlay').on('touchstart click', function(){ $(document).ready(function () {
-            $("#audioplayer").get(0).play();
-        }); });
+        this.alert('fff')
+        // document.querySelector('.btnPlay').touch
+        // $('#btnPlay').on('touchstart click', function(){ $(document).ready(function () {
+        //     $("#audioplayer").get(0).play();
+        // }); });
     }
     else {
         $(document).ready(function () {
