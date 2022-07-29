@@ -61,7 +61,7 @@ function Plus_5() {
     $("#audioplayer").get(0).currentTime += 5;
 }
 
-let numberPage;
+let numberPage = 0;
 const imageComix = document.querySelectorAll(".imageComix");
 
 function isPlaying1() {
@@ -86,6 +86,13 @@ swiper_back.addEventListener("click", e => {
             imageComix[numberPage - 1].classList.add('active');
             document.getElementById("numberPage").innerHTML = `#0${numberPage - 1}`
         }
+        if (numberPage - 1 === 0) {
+            document.querySelector(".back").style.opacity =  '0';
+            document.querySelector(".numberPage").style.opacity =  '0';
+            document.querySelector(".to").style.opacity =  '0';
+            document.querySelector(".btnPlay").style.opacity =  '0';
+            $("#audioplayer").get(0).pause();
+        }
     }
     catch (e) {
 
@@ -109,5 +116,10 @@ swiper_to.addEventListener("click", e => {
 });
 
 function startreading() {
-    swiper_to.click()
+    swiper_to.click();
+    document.querySelector(".back").style.opacity =  '1';
+    document.querySelector(".numberPage").style.opacity =  '1';
+    document.querySelector(".to").style.opacity =  '1';
+    document.querySelector(".btnPlay").style.opacity =  '1';
+    
 }

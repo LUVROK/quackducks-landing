@@ -53,7 +53,8 @@ body, html {
     left: 2vw;
     width: 40px;
     height: 100%;
-    /* transition: 2s; */
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .btnPlay svg {
@@ -152,6 +153,8 @@ nav{
     padding-left: 6px;
     padding-right: 6px;
     cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
 }
 .numberPage {
     color: #FFFFFF;
@@ -159,6 +162,8 @@ nav{
     font-family: 'Bayformance';
     padding-left: 6px;
     padding-right: 6px;
+    opacity: 0;
+    transition: 0.5s;
 }
 .to {
     color: #FFFFFF;
@@ -171,6 +176,9 @@ nav{
     padding-left: 6px;
     padding-right: 6px;
     cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+
 }
 .nav_elements_right {
     /* position: absolute; */
