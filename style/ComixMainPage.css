@@ -53,7 +53,7 @@ body, html {
     left: 2vw;
     width: 40px;
     height: 100%;
-    transition: 2s;
+    /* transition: 2s; */
 }
 
 .btnPlay svg {
@@ -190,9 +190,9 @@ nav{
 }
 .PreviewPage img {
     width: auto !important;
-    height: 680px;
+    height: 90%;
     position: relative;
-    right: 15%;
+    right: 0%;
     bottom: -5%;
     margin-right: 0 !important;
     border-radius: 0px;
@@ -208,28 +208,54 @@ nav{
     backdrop-filter: blur(30px);
     height: calc(100vh - 60px);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PreviewPageBlock {
+    width: 60%;
+    height: 80%;
+    position: relative;
 }
 
 .text_discription {
-
+    position: absolute;
+    font-family: 'Roboto', 'sans-serif';
+    width: 55%;
+    height: auto;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-size: 22px;
+    top: 10%
 }
 .text_discription_close {
-
+    position: absolute;
+    font-family: 'Roboto', 'sans-serif';
+    width: 45%;
+    height: auto;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-size: 22px;
+    top: 50%
 }
 .button_start_reading {
     position: absolute;
-    width: auto;
+    width: 45%;
     height: auto;
     font-size: 36px;
     text-transform: uppercase;
     font-family: 'Roboto', 'sans-serif';
     font-weight: bold;
-    padding: 44px 122px;
+    padding: 44px 0px;
     background-color: #EC3E40;
     color: white;
-    bottom: 20%;
-    right: 45%;
+    bottom: 15%;
+    left: 0%;
     border-radius: 20px;
     cursor: pointer;  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

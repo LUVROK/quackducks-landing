@@ -107,3 +107,7 @@ swiper_to.addEventListener("click", e => {
 
     }
 });
+
+function startreading() {
+    swiper_to.click()
+}
