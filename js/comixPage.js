@@ -25,28 +25,14 @@ window.onload = function () {
 
 let playBool = false;
 const SvgPlay = document.querySelector(".SvgPlay");
+const nav = document.querySelector("nav");
 
 window.addEventListener('scroll', function () {
-    if ($(document).scrollTop() >= 2980) {
-        // btnPlay.style.display = 'flex';
-        // $(document).ready(function () {
-        //     $("#audioplayer").get(0).play();
-        // });
-        // document.querySelector('.btnPlay').touchstart()
-
-        // isPlaying($("#audioplayer").get(0)) === false ? SvgPlay.click() : null;
-
-        // this.alert('fff')
-        // document.querySelector('.btnPlay').touch
-        // $('#btnPlay').on('touchstart click', function(){ $(document).ready(function () {
-        //     $("#audioplayer").get(0).play();
-        // }); });
+    if ($(document).scrollTop() >= 60) {
+        nav.style.opacity = '0';
     }
     else {
-        // btnPlay.style.display = 'none';
-        $(document).ready(function () {
-            $("#audioplayer").get(0).pause();
-        });
+        nav.style.opacity = '1';
     }
 })
 
