@@ -38,18 +38,18 @@ window.addEventListener('scroll', function () {
 
 function play() {
     console.log($("#audioplayer").get(0))
-    
+
     isPlaying($("#audioplayer").get(0)) === false ? ($(document).ready(function () {
         $("#audioplayer").get(0).play();
-    }), $( ".SvgPlay" ).addClass( "displayPlayNone" ), 
-    $( ".SvgStop" ).addClass( "displayPlayFlex" ),
-    $( ".SvgPlay" ).removeClass( "displayPlayFlex" ), 
-    $( ".SvgStop" ).removeClass( "displayPlayNone" )) : ($(document).ready(function () {
-        $("#audioplayer").get(0).pause();
-    }), $( ".SvgPlay" ).addClass( "displayPlayFlex" ), 
-    $( ".SvgStop" ).addClass( "displayPlayNone" ),
-    $( ".SvgPlay" ).removeClass( "displayPlayNone" ), 
-    $( ".SvgStop" ).removeClass( "displayPlayFlex" ))
+    }), $(".SvgPlay").addClass("displayPlayNone"),
+        $(".SvgStop").addClass("displayPlayFlex"),
+        $(".SvgPlay").removeClass("displayPlayFlex"),
+        $(".SvgStop").removeClass("displayPlayNone")) : ($(document).ready(function () {
+            $("#audioplayer").get(0).pause();
+        }), $(".SvgPlay").addClass("displayPlayFlex"),
+            $(".SvgStop").addClass("displayPlayNone"),
+            $(".SvgPlay").removeClass("displayPlayNone"),
+            $(".SvgStop").removeClass("displayPlayFlex"))
 }
 
 function isPlaying(audelem) { return !audelem.paused; }
@@ -87,11 +87,11 @@ swiper_back.addEventListener("click", e => {
             document.getElementById("numberPage").innerHTML = `#0${numberPage - 1}`
         }
         if (numberPage - 1 === 0) {
-            document.querySelector(".back").style.opacity =  '0';
-            document.querySelector(".numberPage").style.opacity =  '0';
-            document.querySelector(".to").style.opacity =  '0';
-            document.querySelector(".btnPlay").style.opacity =  '0';
-            $("#audioplayer").get(0).pause();
+            document.querySelector(".back").style.opacity = '0';
+            document.querySelector(".numberPage").style.opacity = '0';
+            document.querySelector(".to").style.opacity = '0';
+            document.querySelector(".btnPlay").style.opacity = '0';
+            play();
         }
     }
     catch (e) {
@@ -109,6 +109,7 @@ swiper_to.addEventListener("click", e => {
             imageComix[numberPage + 1].classList.add('active');
             document.getElementById("numberPage").innerHTML = `#0${numberPage + 1}`
         }
+        isPlaying($("#audioplayer").get(0)) === false ? play() : null;
     }
     catch (e) {
 
@@ -117,9 +118,9 @@ swiper_to.addEventListener("click", e => {
 
 function startreading() {
     swiper_to.click();
-    document.querySelector(".back").style.opacity =  '1';
-    document.querySelector(".numberPage").style.opacity =  '1';
-    document.querySelector(".to").style.opacity =  '1';
-    document.querySelector(".btnPlay").style.opacity =  '1';
-    
+    document.querySelector(".back").style.opacity = '1';
+    document.querySelector(".numberPage").style.opacity = '1';
+    document.querySelector(".to").style.opacity = '1';
+    document.querySelector(".btnPlay").style.opacity = '1';
+
 }
