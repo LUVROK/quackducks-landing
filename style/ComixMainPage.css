@@ -3,7 +3,7 @@
     /* height: 100vh; */
     min-width: 100%;
     min-height: 100%;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 .white_background img {
     display: block;
@@ -12,7 +12,7 @@
     width: 50%;
 }
 .nav_background_black {
-    background-color: rgba(55, 55, 55, 0.63);
+    background-color: rgba(55, 55, 55, 1);
 }
 
 @media only screen and (max-width: 990px) {
@@ -46,10 +46,13 @@ body, html {
 
 .btnPlay {
     z-index: 9999;
-    position:fixed;
-    top: 10vh;
-    left: 10%;
-    display: none;
+    position:relative;
+    /* top: 10vh; */
+    /* left: 10%; */
+    /* display: none; */
+    left: 2vw;
+    width: 40px;
+    height: 100%;
     transition: 2s;
 }
 
@@ -60,13 +63,25 @@ body, html {
     cursor: pointer;
     /* display: none; */
     z-index: 999;
+    width: 40px;
+    height: 40px;
 }
 
-.SvgPlay {
+.SvgPlay {    width: 40px;
+    height: 100%;
     visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
-.SvgStop {
+.SvgStop {    width: 40px;
+    height: 100%;
     visibility: hidden;
+    position: relative;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .displayPlayNone {
@@ -99,4 +114,73 @@ body, html {
     border-radius: 10px;
     padding: 3px 6px;
     cursor: pointer;
+}
+
+
+.nav_background_black {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: fixed;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.nav_background_black img {
+    cursor: pointer;
+}
+.back {
+    color: #FFFFFF;
+    font-size: 52px;
+    font-family: 'Bayformance';
+    background-color: #757575;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor: pointer;
+}
+.numberPage {
+    color: #FFFFFF;
+    font-size: 42px;
+    font-family: 'Bayformance';
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.to {
+    color: #FFFFFF;
+    font-size: 52px;
+    font-family: 'Bayformance';
+    background-color: #757575;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor: pointer;
+}
+.nav_elements_right {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 60vw;
+}
+
+.imageComix {
+    display: none !important;
+}
+.active {
+    display: flex !important;
 }

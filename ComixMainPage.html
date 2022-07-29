@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="./swiper%408.2.2/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/navStyle.css">
+    <!-- <link rel="stylesheet" href="./style/navStyle.css"> -->
     <link rel="stylesheet" href="./style/fonts.css">
     <link rel="stylesheet" href="./style/black_wallpaper.css">
     <link rel="stylesheet" href="./style/duck-bg.css">
@@ -29,58 +29,61 @@
 </head>
 <body>
     <nav class="nav_background_black">
-        <div class="nav_elements_left"></div>
-            <a href="javascript:history.go(-1)" class="scrollto nav_elements__three Move_Black_wallpaper">QUACK<p class="elements3_1">DUCKS</p></a>
-        <div class="nav_elements_right"></div>
+        <!-- <div class="nav_elements_left"></div> -->
+        <a href="./index.html" class="toBack"><img src="./img/qpl.png" alt height="50px"/></a>
+            <!-- <a href="javascript:history.go(-1)" class="scrollto nav_elements__three Move_Black_wallpaper">QUACK<p class="elements3_1">DUCKS</p></a> -->
+        <div class="nav_elements_right">
+            <div class="back" id="swiper_back">&#60;</div>
+            <div class="numberPage" id="numberPage">#00</div>
+            <div class="to" id="swiper_to">&#62;</div>
+            <div type="button" class="btnPlay" id="btnPlay">
+                <div class="SvgPlay" onclick="play()">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="40px" height="40px" viewBox="0 0 408.221 408.221" style="enable-background:new 0 0 408.221 408.221;"
+                        xml:space="preserve" fill="#FFFFFF">
+                        <g>
+                            <g>
+                                <path d="M204.11,0C91.388,0,0,91.388,0,204.111c0,112.725,91.388,204.11,204.11,204.11c112.729,0,204.11-91.385,204.11-204.11
+                                    C408.221,91.388,316.839,0,204.11,0z M286.547,229.971l-126.368,72.471c-17.003,9.75-30.781,1.763-30.781-17.834V140.012
+                                    c0-19.602,13.777-27.575,30.781-17.827l126.368,72.466C303.551,204.403,303.551,220.217,286.547,229.971z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="SvgStop" onclick="play()">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="40px" height="40px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#FFFFFF">
+                        <g>
+                            <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M224,320
+                            c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z M352,320
+                            c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z"/>
+                        
+                        </g>
+                    </svg>
+                </div>
+                <!-- <button type="button" onclick="Minus_5()" class="Minus_5" id="Minus_5">-5sec</button>
+                <button type="button" onclick="Plus_5()" class="Plus_5" id="Plus_5">+5sec</button> -->
+            </div>
+        </div>
     </nav>
 
-    <div class="black_wallpaper"></div>
+    <!-- <div class="black_wallpaper"></div> -->
     <div class="preloader"> 
         <img src="img/Logo_Mockup_098.png" class="preloader__image"/>
     </div>
-    <div type="button" class="btnPlay" id="btnPlay">
-        <div class="SvgPlay" onclick="play()">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="40px" height="40px" viewBox="0 0 408.221 408.221" style="enable-background:new 0 0 408.221 408.221;"
-                xml:space="preserve">
-                <g>
-                    <g>
-                        <path d="M204.11,0C91.388,0,0,91.388,0,204.111c0,112.725,91.388,204.11,204.11,204.11c112.729,0,204.11-91.385,204.11-204.11
-                            C408.221,91.388,316.839,0,204.11,0z M286.547,229.971l-126.368,72.471c-17.003,9.75-30.781,1.763-30.781-17.834V140.012
-                            c0-19.602,13.777-27.575,30.781-17.827l126.368,72.466C303.551,204.403,303.551,220.217,286.547,229.971z"/>
-                    </g>
-                </g>
-            </svg>
-        </div>
-        <div class="SvgStop" onclick="play()">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="40px" height="40px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <g>
-                    <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M224,320
-                    c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z M352,320
-                    c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z"/>
-                
-                </g>
-            </svg>
-        </div>
-        <button type="button" onclick="Minus_5()" class="Minus_5" id="Minus_5">-5sec</button>
-        <button type="button" onclick="Plus_5()" class="Plus_5" id="Plus_5">+5sec</button>
-    </div>
     <div class="white_background">
-        <img src="./img/comix/quack_punk.jpg" alt=""></img>
-        <img src="./img/comix/01.jpg" alt=""></img>
-        <img src="./img/comix/02.jpg" alt=""></img>
-        <img src="./img/comix/03.jpg" alt=""></img>
-        <img src="./img/comix/04.jpg" alt=""></img>
-        <img src="./img/comix/05.jpg" alt=""></img>
-        <img src="./img/comix/06.jpg" alt=""></img>
+        <img src="./img/comix/quack_punk.jpg" alt="" id="0" class="imageComix active"></img>
+        <img src="./img/comix/01.jpg" alt="" id="1" class="imageComix"></img>
+        <img src="./img/comix/02.jpg" alt="" id="2" class="imageComix"></img>
+        <img src="./img/comix/03.jpg" alt="" id="3" class="imageComix"></img>
+        <img src="./img/comix/04.jpg" alt="" id="4" class="imageComix"></img>
+        <img src="./img/comix/05.jpg" alt="" id="5" class="imageComix"></img>
+        <img src="./img/comix/06.jpg" alt="" id="6" class="imageComix"></img>
         <!-- <iframe src="img/musicComix.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe> -->
-        <!-- <audio autoplay loop>
+        <!-- <audio loop id="audioplayer" >
             <source src="./img/musicComix.mp3" type="audio/mp3">
         </audio> -->
-        <audio id="audioplayer" src="./img/musicComix.mp3" type="audio/mp3" loop="loop"  ></audio>
-
-
+        <audio id="audioplayer" src="./img/musicComix.mp3" type="audio/mp3" loop="loop"></audio>
     </div>
 
     </div>

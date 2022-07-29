@@ -32,3 +32,8 @@
 	font-family: 'TrovasRegular-rgGOy'; 
 	src: url(../fonts/TrovasRegular-rgGOy.otf)  format('truetype'); 
 }
+
+@font-face {
+	font-family: 'Bayformance'; 
+	src: url(../fonts/Bayformance.otf)  format('truetype'); 
+}

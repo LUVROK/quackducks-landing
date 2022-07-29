@@ -28,12 +28,14 @@ const SvgPlay = document.querySelector(".SvgPlay");
 
 window.addEventListener('scroll', function () {
     if ($(document).scrollTop() >= 2980) {
-        btnPlay.style.display = 'flex';
+        // btnPlay.style.display = 'flex';
         // $(document).ready(function () {
         //     $("#audioplayer").get(0).play();
         // });
         // document.querySelector('.btnPlay').touchstart()
-        isPlaying($("#audioplayer").get(0)) === false ? SvgPlay.click() : null;
+
+        // isPlaying($("#audioplayer").get(0)) === false ? SvgPlay.click() : null;
+
         // this.alert('fff')
         // document.querySelector('.btnPlay').touch
         // $('#btnPlay').on('touchstart click', function(){ $(document).ready(function () {
@@ -41,15 +43,15 @@ window.addEventListener('scroll', function () {
         // }); });
     }
     else {
-        btnPlay.style.display = 'none';
+        // btnPlay.style.display = 'none';
         $(document).ready(function () {
             $("#audioplayer").get(0).pause();
         });
     }
 })
 
-function play () {
-    // console.log(isPlaying($("#audioplayer").get(0)))
+function play() {
+    console.log($("#audioplayer").get(0))
     
     isPlaying($("#audioplayer").get(0)) === false ? ($(document).ready(function () {
         $("#audioplayer").get(0).play();
@@ -63,12 +65,59 @@ function play () {
     $( ".SvgPlay" ).removeClass( "displayPlayNone" ), 
     $( ".SvgStop" ).removeClass( "displayPlayFlex" ))
 }
+
 function isPlaying(audelem) { return !audelem.paused; }
 
-function Minus_5(){
+function Minus_5() {
     $("#audioplayer").get(0).currentTime -= 5;
 }
-function Plus_5(){
+function Plus_5() {
     $("#audioplayer").get(0).currentTime += 5;
-    
 }
+
+let numberPage;
+const imageComix = document.querySelectorAll(".imageComix");
+
+function isPlaying1() {
+    const Active = document.querySelector(".active");
+    numberPage = Active.id;
+    document.getElementById("numberPage").innerHTML = `#0${numberPage}`
+    return numberPage;
+}
+// isPlaying()
+
+const swiper_back = document.querySelector("#swiper_back");
+const swiper_to = document.querySelector("#swiper_to");
+
+swiper_back.addEventListener("click", e => {
+    try {
+        // console.log(imageComix[numberPage]);
+        const Active = document.querySelector(".active");
+        numberPage = Active.id;
+        numberPage = parseInt(numberPage);
+        if (imageComix[numberPage - 1]) {
+            imageComix[numberPage].classList.remove('active');
+            imageComix[numberPage - 1].classList.add('active');
+            document.getElementById("numberPage").innerHTML = `#0${numberPage - 1}`
+        }
+    }
+    catch (e) {
+
+    }
+});
+swiper_to.addEventListener("click", e => {
+    try {
+        // console.log(imageComix[numberPage]);
+        const Active = document.querySelector(".active");
+        numberPage = Active.id;
+        numberPage = parseInt(numberPage);
+        if (imageComix[numberPage + 1]) {
+            imageComix[numberPage].classList.remove('active');
+            imageComix[numberPage + 1].classList.add('active');
+            document.getElementById("numberPage").innerHTML = `#0${numberPage + 1}`
+        }
+    }
+    catch (e) {
+
+    }
+});
