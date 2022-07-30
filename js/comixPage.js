@@ -122,5 +122,5 @@ function startreading() {
     document.querySelector(".numberPage").style.opacity = '1';
     document.querySelector(".to").style.opacity = '1';
     document.querySelector(".btnPlay").style.opacity = '1';
-    play();
+    // play();
 }
