@@ -415,7 +415,7 @@ nav{
 
 @media screen and (max-width: 530px) and (max-height: 700px) {
     .text_discription {
-        top: -15%;
+        top: 0%;
         font-size: 14px;
     }
     .text_discription_close {
