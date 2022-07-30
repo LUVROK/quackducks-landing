@@ -109,6 +109,7 @@ swiper_to.addEventListener("click", e => {
             imageComix[numberPage].classList.remove('active');
             imageComix[numberPage + 1].classList.add('active');
             document.getElementById("numberPage").innerHTML = `#0${numberPage + 1}`
+            // imageComix[numberPage + 1].classList.add('active');
         }
     }
     catch (e) {

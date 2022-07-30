@@ -9,7 +9,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 40%;
 }
 .nav_background_black {
     background-color: rgba(55, 55, 55, 1);
@@ -164,13 +164,20 @@ nav{
     left: 60vw;
 }
 
-.imageComix {
-    width: 100%;
-    display: none !important;
+.background_first_page {
     background-image: url('../img/comix/background.jpg');
     background-position: cover;
     background-repeat: no-repeat;
+}
+
+.imageComix {
+    width: 100%;
+    display: none !important;
     /* filter: blur(5px); */
+}
+.chapter_1 {
+    display: flex;
+    flex-direction: column;
 }
 .PreviewPage img {
     width: auto !important;
@@ -246,7 +253,7 @@ nav{
     font-size: 36px;
     text-transform: uppercase;
     font-family: 'Bayformance';
-    font-weight: bold;
+    font-weight: normal;
     padding: 44px 0px;
     background-color: #EC3E40;
     color: white;
@@ -263,11 +270,17 @@ nav{
     .PreviewPageBlock {
         width: 80%;
     }
+    .white_background img {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 1210px) {
     .PreviewPageBlock {
         width: 90%;
+    }
+    .white_background img {
+        width: 60%;
     }
 }
 
@@ -277,6 +290,9 @@ nav{
     }
     .PreviewPageBlock {
         width: 95%;
+    }
+    .white_background img {
+        width: 70%;
     }
 }
 
