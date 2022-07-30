@@ -91,6 +91,9 @@ swiper_back.addEventListener("click", e => {
             document.querySelector(".numberPage").style.opacity = '0';
             document.querySelector(".to").style.opacity = '0';
             document.querySelector(".btnPlay").style.opacity = '0';
+            document.querySelector(".controllSong").style.visibility = 'hidden';
+            document.querySelector(".controllSong").style.transition = '0s';
+            document.querySelector(".controllSong").style.opacity = '0';
             isPlaying($("#audioplayer").get(0)) === true ? $("#audioplayer").get(0).pause() : null;
             // play();
         }
@@ -123,5 +126,13 @@ function startreading() {
     document.querySelector(".numberPage").style.opacity = '1';
     document.querySelector(".to").style.opacity = '1';
     document.querySelector(".btnPlay").style.opacity = '1';
+    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
+
+        document.querySelector(".controllSong").style.visibility = 'visible';
+        document.querySelector(".controllSong").style.transition = '0.5s';
+        document.querySelector(".controllSong").style.opacity = '1';
+
+    }
+    // controllSong
     // play();
 }

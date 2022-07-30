@@ -44,9 +44,128 @@ body, html {
     height: 40px;
 }
 
+.btnPlay2 {
+    z-index: 9999;
+    position: fixed;
+    /* top: 10vh; */
+    /* left: 10%; */
+    /* display: none; */
+    left: 2vw;
+    width: 440px;
+    height: 100%;
+    /* opacity: 0; */
+    transition: 0.5s;
+    display: flex;
+    bottom: 20px;
+    flex-direction: row;
+    height: 100px;
+    background-color: white;
+    box-shadow:  20px 20px 60px #676767,
+    -20px -20px 60px #ffffff00;
+    border-radius:5px;
+    color: black;
+}
+
+.controllSong_block_logo {
+    position: absolute;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    padding: 12px;
+}
+.controllSong_block_logo img {
+    width: auto !important;
+    height: 100%;
+}
+.controllSong_block_title {
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    left: 25%;
+}
+.groupSong {
+    position: relative;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.titleSong {
+    position: relative;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.btnPlay2 svg {
+    position: absolute;
+    left: 10%;
+    /* bottom: 10px; */
+    cursor: pointer;
+    /* display: none; */
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+}
+
+.Plus_5_2 {
+    position: relative;
+    /* top: 45px; */
+    border: 0;
+    background-color: #8a7437;
+    color: white;
+    width: 49px;
+    height: 49px;
+    border-radius: 99px;
+    padding: 3px 6px;
+    /* left: -17px; */
+    cursor: pointer;
+}
+.Minus_5_2 {
+    position: relative;
+    /* left: -20px; */
+    /* top: 45px; */
+    border: 0;
+    background-color: #8a7437;
+    color: white;
+    height: 49px;
+    width: 49px;
+    border-radius: 99px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.rewind {
+    width: auto !important;
+    cursor: pointer;
+}
+.rewind_minus {
+    transform:scale(-1,1);  
+    padding-left: 12px; 
+    padding-right: 12px; 
+}
+.rewind_plus {
+    transform:scale(1,1);   
+    padding-left: 12px; 
+    padding-right: 12px;
+}
+.rewindCenter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .SvgPlay {    width: 40px;
     height: 100%;
-    visibility: visible;
+    /* visibility: visible; */
     display: flex;
     justify-content: center;
     align-items:center;
@@ -59,6 +178,24 @@ body, html {
     display: flex;
     justify-content: center;
     align-items:center;
+}
+.btnPlay2_SvgPlay svg {
+    left: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btnPlay2_SvgStop {
+    position: absolute;
+    /* left: 0; */
+    right: 23.75%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btnPlay2_SvgStop svg{
+
 }
 
 .displayPlayNone {
@@ -232,7 +369,7 @@ nav{
     text-shadow: 1px 1px 2px black;
     color: white;
     font-size: 22px;
-    top: 10%
+    top: 20%;
 }
 .text_discription_close {
     position: absolute;
@@ -552,4 +689,25 @@ nav{
     .button_start_reading {
 
     }
+}
+
+.controllSong {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.controllSong_block {
+
+}
+.controllSong_block_right{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
 }
