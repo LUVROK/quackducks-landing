@@ -415,7 +415,40 @@ nav{
 
 @media screen and (max-width: 530px) and (max-height: 700px) {
     .text_discription {
-        top: 6px;
+        top: -15%;
+        font-size: 14px;
+    }
+    .text_discription_close {
+        top: -10px;
+    }
+    .PreviewPage img {
+        /* height: 60%; */
+        width: 75% !important;
+        right: 12.5%;
+    }
+}
+@media screen and (max-width: 530px) and (max-height: 600px) {
+    .text_discription {
+        top: 0%;
+        font-size: 12px;
+    }
+    .text_discription_close {
+        top: 0px;
+        width: 100%;
+        left: 0%;
+    }
+    .PreviewPage img {
+        /* height: 60%; */
+        width: 75% !important;
+        right: 12.5%;
+    }
+    .button_start_reading {
+        bottom: -10%;
+    }
+}
+@media screen and (max-width: 530px) and (max-height: 500px) {
+    .text_discription {
+        top: 0%;
         font-size: 14px;
     }
     .text_discription_close {
