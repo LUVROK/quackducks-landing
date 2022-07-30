@@ -125,7 +125,9 @@ function startreading() {
     document.querySelector(".back").style.opacity = '1';
     document.querySelector(".numberPage").style.opacity = '1';
     document.querySelector(".to").style.opacity = '1';
-    document.querySelector(".btnPlay").style.opacity = '1';
+    if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
+        document.querySelector(".btnPlay").style.opacity = '1';
+    }
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
 
         document.querySelector(".controllSong").style.visibility = 'visible';
