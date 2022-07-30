@@ -84,14 +84,15 @@ swiper_back.addEventListener("click", e => {
         if (imageComix[numberPage - 1]) {
             imageComix[numberPage].classList.remove('active');
             imageComix[numberPage - 1].classList.add('active');
-            document.getElementById("numberPage").innerHTML = `#0${numberPage - 1}`
+            document.getElementById("numberPage").innerHTML = `#0${numberPage - 1}`;
         }
         if (numberPage - 1 === 0) {
             document.querySelector(".back").style.opacity = '0';
             document.querySelector(".numberPage").style.opacity = '0';
             document.querySelector(".to").style.opacity = '0';
             document.querySelector(".btnPlay").style.opacity = '0';
-            play();
+            isPlaying($("#audioplayer").get(0)) === true ? $("#audioplayer").get(0).pause() : null;
+            // play();
         }
     }
     catch (e) {
@@ -109,7 +110,6 @@ swiper_to.addEventListener("click", e => {
             imageComix[numberPage + 1].classList.add('active');
             document.getElementById("numberPage").innerHTML = `#0${numberPage + 1}`
         }
-        isPlaying($("#audioplayer").get(0)) === false ? play() : null;
     }
     catch (e) {
 
@@ -122,5 +122,5 @@ function startreading() {
     document.querySelector(".numberPage").style.opacity = '1';
     document.querySelector(".to").style.opacity = '1';
     document.querySelector(".btnPlay").style.opacity = '1';
-
+    play();
 }
