@@ -399,6 +399,7 @@ a.social_icons__discord{
     background-repeat: repeat;
     background-color: rgba(255, 255, 255, 0.2); 
     box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);
+    -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
 } */
 /* .welcome-block{ */
@@ -415,6 +416,7 @@ a.social_icons__discord{
     background-repeat: repeat;
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);
+    -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px); */
 /* } */
 /* .shadow-block-bacground .welcome-block .welcome-block-title{
@@ -495,6 +497,7 @@ a.social_icons__discord{
     background-repeat: repeat;
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 50px -20px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);
+    -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
     height: 100%;
 }*/
@@ -767,8 +770,8 @@ img.welcome_box__arrow{
     align-items: center;
     margin: 0;
     padding: 0;
-    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);    
+    backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.09); 
     color: white;
     font-size: 92px;
@@ -873,8 +876,8 @@ details > summary::-webkit-details-marker {
     background-image: url(../img/faq-bg-deco.png);
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);
-    backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
     position: inherit;
     top: 50%;
     /* visibility: hidden; */
@@ -1098,8 +1101,8 @@ details summary::-webkit-details-marker {
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 50px rgb(255 255 255 / 25%), inset 0px 4px 20px rgb(255 255 255 / 20%);
-    backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
 }
 .view-photo .view-photo-big img{
     width: 100%;
