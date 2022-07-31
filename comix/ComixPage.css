@@ -570,6 +570,21 @@ nav{
         margin-left: auto;
         margin-right: 0;
     }
+    
+    .notification {
+        top: 10%;
+        bottom: auto !important;
+        left: auto !important;
+        right: 2%;
+        /* right: 2%; */
+        background-color: #acacac;
+        color: black;
+    }
+    .notification_block_text {
+        /* font-family: 'Bayformance';
+        font-weight: 100; */
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -759,4 +774,33 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-content: center;
+}
+
+.notification {
+    position: fixed;
+    bottom: 15%;
+    left: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    height: auto;
+    width: auto;
+    background-color: #555555;
+    border-radius: 5px;
+    color: white;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 1s;
+}
+.notification_block {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.notification_block_text {
+    font-family: 'Bayformance';
+    font-weight: 100;
+    font-size: 22px;
 }
