@@ -21,12 +21,6 @@ window.onload = function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
     }, 500);
-
-    setTimeout(function () {
-        // SongClose.style.animation = 'moveAround 2s ease-in-out';
-        document.querySelector(".btnPlay2").style.transform = 'translateX(-500px)';
-        document.querySelector(".btnPlay2").style.opacity = '0';
-    }, 3000);
 }
 
 let playBool = false;
@@ -139,7 +133,11 @@ function startreading() {
         document.querySelector(".controllSong").style.visibility = 'visible';
         document.querySelector(".controllSong").style.transition = '0s';
         document.querySelector(".controllSong").style.opacity = '1';
-
+        setTimeout(function () {
+            SongClose.style.animation = 'moveAroundBack 2s ease-in-out';
+            document.querySelector(".btnPlay2").style.transform = 'translateX(-500px)';
+            document.querySelector(".btnPlay2").style.opacity = '0';
+        }, 3000);
     }
     // controllSong
     // play();
@@ -163,7 +161,12 @@ SongClose.addEventListener("click", e => {
         ? (SongClose.style.animation = 'moveAround 2s ease-in-out', document.querySelector(".btnPlay2").style.transform = 'translateX(-500px)'
         , document.querySelector(".btnPlay2").style.opacity = '0')
         : (SongClose.style.animation = 'moveAroundback 2s ease-in-out', document.querySelector(".btnPlay2").style.transform = 'translateX(80px)'
-        , document.querySelector(".btnPlay2").style.opacity = '1');
+        , document.querySelector(".btnPlay2").style.opacity = '1',
+        setTimeout(function () {
+            SongClose.style.animation = 'moveAround 2s ease-in-out';
+            document.querySelector(".btnPlay2").style.transform = 'translateX(-500px)';
+            document.querySelector(".btnPlay2").style.opacity = '0';
+        }, 10000));
         console.log(document.querySelector(".btnPlay2").style.transform === 'translateX(80px)')
 
     }
