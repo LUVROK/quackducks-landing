@@ -54,16 +54,62 @@ body, html {
     width: 440px;
     height: 100%;
     /* opacity: 0; */
-    transition: 0.5s;
+    transition: transform 2s, opacity 1s;
     display: flex;
     bottom: 20px;
     flex-direction: row;
     height: 100px;
     background-color: white;
-    box-shadow:  20px 20px 60px #676767,
+    box-shadow:  5px 5px 10px #676767,
     -20px -20px 60px #ffffff00;
     border-radius:5px;
     color: black;
+    opacity: 1;
+
+}
+
+.SongClose {
+    background-color:rgba(0, 0, 0, 1);
+    width: 60px !important;
+    height: 60px !important;
+    position: fixed;
+    left: 2%;
+    bottom: 2%;
+    border-radius: 99px;
+    object-fit: cover;
+    cursor: pointer;
+    /* transform: rotate(0deg); */
+    /* transition: 1s; */
+    animation: none;
+}
+/* .SongClose img:focus {
+    animation: moveAround 2s ease-in-out;
+} */
+
+@keyframes moveAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+@keyframes moveAroundback {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+
+.SongClose img {
+    width: 60px !important;
+    height: 60px !important;   
+    object-fit: cover;
+    padding: 5px;
+    cursor: pointer;
+
 }
 
 .controllSong_block_logo {
@@ -698,7 +744,7 @@ nav{
     z-index: 9999;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 .controllSong_block {
 

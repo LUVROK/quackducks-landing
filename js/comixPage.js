@@ -21,6 +21,12 @@ window.onload = function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
     }, 500);
+
+    setTimeout(function () {
+        // SongClose.style.animation = 'moveAround 2s ease-in-out';
+        document.querySelector(".btnPlay2").style.transform = 'translateX(-500px)';
+        document.querySelector(".btnPlay2").style.opacity = '0';
+    }, 3000);
 }
 
 let playBool = false;
@@ -131,10 +137,37 @@ function startreading() {
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
 
         document.querySelector(".controllSong").style.visibility = 'visible';
-        document.querySelector(".controllSong").style.transition = '0.5s';
+        document.querySelector(".controllSong").style.transition = '0s';
         document.querySelector(".controllSong").style.opacity = '1';
 
     }
     // controllSong
     // play();
 }
+
+const SongClose = document.querySelector(".SongClose");
+SongClose.addEventListener("click", e => {
+    try {
+        // console.log(imageComix[numberPage]);
+        // const Active = document.querySelector(".active");
+        // numberPage = Active.id;
+        // numberPage = parseInt(numberPage);
+        // if (imageComix[numberPage + 1]) {
+        //     imageComix[numberPage].classList.remove('active');
+        //     imageComix[numberPage + 1].classList.add('active');
+        //     document.getElementById("numberPage").innerHTML = `#0${numberPage + 1}`
+        //     // imageComix[numberPage + 1].classList.add('active');
+        // }
+
+        document.querySelector(".btnPlay2").style.transform === 'translateX(80px)' 
+        ? (SongClose.style.animation = 'moveAround 2s ease-in-out', document.querySelector(".btnPlay2").style.transform = 'translateX(-500px)'
+        , document.querySelector(".btnPlay2").style.opacity = '0')
+        : (SongClose.style.animation = 'moveAroundback 2s ease-in-out', document.querySelector(".btnPlay2").style.transform = 'translateX(80px)'
+        , document.querySelector(".btnPlay2").style.opacity = '1');
+        console.log(document.querySelector(".btnPlay2").style.transform === 'translateX(80px)')
+
+    }
+    catch (e) {
+
+    }
+});
