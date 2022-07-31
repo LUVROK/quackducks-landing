@@ -234,14 +234,17 @@ body, html {
 .btnPlay2_SvgStop {
     position: absolute;
     /* left: 0; */
-    right: 23.75%;
+    right: 12.25%;
     top: 0%;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 .btnPlay2_SvgStop svg{
-
+    left: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .displayPlayNone {
